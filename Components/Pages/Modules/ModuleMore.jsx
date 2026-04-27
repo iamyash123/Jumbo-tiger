@@ -1,0 +1,52 @@
+import React from 'react'
+import GradientStepMark from '@/Components/Common/Gradientstepmark'
+import Link from 'next/link';
+
+const defaultContent = {
+    heading: 'EXPLORE MORE',
+    subtitle: 'Works With These Modules',
+    items: [
+    {
+        title: "Inventory & Occupancy",
+        desc: "Real-time availability feeds directly into the booking pipeline.",
+        href: '/',
+    },
+    {
+        title: "Payments & Rent",
+        desc: "Deposit collection and first rent payment integrated into onboarding.",
+        href: '/',
+    },
+    {
+        title: "Tenant Portal",
+        desc: "Residents access their welcome pack and community from day one.",
+        href: '/',
+    }
+    ]
+}
+const ModuleMore = ({ content = defaultContent }) => {
+    const { heading, subtitle, items } = content
+    return (
+        <section>
+            <div className="container">
+                <div className="padding-80-40 border-x border-[#E5E7EB]">
+                    <h2 className="bold text-center">{heading}</h2>
+                    <p className="mt-3! text-center">{subtitle}</p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3">
+                    {items.map((item, index) => (
+                        <div key={index} className='padding-80 px-5 lg:px-10 border border-[#E5E7EB]'>
+                            <GradientStepMark />
+                            <div className='mt-6 lg:mt-10'>
+                                <h6 className="semibold">{item.title}</h6>
+                                <p className="!mt-4 grey">{item.desc}</p>
+                            </div>
+                            <Link href={item.href || '/'} className='outline-btn w-fit mt-6'>Learn more</Link>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default ModuleMore

@@ -1,0 +1,12 @@
+@import "@heroui/styles";
+
+@source './**/*.{js,jsx,ts,tsx}';
+@source '../Components/**/*.{js,jsx,ts,tsx}';
+
+@custom-variant dark (&:is(.dark *));
+
+
+body {
+  width: 100%;
+  height: 100vh;
+}

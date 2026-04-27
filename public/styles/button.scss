@@ -1,0 +1,78 @@
+@use "variables" as *;
+@use "global" as *;
+
+
+.primary-btn {
+    border-radius: 42px;
+    background-color: #7E3CEF;
+    color: #fff;
+    padding: 8px 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    height: auto;
+    gap: 8px;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 165%;
+
+    &:hover {
+        background-color: #5F13E2;
+
+    }
+
+    &.large {
+        padding: 12px 20px;
+    }
+}
+
+.outline-btn {
+    border-radius: 42px;
+    border: 1px solid #D1D5DB;
+    background: rgba(0, 0, 0, 0.00);
+    color: #4B5563;
+    padding: 8px 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    height: auto;
+    gap: 8px;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 165%;
+
+    &:hover {
+        border: 1px solid #9CA3AF;
+        color: #111827;
+
+    }
+
+    &.large {
+        padding: 12px 20px;
+    }
+}
+
+.price-button {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 46px;
+    background: linear-gradient(270deg, #FF965D 0.29%, #9960FA 62.75%, #000 107.18%);
+    color: #FFF;
+    text-align: center;
+    font-family: $body-font;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165%;
+}
