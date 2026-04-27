@@ -1047,4 +1047,175 @@ export const modulesData = {
             secondaryHref: '/',
         },
     },
+    'access-control': {
+        banner: {
+            title: 'Access Control & Smart Building',
+            description:
+                'Smart locks, keyless entry, guest access provisioning, emergency protocols, and IoT building management -- all controlled from one dashboard. Integrate with SALTO, Yale, Nuki, and 20+ hardware providers.',
+            primaryLabel: 'Book a Free demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/bookdemo',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Keys Are a Liability. Manual Access Is a Bottleneck.",
+            items: [
+                { title: 'Lost & Copied Keys', desc: "Physical keys get duplicated, lost, and never returned. Re-keying costs $150+ per lock and leaves security gaps between tenants." },
+                { title: '24/7 Front Desk Dependency', desc: 'Someone has to be at the desk to buzz in guests, vendors, and deliveries. After-hours access is a constant headache.' },
+                { title: 'No Access Audit Trail', desc: 'When something goes wrong, you have no idea who entered which door at what time. No logs, no accountability.' },
+                { title: 'Guest Access Chaos', desc: 'Residents share entry codes freely. You have no control over who enters, when, or for how long.' },
+                { title: 'Emergency Response Gaps', desc: "Fire alarm goes off -- who is in the building? No real-time occupancy data means slow and unreliable emergency response." },
+                { title: 'Disconnected Systems', desc: "Locks, intercoms, CCTV, and PMS all run separately. No unified view of building security." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Smart Lock Integration & Keyless Entry',
+                description: 'Connect with 20+ smart lock providers for seamless keyless entry. Residents use their phone, PIN, or biometrics. No more physical keys to manage.',
+                points: [
+                    'Integration with SALTO, Yale, Nuki, Igloohome, August, and 15+ more providers',
+                    'Mobile app unlock: Bluetooth, NFC, and remote unlock from anywhere',
+                    'PIN code access with unique codes per resident, auto-expiring for guests',
+                    'Biometric options: fingerprint and facial recognition where hardware supports it',
+                    'Automatic access provisioning on move-in and revocation on move-out',
+                    'Fallback access methods: physical key override for emergency scenarios'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Guest & Visitor Access Provisioning',
+                description: 'Residents generate time-limited digital passes for guests. No front desk needed. Full control over who enters, when, and which doors they can access.',
+                points: [
+                    'Resident-generated guest passes with specific date, time, and door permissions',
+                    'Auto-expiring access codes that deactivate after the visit window closes',
+                    'Delivery and courier access: one-time codes for package drop-off zones',
+                    'Vendor and contractor access with pre-approved time windows and restricted zones',
+                    'Guest pre-registration with ID verification before access is granted',
+                    'Overstay alerts when guests remain beyond their authorized time window'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Building Zone & Permission Management',
+                description: 'Define access zones and assign granular permissions. Residents access their floor and common areas. Staff access maintenance rooms. Vendors access only where needed.',
+                points: [
+                    'Zone-based access: bedrooms, floors, common areas, gyms, rooftops, parking, storage',
+                    'Role-based permissions: resident, staff, manager, vendor, guest -- each with different access',
+                    'Time-based rules: gym access 6am-10pm, rooftop closes at midnight, maintenance zones weekdays only',
+                    'Multi-property permission templates: set once, deploy across your portfolio',
+                    'Temporary access elevation for move-in days, events, or maintenance windows',
+                    'Automatic permission updates when residents change rooms or properties'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Real-Time Access Logs & Security Monitoring',
+                description: 'Every door event logged with timestamp, identity, and method. Searchable audit trail for security reviews, incident investigation, and compliance reporting.',
+                points: [
+                    'Complete audit trail: who accessed which door, when, and how (app, PIN, card, override)',
+                    'Real-time dashboard showing live door status and recent access events across all properties',
+                    'Anomaly detection: unusual access patterns, repeated failed attempts, after-hours activity',
+                    'Incident investigation: search by resident, door, timeframe, or access method',
+                    'Exportable access logs for insurance claims, police reports, and compliance audits',
+                    'Integration with CCTV: correlate access events with camera footage timestamps'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Emergency Protocols & Lockdown',
+                description: 'Fire, flood, or security threat? Trigger building-wide lockdown or emergency unlock from your dashboard. Real-time occupancy data for emergency responders.',
+                points: [
+                    'Emergency unlock: open all doors simultaneously for fire evacuation',
+                    'Security lockdown: lock all entry points instantly during a threat',
+                    'Real-time occupancy tracking: know exactly who is in the building at any moment',
+                    'Emergency muster reports generated automatically for fire brigade and responders',
+                    'Integration with fire alarm and building management systems for automated triggers',
+                    'Resident emergency notifications: push alerts with evacuation instructions'
+                ],
+                image: '/images/buildscale.webp',
+            },
+
+            {
+                title: 'IoT & Smart Building Management',
+                description: 'Beyond locks -- manage smart thermostats, lighting, energy meters, water sensors, and air quality monitors. Turn your building into an intelligent, efficient operation.',
+                points: [
+                    'Smart thermostat integration: automated climate control by occupancy and schedule',
+                    'Energy sub-metering: track consumption per unit, floor, or common area',
+                    'Water leak and flood sensors: instant alerts to prevent damage',
+                    'Air quality monitoring: CO2, humidity, and temperature for resident wellbeing',
+                    'Lighting automation: occupancy-based lighting for common areas and corridors',
+                    'Centralized IoT dashboard: all sensors, devices, and building systems in one view'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Secure Your Buildings. Simplify Access.",
+            description: 'See how smart access control eliminates key management, reduces security incidents, and gives you full visibility over every door.',
+            primaryLabel: 'Book a Free demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'See How It Works',
+            secondaryHref: '/bookdemo',
+        },
+        stats: [
+            { value: '100%', label: 'Elimination of physical key management' },
+            { value: '2hrs', label: 'Reduction in unauthorized access incidents' },
+            { value: '45s', label: 'Average time to investigate any access event' },
+            { value: '3x', label: 'Faster emergency muster reporting' },
+        ],
+        more: {
+            heading: 'EXPLORE MORE',
+            subtitle: 'Works With These Modules',
+            items: [
+                { title: 'Booking & Onboarding', desc: 'Trigger deposits and first payments directly from the booking flow.', href: '/modules/booking-onboarding' },
+                { title: 'Tenant Portal', desc: 'Residents can view invoices, balances, and payment history in one place.', href: '/modules/tenant-portal' },
+                { title: 'Operations', desc: 'Billing data connects to occupancy, status changes, and move-out workflows.', href: '/modules/operations' },
+            ],
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'Which smart lock brands do you integrate with?',
+                    answer: "We support 20+ providers including SALTO, Yale, Nuki, Igloohome, August, Dormakaba, ASSA ABLOY, and more. Our open API also supports custom hardware integrations.",
+                },
+                {
+                    question: 'Can we handle walk-in visitors?',
+                    answer: 'Yes. The guard app has a walk-in flow where security staff register the visitor on the spot and send a notification to the resident for confirmation. If the resident confirms, the visitor is logged in.',
+                },
+                {
+                    question: 'How does vendor tracking work?',
+                    answer: 'Vendors are registered with company details, ID, and work area assignment. They check in/out via QR code or the guard app. Movement logs track duration and location. Recurring vendors (cleaners, maintenance) have persistent profiles.',
+                },
+                {
+                    question: 'What happens if a guest overstays?',
+                    answer: 'The system monitors guest duration against configurable limits. When thresholds are approached or exceeded, automatic alerts go to the resident and management. Repeated violations trigger escalation workflows.',
+                },
+                {
+                    question: 'Is there an audit trail?',
+                    answer: 'Yes. Every visitor event (registration, check-in, check-out, overstay alert) is logged with timestamps. Reports are exportable for insurance claims, compliance audits, and incident investigations.',
+                },
+                {
+                    question: 'Does it integrate with smart locks?',
+                    answer: 'Yes. Integration with SALTO, RemoteLock, KeyCafe, and other access control systems. Visitor access codes can be auto-generated and auto-expired based on registered visit times.',
+                }
+                ,
+                {
+                    question: 'How is visitor data handled for GDPR?',
+                    answer: 'Configurable data retention policies automatically purge visitor records after your chosen period. Residents can request deletion of their guest data. All data handling follows GDPR best practices.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Secure Your Properties?',
+            description: "Book a demo and see how digital visitor management protects your buildings and saves reception hours.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
 }
