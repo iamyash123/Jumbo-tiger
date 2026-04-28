@@ -1,13 +1,16 @@
 export const modulesData = {
     'booking-onboarding': {
         banner: {
+            icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
+                < path d="M36.6668 28.2V33.2C36.6686 33.6641 36.5736 34.1236 36.3876 34.5489C36.2017 34.9742 35.9289 35.3559 35.5869 35.6697C35.2449 35.9835 34.841 36.2224 34.4013 36.3711C33.9616 36.5198 33.4957 36.5751 33.0334 36.5333C27.9048 35.976 22.9784 34.2235 18.6501 31.4166C14.6231 28.8577 11.209 25.4436 8.65009 21.4166C5.83339 17.0686 4.0805 12.1183 3.53343 6.96662C3.49178 6.50574 3.54655 6.04123 3.69426 5.60267C3.84197 5.16411 4.07938 4.76111 4.39137 4.41933C4.70336 4.07755 5.0831 3.80447 5.50641 3.61749C5.92972 3.43052 6.38733 3.33373 6.85009 3.33329H11.8501C12.6589 3.32533 13.4431 3.61176 14.0564 4.13918C14.6696 4.6666 15.0702 5.39904 15.1834 6.19996C15.3945 7.80007 15.7858 9.37117 16.3501 10.8833C16.5743 11.4798 16.6229 12.1281 16.4899 12.7514C16.357 13.3747 16.0482 13.9468 15.6001 14.4L13.4834 16.5166C15.856 20.6892 19.3108 24.144 23.4834 26.5166L25.6001 24.4C26.0532 23.9519 26.6253 23.643 27.2486 23.5101C27.8719 23.3772 28.5202 23.4257 29.1168 23.65C30.6289 24.2142 32.2 24.6056 33.8001 24.8166C34.6097 24.9308 35.3491 25.3386 35.8776 25.9625C36.4062 26.5863 36.687 27.3826 36.6668 28.2Z" fill="black" />
+                   </svg > `,
             title: 'Booking & Onboarding',
             description:
                 'From first enquiry to move-in day, automate the entire resident journey. Online applications, housemate matching, digital contracts, e-signatures, deposits, and move-in checklists in one seamless flow.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
-            secondaryLabel: 'See How It Works',
-            secondaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -128,10 +131,10 @@ export const modulesData = {
         automate: {
             title: 'Automate Your Entire Onboarding Flow',
             description: 'See how JumboTiger can take your booking-to-move-in process from days to hours.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
-            secondaryLabel: 'See How It Works',
-            secondaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
         },
         stats: [
             { value: '3X', label: 'Faster lead-to-move-in conversion' },
@@ -139,26 +142,14 @@ export const modulesData = {
             { value: '60S', label: 'Enquiry-to-quote with instant availability' },
             { value: '95%', label: 'ID verification accuracy with biometric matching' },
         ],
-        more: {
-            heading: 'EXPLORE MORE',
-            subtitle: 'Works With These Modules',
-            items: [
+        clientWords: {
+            "testimonials": [
                 {
-                    title: 'Inventory & Occupancy',
-                    desc: 'Real-time availability feeds directly into the booking pipeline.',
-                    href: '/modules/inventory-occupancy',
-                },
-                {
-                    title: 'Payments & Rent',
-                    desc: 'Deposit collection and first rent payment integrated into onboarding.',
-                    href: '/modules/payments-rent',
-                },
-                {
-                    title: 'Tenant Portal',
-                    desc: 'Residents access their welcome pack and community from day one.',
-                    href: '/modules/tenant-portal',
-                },
-            ],
+                    "quote": "We used to spend 3-4 days onboarding each resident. With JumboTiger, most complete the entire process online before they even arrive. Move-in day is now just handing over keys.",
+                    "name": "Operations Director",
+                    "role": "UK Coliving Operator, 500+ beds"
+                }
+            ]
         },
         faq: {
             heading: 'FAQ',
@@ -205,13 +196,16 @@ export const modulesData = {
     },
     'payments-rent': {
         banner: {
+            icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 36 36" fill="none">
+             <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5107 0C27.1815 7.31866e-05 35.0215 7.84001 35.0215 17.5107C35.0214 27.1814 27.1814 35.0214 17.5107 35.0215C7.84001 35.0215 7.31913e-05 27.1815 0 17.5107C0 7.83997 7.83997 0 17.5107 0ZM16.3594 5.31641C16.1607 5.31641 15.9975 5.37947 15.8711 5.50586C15.7446 5.63232 15.6816 5.79542 15.6816 5.99414V7.89062C13.857 8.14354 12.4208 8.77643 11.373 9.78809C10.3435 10.7996 9.82821 12.0276 9.82812 13.4727C9.82812 14.5926 10.0812 15.5323 10.5869 16.291C11.0927 17.0317 11.8248 17.6367 12.7822 18.1064C13.7577 18.5581 14.9318 18.9287 16.3047 19.2178C17.3703 19.4345 18.2193 19.6514 18.8516 19.8682C19.5019 20.0669 19.9717 20.293 20.2607 20.5459C20.5497 20.7987 20.6943 21.1325 20.6943 21.5479C20.6943 22.1078 20.4237 22.5508 19.8818 22.876C19.358 23.2011 18.5721 23.3642 17.5244 23.3643C16.8924 23.3643 16.3593 23.2919 15.9258 23.1475C15.5103 22.9849 15.1665 22.7764 14.8955 22.5234C14.6428 22.2707 14.4443 22.009 14.2998 21.7383C14.1914 21.5938 14.0644 21.4761 13.9199 21.3857C13.7935 21.2955 13.6042 21.2501 13.3516 21.25H9.93652C9.77405 21.2501 9.62932 21.3131 9.50293 21.4395C9.39454 21.5478 9.34082 21.6748 9.34082 21.8193C9.37697 22.6503 9.62994 23.4361 10.0996 24.1768C10.5693 24.9173 11.2644 25.5587 12.1855 26.1006C13.1249 26.6245 14.2906 26.9683 15.6816 27.1309V29.0273C15.6817 29.208 15.7447 29.3618 15.8711 29.4883C15.9975 29.6327 16.1607 29.7051 16.3594 29.7051H18.6084C18.7888 29.705 18.942 29.6325 19.0684 29.4883C19.2129 29.3618 19.2851 29.208 19.2852 29.0273V27.1309C20.5677 26.9683 21.6881 26.6337 22.6455 26.1279C23.603 25.6221 24.3443 24.9624 24.8682 24.1494C25.41 23.3366 25.6807 22.3968 25.6807 21.3311C25.6806 20.2294 25.4461 19.3172 24.9766 18.5947C24.5069 17.854 23.7656 17.2573 22.7539 16.8057C21.7423 16.336 20.4143 15.9477 18.7705 15.6406C17.777 15.4239 16.9911 15.2163 16.4131 15.0176C15.8531 14.8189 15.4463 14.5844 15.1934 14.3135C14.9585 14.0425 14.8418 13.7256 14.8418 13.3643C14.8419 12.7863 15.0587 12.3617 15.4922 12.0908C15.9437 11.802 16.5668 11.6573 17.3613 11.6572C18.0839 11.6572 18.6807 11.8111 19.1504 12.1182C19.6198 12.4071 19.9092 12.7502 20.0176 13.1475C20.1259 13.31 20.252 13.4277 20.3965 13.5C20.5409 13.5722 20.7125 13.6084 20.9111 13.6084H24.4883C24.6507 13.6084 24.7862 13.5544 24.8945 13.4463C25.0029 13.3198 25.0576 13.1836 25.0576 13.0391C25.0395 12.3888 24.8041 11.7113 24.3525 11.0068C23.919 10.3024 23.2776 9.67029 22.4287 9.11035C21.5797 8.55036 20.5316 8.16209 19.2852 7.94531V5.99414C19.2852 5.79542 19.2129 5.63232 19.0684 5.50586C18.942 5.37972 18.7887 5.31647 18.6084 5.31641H16.3594Z" fill="black"/>
+                  </svg>`,
             title: 'Payments & Rent Collection',
             description:
                 'Automate invoicing, collect rent through multiple gateways, manage dynamic pricing, track utilities, and sync with your accounting stack. Every payment, every property, one dashboard.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
             secondaryLabel: 'Explore Modules',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/modules',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -309,10 +303,10 @@ export const modulesData = {
         automate: {
             title: 'Stop Chasing Payments, Start Automating Revenue',
             description: 'See how JumboTiger automates rent collection, dynamic pricing, and utility billing for operators like you.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
-            secondaryLabel: 'See How It Works',
-            secondaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
         },
         stats: [
             { value: '60%', label: 'Reduction in payment processing time' },
@@ -320,14 +314,15 @@ export const modulesData = {
             { value: '15%', label: 'Revenue uplift with dynamic pricing' },
             { value: '24/7', label: 'Faster reconciliation with AI matching' },
         ],
-        more: {
-            heading: 'EXPLORE MORE',
-            subtitle: 'Works With These Modules',
-            items: [
-                { title: 'Booking & Onboarding', desc: 'Trigger deposits and first payments directly from the booking flow.', href: '/modules/booking-onboarding' },
-                { title: 'Tenant Portal', desc: 'Residents can view invoices, balances, and payment history in one place.', href: '/modules/tenant-portal' },
-                { title: 'Operations', desc: 'Billing data connects to occupancy, status changes, and move-out workflows.', href: '/modules/operations' },
-            ],
+        clientWords: {
+
+            "testimonials": [
+                {
+                    "quote": "We went from spending 2 days a month reconciling payments to having it done automatically. The dynamic pricing module alone paid for the entire platform in the first quarter.",
+                    "name": "Finance Director",
+                    "role": "European Flex Living Brand, 1,200+ beds"
+                }
+            ]
         },
         faq: {
             heading: 'FAQ',
@@ -377,10 +372,10 @@ export const modulesData = {
             title: 'Tenant Portal & Mobile App',
             description:
                 'A fully branded web and mobile app where residents pay rent, book facilities, submit tickets, register visitors, order meals, access welcome guides, and connect with their community.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
             secondaryLabel: 'Explore Modules',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/modules',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -478,10 +473,10 @@ export const modulesData = {
         automate: {
             title: "Give Your Residents an App They'll Actually Love",
             description: 'See how a branded tenant portal drives community, reduces support load, and boosts renewals.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
-            secondaryLabel: 'See How It Works',
-            secondaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
         },
         stats: [
             { value: '70%', label: 'Reduction in resident support queries' },
@@ -489,14 +484,14 @@ export const modulesData = {
             { value: '85%', label: 'Resident app adoption in first month' },
             { value: '+15', label: 'Average NPS increase after deployment' },
         ],
-        more: {
-            heading: 'EXPLORE MORE',
-            subtitle: 'Works With These Modules',
-            items: [
-                { title: 'Booking & Onboarding', desc: 'Trigger deposits and first payments directly from the booking flow.', href: '/modules/booking-onboarding' },
-                { title: 'Tenant Portal', desc: 'Residents can view invoices, balances, and payment history in one place.', href: '/modules/tenant-portal' },
-                { title: 'Operations', desc: 'Billing data connects to occupancy, status changes, and move-out workflows.', href: '/modules/operations' },
-            ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "The tenant app transformed our resident experience. Visitor management alone saved our reception team 2 hours a day. Community engagement doubled and our renewal rate jumped 18%.",
+                    "name": "Community Manager",
+                    "role": "South Asian Coliving Brand, 300+ beds"
+                }
+            ]
         },
         faq: {
             heading: 'FAQ',
@@ -546,10 +541,10 @@ export const modulesData = {
             title: 'Inventory & Occupancy Management',
             description:
                 'Track every bed, room, and unit across your portfolio in real-time. Manage hybrid stays, forecast vacancies, optimize occupancy, and make data-driven decisions with live dashboards.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
             secondaryLabel: 'Explore Modules',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/modules',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -647,10 +642,10 @@ export const modulesData = {
         automate: {
             title: "See Your Entire Portfolio in Real-Time",
             description: 'Book a demo and see how hybrid stay management and vacancy forecasting keep occupancy above 95%.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
-            secondaryLabel: 'See How It Works',
-            secondaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
         },
         stats: [
             { value: '95%+', label: 'Average occupancy with hybrid stay management' },
@@ -658,14 +653,14 @@ export const modulesData = {
             { value: '72%', label: 'Reduction in void periods' },
             { value: '2x', label: 'Faster unit turnaround with automated workflows' },
         ],
-        more: {
-            heading: 'EXPLORE MORE',
-            subtitle: 'Works With These Modules',
-            items: [
-                { title: 'Booking & Onboarding', desc: 'Trigger deposits and first payments directly from the booking flow.', href: '/modules/booking-onboarding' },
-                { title: 'Tenant Portal', desc: 'Residents can view invoices, balances, and payment history in one place.', href: '/modules/tenant-portal' },
-                { title: 'Operations', desc: 'Billing data connects to occupancy, status changes, and move-out workflows.', href: '/modules/operations' },
-            ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "The hybrid stay feature was a game-changer. We fill gap nights between long-term leases with short stays and increased our RevPAB by 22%. Void periods dropped from 14 days to 4.",
+                    "name": "Revenue Manager",
+                    "role": "European Flex Living Operator, 800+ beds"
+                }
+            ]
         },
         faq: {
             heading: 'FAQ',
@@ -715,10 +710,10 @@ export const modulesData = {
             title: 'Community & Events',
             description:
                 'The community tools that make coliving special. Social feeds, event creation, polls, resident profiles, local partnerships, and engagement analytics -- all in a branded space your residents love.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
             secondaryLabel: 'Explore Modules',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/modules',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -816,10 +811,10 @@ export const modulesData = {
         automate: {
             title: "Build the Community That Drives Renewals",
             description: 'See how social features, events, and engagement analytics create the coliving experience residents stay for.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
-            secondaryLabel: 'See How It Works',
-            secondaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
         },
         stats: [
             { value: '2x', label: 'Higher renewal rate for engaged residents' },
@@ -827,14 +822,14 @@ export const modulesData = {
             { value: '+18', label: 'NPS increase with active community tools' },
             { value: '30%', label: 'Reduction in churn with engagement monitoring' },
         ],
-        more: {
-            heading: 'EXPLORE MORE',
-            subtitle: 'Works With These Modules',
-            items: [
-                { title: 'Booking & Onboarding', desc: 'Trigger deposits and first payments directly from the booking flow.', href: '/modules/booking-onboarding' },
-                { title: 'Tenant Portal', desc: 'Residents can view invoices, balances, and payment history in one place.', href: '/modules/tenant-portal' },
-                { title: 'Operations', desc: 'Billing data connects to occupancy, status changes, and move-out workflows.', href: '/modules/operations' },
-            ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "Community engagement was the missing piece. Once we launched the social feed and events module, event attendance tripled and our renewal rate jumped from 62% to 81%. Residents stay for the people, not just the room.",
+                    "name": "Community Manager",
+                    "role": "European Coliving Brand, 12 properties"
+                }
+            ]
         },
         faq: {
             heading: 'FAQ',
@@ -881,10 +876,10 @@ export const modulesData = {
             title: 'Visitor Management',
             description:
                 'Pre-register guests, generate QR-coded passes, track vendor movements, and maintain a complete digital log of every person entering your properties. Security meets convenience.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
             secondaryLabel: 'Explore Modules',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/modules',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -982,10 +977,10 @@ export const modulesData = {
         automate: {
             title: "Know Who's in Your Building at All Times",
             description: 'See how QR-coded passes, guard apps, and digital logs transform property security.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
-            secondaryLabel: 'See How It Works',
-            secondaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
         },
         stats: [
             { value: '90%', label: 'Reduction in unauthorized building access' },
@@ -993,14 +988,14 @@ export const modulesData = {
             { value: '100%', label: 'Digital audit trail for every visitor' },
             { value: '30s', label: 'Average check-in time with QR code scanning' },
         ],
-        more: {
-            heading: 'EXPLORE MORE',
-            subtitle: 'Works With These Modules',
-            items: [
-                { title: 'Booking & Onboarding', desc: 'Trigger deposits and first payments directly from the booking flow.', href: '/modules/booking-onboarding' },
-                { title: 'Tenant Portal', desc: 'Residents can view invoices, balances, and payment history in one place.', href: '/modules/tenant-portal' },
-                { title: 'Operations', desc: 'Billing data connects to occupancy, status changes, and move-out workflows.', href: '/modules/operations' },
-            ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We used to have paper sign-in sheets that nobody filled in properly. Now every visitor is pre-registered with a QR pass. Our reception team processes 3x more visitors in half the time.",
+                    "name": "Security Manager",
+                    "role": "UK Coliving Operator, 8 properties"
+                }
+            ]
         },
         faq: {
             heading: 'FAQ',
@@ -1052,10 +1047,10 @@ export const modulesData = {
             title: 'Access Control & Smart Building',
             description:
                 'Smart locks, keyless entry, guest access provisioning, emergency protocols, and IoT building management -- all controlled from one dashboard. Integrate with SALTO, Yale, Nuki, and 20+ hardware providers.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
             secondaryLabel: 'Explore Modules',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/modules',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -1153,10 +1148,10 @@ export const modulesData = {
         automate: {
             title: "Secure Your Buildings. Simplify Access.",
             description: 'See how smart access control eliminates key management, reduces security incidents, and gives you full visibility over every door.',
-            primaryLabel: 'Book a Free demo',
+            primaryLabel: 'Book a Free Demo',
             primaryHref: '/bookdemo',
-            secondaryLabel: 'See How It Works',
-            secondaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
         },
         stats: [
             { value: '100%', label: 'Elimination of physical key management' },
@@ -1164,14 +1159,14 @@ export const modulesData = {
             { value: '45s', label: 'Average time to investigate any access event' },
             { value: '3x', label: 'Faster emergency muster reporting' },
         ],
-        more: {
-            heading: 'EXPLORE MORE',
-            subtitle: 'Works With These Modules',
-            items: [
-                { title: 'Booking & Onboarding', desc: 'Trigger deposits and first payments directly from the booking flow.', href: '/modules/booking-onboarding' },
-                { title: 'Tenant Portal', desc: 'Residents can view invoices, balances, and payment history in one place.', href: '/modules/tenant-portal' },
-                { title: 'Operations', desc: 'Billing data connects to occupancy, status changes, and move-out workflows.', href: '/modules/operations' },
-            ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We eliminated 2,000 physical keys across our portfolio in one month. Guest access that used to require front desk staff 24/7 now runs on auto-pilot. Security incidents dropped 90% because every door event is logged and monitored.",
+                    "name": "Head of Operations",
+                    "role": "UK Coliving Operator, 18 properties"
+                }
+            ]
         },
         faq: {
             heading: 'FAQ',
@@ -1182,36 +1177,3158 @@ export const modulesData = {
                     answer: "We support 20+ providers including SALTO, Yale, Nuki, Igloohome, August, Dormakaba, ASSA ABLOY, and more. Our open API also supports custom hardware integrations.",
                 },
                 {
-                    question: 'Can we handle walk-in visitors?',
-                    answer: 'Yes. The guard app has a walk-in flow where security staff register the visitor on the spot and send a notification to the resident for confirmation. If the resident confirms, the visitor is logged in.',
+                    question: 'Can residents unlock doors with their phone?',
+                    answer: 'Yes. Residents use the branded mobile app for Bluetooth and NFC unlock. They can also use PIN codes or biometric methods depending on your hardware setup.',
                 },
                 {
-                    question: 'How does vendor tracking work?',
-                    answer: 'Vendors are registered with company details, ID, and work area assignment. They check in/out via QR code or the guard app. Movement logs track duration and location. Recurring vendors (cleaners, maintenance) have persistent profiles.',
+                    question: 'How does guest access work?',
+                    answer: 'Residents generate a time-limited digital pass from the app. The guest receives a link or PIN that grants access to specific doors during the authorized window. Access auto-expires after the visit.',
                 },
                 {
-                    question: 'What happens if a guest overstays?',
-                    answer: 'The system monitors guest duration against configurable limits. When thresholds are approached or exceeded, automatic alerts go to the resident and management. Repeated violations trigger escalation workflows.',
+                    question: 'What happens during a power outage?',
+                    answer: 'Smart locks have battery backup (typically 12+ months). In emergency scenarios, physical key override is always available. The system queues access events and syncs when connectivity returns.',
                 },
                 {
-                    question: 'Is there an audit trail?',
-                    answer: 'Yes. Every visitor event (registration, check-in, check-out, overstay alert) is logged with timestamps. Reports are exportable for insurance claims, compliance audits, and incident investigations.',
+                    question: 'Can we set different access levels per zone?',
+                    answer: 'Absolutely. Define unlimited zones (floors, common areas, gyms, parking) and assign granular permissions by role, time of day, and property. Templates can be applied across your portfolio.',
                 },
                 {
-                    question: 'Does it integrate with smart locks?',
-                    answer: 'Yes. Integration with SALTO, RemoteLock, KeyCafe, and other access control systems. Visitor access codes can be auto-generated and auto-expired based on registered visit times.',
-                }
-                ,
-                {
-                    question: 'How is visitor data handled for GDPR?',
-                    answer: 'Configurable data retention policies automatically purge visitor records after your chosen period. Residents can request deletion of their guest data. All data handling follows GDPR best practices.',
+                    question: 'How does emergency lockdown work?',
+                    answer: 'Managers can trigger building-wide lockdown or emergency unlock from the dashboard or mobile app. The system also integrates with fire alarms for automated emergency door release.',
                 }
 
             ],
         },
         readybuild: {
-            title: 'Ready to Secure Your Properties?',
-            description: "Book a demo and see how digital visitor management protects your buildings and saves reception hours.",
+            title: 'Ready for Keyless, Secure Buildings?',
+            description: "Book a demo and see how smart access control transforms your building security and eliminates key management headaches.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'facility-booking': {
+        banner: {
+            title: 'Facility & Amenity Booking',
+            description:
+                'Gym slots, coworking desks, meeting rooms, laundry machines, rooftop terraces, BBQ areas -- all bookable from the resident app with time-slot management, payments, and usage analytics.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Shared Amenities Without a System Is Chaos",
+            items: [
+                { title: 'Double Bookings', desc: "Two residents show up for the same meeting room at the same time. Paper sign-up sheets and WhatsApp groups create constant conflicts." },
+                { title: 'Gym Overcrowding', desc: 'No capacity limits means the gym is packed at 6pm and empty at 10am. Residents complain about wait times for equipment.' },
+                { title: 'Revenue Left on the Table', desc: 'Premium amenities like coworking spaces, private dining rooms, and rooftop terraces could generate revenue but have no booking or payment system.' },
+                { title: 'Laundry Wars', desc: 'Machines are always busy. Residents leave clothes in for hours. No way to enforce time limits or notify when cycles finish.' },
+                { title: 'No Usage Data', desc: "You have no idea which amenities are popular, which are underused, and what residents actually want. Investment decisions are guesswork." },
+                { title: 'No-Show Waste', desc: "Residents book slots and never show up, blocking others from using the space. No accountability or consequence for no-shows." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Space Configuration & Management',
+                description: 'Define every bookable space in your property: type, capacity, available hours, booking rules, and photos. Set up once, manage from the dashboard.',
+                points: [
+                    'Unlimited bookable space types: gym, coworking, meeting room, laundry, rooftop, BBQ, cinema, sauna, pool',
+                    'Per-space configuration: capacity limits, operating hours, minimum/maximum booking duration',
+                    'Photo gallery and description for each space shown to residents in the booking flow',
+                    'Buffer time between bookings for cleaning or reset (configurable per space type)',
+                    'Seasonal and day-of-week schedules: different hours for weekdays vs. weekends vs. holidays',
+                    'Multi-property space management from a single portfolio dashboard'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Time-Slot Booking & Availability',
+                description: 'Residents browse real-time availability and book slots from the mobile app in seconds. Calendar views, instant confirmation, and automated reminders reduce no-shows.',
+                points: [
+                    'Real-time availability calendar with visual slot picker in the tenant portal and mobile app',
+                    'Instant booking confirmation with calendar sync (Google Calendar, Apple Calendar, Outlook)',
+                    'Automated reminders: 1-hour and 15-minute pre-booking push notifications',
+                    'Recurring bookings: weekly gym slots, daily coworking desks, regular meeting room reservations',
+                    'Waitlist when slots are full: automatic notification when a cancellation opens a spot',
+                    'Advance booking limits: configure how far ahead residents can book (e.g., 7 days for gym, 30 for events)'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Paid Bookings & Credit System',
+                description: 'Monetize premium spaces with per-booking charges, monthly credits, or subscription tiers. Payments flow directly through the existing payment infrastructure.',
+                points: [
+                    'Free and paid space tiers: gym included, coworking extra, private dining premium',
+                    'Per-booking pricing with automatic charge to resident account or card on file',
+                    'Monthly credit allowances: residents get X free bookings, pay for additional usage',
+                    'Subscription tiers: basic residents get communal spaces, premium unlocks coworking and sauna',
+                    'Deposit and damage fee collection for high-value spaces (rooftop events, private dining)',
+                    'Revenue reporting: track income by space type, property, and time period'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'No-Show Management & Enforcement',
+                description: 'Automated check-in verification, no-show detection, and consequence enforcement. Fair usage policies that actually work.',
+                points: [
+                    'QR code check-in: residents scan on arrival to confirm attendance',
+                    'Access control integration: smart lock only unlocks during the booked time slot',
+                    'Automatic no-show detection: if no check-in within 15 minutes, slot is released',
+                    'No-show tracking per resident with configurable consequence tiers (warning, temporary ban, fee)',
+                    'Fair usage policies: limit bookings per resident per week to prevent hogging',
+                    'Automatic slot release: cancelled or no-show slots immediately become available to waitlisted residents'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Laundry & Equipment-Specific Features',
+                description: 'Purpose-built features for laundry rooms and equipment-based spaces. Machine status, cycle notifications, and time enforcement keep shared equipment fair.',
+                points: [
+                    'Machine-level booking: book a specific washer or dryer, not just a time slot',
+                    'Cycle completion notifications: push alert when your wash or dry cycle finishes',
+                    'Overstay enforcement: automated reminders and penalties for leaving clothes in machines',
+                    'Equipment status display: see which machines are available, in-use, or out-of-order in real time',
+                    'Maintenance flagging: residents report broken machines directly from the booking screen',
+                    'Usage analytics per machine: identify high-demand and frequently broken equipment'
+                ],
+                image: '/images/buildscale.webp',
+            },
+
+            {
+                title: 'Usage Analytics & Space Optimization',
+                description: 'Data-driven decisions on your amenity investment. See utilization rates, peak times, popular spaces, and resident satisfaction -- then optimize accordingly.',
+                points: [
+                    'Utilization rate dashboards: percentage of available slots booked per space per day',
+                    'Peak hour analysis: heatmaps showing when each amenity is busiest and when it sits empty',
+                    'Most-booked and least-booked spaces with trend analysis over time',
+                    'Revenue per space: income generated by paid amenities vs. operational cost',
+                    'Resident satisfaction: post-booking micro-surveys and NPS per amenity',
+                    'ROI analysis for new amenity investment: forecast demand based on existing usage patterns'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Turn Shared Spaces Into a Competitive Advantage",
+            description: 'See how facility booking eliminates conflicts, monetizes premium amenities, and gives you data to optimize your spaces.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '95%', label: 'Reduction in double-booking complaints' },
+            { value: '40%', label: 'Increase in amenity utilization with time-slot management' },
+            { value: '3x', label: 'Revenue from premium amenities with paid bookings' },
+            { value: '70%', label: 'Reduction in no-shows with QR check-in enforcement' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "Our gym complaints dropped to near-zero after launching the booking system. The coworking space now generates real revenue with paid bookings. And the laundry notifications alone made residents happier than any other feature we have launched.",
+                    "name": "Community Manager",
+                    "role": "European Coliving Brand, 8 properties, 600 beds"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'What types of spaces can we manage?',
+                    answer: "Any shared space: gym, coworking desks, meeting rooms, laundry machines, rooftop terrace, BBQ area, cinema room, sauna, pool, parking spots, storage units, private dining rooms -- if it can be booked, we support it.",
+                },
+                {
+                    question: 'Can residents book from their phone?',
+                    answer: 'Yes. The full booking flow -- browse availability, select a slot, confirm, get reminders, and check in -- all happens from the branded mobile app or tenant portal.',
+                },
+                {
+                    question: 'How does no-show enforcement work?',
+                    answer: 'Residents check in via QR code or access control integration. If no check-in within 15 minutes, the booking is automatically released. Repeated no-shows trigger configurable consequences: warnings, temporary booking bans, or fees.',
+                },
+                {
+                    question: 'Can we charge for premium spaces?',
+                    answer: 'Absolutely. Set per-booking prices, monthly credit allowances, or subscription tiers. Free gym access with paid coworking and premium private dining, for example. All charges flow through your existing payment setup.',
+                },
+                {
+                    question: 'How does the laundry feature work?',
+                    answer: 'Residents book specific machines for specific time slots. They get push notifications when their cycle finishes. If they leave clothes beyond the grace period, overstay reminders and penalties kick in. Machine status is visible in real time.',
+                },
+                {
+                    question: 'What analytics do we get?',
+                    answer: 'Utilization rates per space, peak hour heatmaps, most/least popular amenities, revenue per space, no-show rates, and resident satisfaction scores. All filterable by property, time period, and space type.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Manage Every Shared Space?',
+            description: "Book a demo and see how facility booking turns amenity chaos into a smooth, revenue-generating operation.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'housekeeping-facilities': {
+        banner: {
+            title: 'Housekeeping & Facilities Management',
+            description:
+                'Rule-based cleaning automation, staff mobile app, facility booking, linen tracking, quality inspections, and turnaround coordination. Your operations run themselves.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Housekeeping Still Runs on WhatsApp & Spreadsheets",
+            items: [
+                { title: 'Spreadsheet Rotas', desc: "Cleaning schedules maintained manually. One staff sick day and the whole system collapses." },
+                { title: 'WhatsApp Coordination', desc: 'Task assignments and updates happening in group chats. Nothing tracked, nothing measured.' },
+                { title: 'No Proof of Work', desc: "Cleaners say rooms are done, but there's no photo evidence or checklist completion to verify." },
+                { title: 'Slow Turnarounds', desc: "Move-out to move-in takes too long because cleaning, inspection, and maintenance aren't coordinated." },
+                { title: 'Linen Guesswork', desc: "No tracking of linen inventory, replacement cycles, or consumable stock levels across properties." },
+                { title: 'No Quality Metrics', desc: "No inspection scoring, no cleanliness KPIs, no way to compare cleaning quality across properties or teams." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Rule-Based Task Automation',
+                description: 'Define rules and let the system create tasks automatically. On checkout, create a deep clean. Every Tuesday, clean common areas. For stays over 7 days, schedule mid-stay service.',
+                points: [
+                    'Rule-based task creation: by checkout date, booking type, stay length, or day of week',
+                    'Automatic task generation on checkout with configurable delay and priority',
+                    'Recurring scheduled tasks: daily, weekly, monthly with building and floor targeting',
+                    'Mid-stay cleaning schedules triggered by stay duration thresholds',
+                    'Common area cleaning rotas with rotating team assignment',
+                    'Seasonal deep clean scheduling with advance planning and resource allocation'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Staff Mobile App',
+                description: 'Give your housekeeping and maintenance teams a dedicated mobile app. Real-time task lists, checklists, photo uploads, key tracking, and route optimization.',
+                points: [
+                    'Real-time task list filtered by building, floor, priority, and assignment',
+                    'Task-specific checklists with mandatory completion steps and photo evidence',
+                    'Photo uploads as proof of completion with before/after comparison',
+                    'Key and access card tracking with handover logging between shifts',
+                    'Route optimization: tasks ordered by floor and proximity for efficiency',
+                    'Offline mode: cached task lists for areas with poor connectivity, auto-sync on reconnect'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Quality Inspections & Scoring',
+                description: 'Standardize cleaning quality across your portfolio. Inspector checklists, photo documentation, scoring rubrics, and trend analysis by team, property, and time period.',
+                points: [
+                    'Configurable inspection checklists per room type, property, and cleaning type',
+                    'Scoring rubrics: rate each checklist item on quality scale with photo evidence',
+                    'Inspector sign-off with digital signature and timestamp',
+                    'Quality trend analysis by team, property, and time period',
+                    'Automated re-clean triggers when inspection scores fall below threshold',
+                    'Portfolio-wide cleanliness benchmarking and league tables'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Linen & Consumable Inventory',
+                description: 'Track every towel, sheet, and cleaning product. Automatic reorder alerts, usage analytics, and cost tracking per property and per room.',
+                points: [
+                    'Linen inventory tracking: towels, sheets, pillows, blankets with condition status',
+                    'Par level management with automatic reorder alerts when stock hits threshold',
+                    'Consumable tracking: cleaning products, toiletries, kitchen supplies',
+                    'Usage analytics per property, room type, and season for demand planning',
+                    'Vendor ordering integration for automated procurement workflows',
+                    'Cost tracking per room, property, and period with budget vs. actual reporting'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Facility Booking & Management',
+                description: 'Let residents book shared amenities -- meeting rooms, gym, laundry, coworking, rooftop -- with time-slot management, paid bookings, and usage analytics.',
+                points: [
+                    'Configurable bookable spaces: meeting rooms, gym, laundry, coworking, rooftop, BBQ',
+                    'Time-slot management with configurable availability windows and buffer times',
+                    'Paid facility bookings: per-use charges added to monthly invoice or paid in-app',
+                    'Credits system: allocate monthly credits for facility usage per resident',
+                    'Auto-cancellation of unpaid or no-show bookings with waitlist promotion',
+                    'Usage analytics: peak times, popular facilities, and revenue per amenity'
+                ],
+                image: '/images/buildscale.webp',
+            },
+
+            {
+                title: 'Turnaround Coordination',
+                description: 'Orchestrate the entire move-out-to-move-in process. Inspection, cleaning, maintenance, and re-listing coordinated in one automated workflow with status tracking.',
+                points: [
+                    'Automated turnaround workflow triggered on confirmed move-out date',
+                    'Sequential task chain: move-out inspection > cleaning > maintenance > final check > re-list',
+                    'Status dashboard showing turnaround progress for every unit in real-time',
+                    'Bottleneck detection: flag units stuck at any stage beyond expected timeframes',
+                    'Turnaround time analytics: average, best, worst by property and room type',
+                    'Direct integration with inventory module to auto-update availability on completion'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Automate Your Entire Housekeeping Operation",
+            description: 'See how rule-based automation, staff apps, and quality inspections keep your properties spotless.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '80%', label: 'Reduction in housekeeping coordination time' },
+            { value: '50%', label: 'Faster unit turnarounds with automated workflows' },
+            { value: '3x', label: 'More inspections completed with mobile app' },
+            { value: '70%', label: 'Cost savings on linen and consumables' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We went from managing cleaning via a WhatsApp group to fully automated task assignment with photo proof. Our cleaning quality scores went up 40% and turnaround time dropped from 5 days to 2.",
+                    "name": "Operations Director",
+                    "role": "European Coliving Brand, 15 properties"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'How does rule-based task creation work?',
+                    answer: "Any shared space: gym, coworking desks, meeting rooms, laundry machines, rooftop terrace, BBQ area, cinema room, sauna, pool, parking spots, storage units, private dining rooms -- if it can be booked, we support it.",
+                },
+                {
+                    question: 'Does the staff app work offline?',
+                    answer: 'Yes. Task lists and checklists are cached locally. Staff can complete tasks offline and data syncs automatically when connection is restored.',
+                },
+                {
+                    question: 'How do quality inspections work?',
+                    answer: 'Inspectors use a configurable checklist on their mobile app, scoring each item and uploading photos. If scores fall below a threshold, a re-clean task is auto-created. Quality trends are tracked across properties and teams.',
+                },
+                {
+                    question: 'Can residents book paid facilities?',
+                    answer: 'Yes. Set per-use pricing or allocate monthly credits. Charges can be added to the monthly invoice or paid immediately in-app. No-shows and unpaid bookings are auto-cancelled with waitlist promotion.',
+                },
+                {
+                    question: 'How does turnaround tracking work?',
+                    answer: 'When a move-out is confirmed, the system creates a sequential task chain: inspection > clean > maintenance > final check > re-list. A real-time dashboard shows progress per unit, flagging bottlenecks.',
+                },
+                {
+                    question: 'Can we track linen inventory?',
+                    answer: 'Yes. Track every linen item by type, condition, and location. Par levels trigger automatic reorder alerts. Usage analytics help with demand planning and budget forecasting.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Automate Your Operations?',
+            description: "Book a demo and see how operators cut turnaround time by 50% with automated housekeeping.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'maintenance-work-orders': {
+        banner: {
+            title: 'Maintenance & Work Orders',
+            description:
+                'From resident ticket submission to contractor coordination, track every maintenance request from creation to resolution. SLA monitoring, vendor management, asset tracking, and cost analytics.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Maintenance Requests Disappear Into Black Holes",
+            items: [
+                { title: 'Lost Requests', desc: "Tickets reported verbally, via WhatsApp, or email. No centralized system, no tracking, no accountability." },
+                { title: 'Slow Resolution', desc: 'Average time to fix an issue is days or weeks because there is no priority system or SLA tracking.' },
+                { title: 'Cost Blindness', desc: "No visibility into maintenance spend by property, category, or vendor. Budget overruns discovered too late." },
+                { title: 'Reactive Only', desc: "Everything breaks before it is addressed. No preventive maintenance schedules for boilers, HVAC, or fire systems." },
+                { title: 'Vendor Chaos', desc: "Contractors managed via phone calls. No work orders, no estimate tracking, no proof of completion." },
+                { title: 'No Resident Updates', desc: "Residents submit a request and hear nothing until it is either fixed or they complain again." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Multi-Channel Ticket Submission',
+                description: 'Residents submit tickets from the app with photos. Staff create tickets from inspections. QR codes on equipment enable instant issue reporting. Every ticket tracked from creation.',
+                points: [
+                    'Resident ticket submission from tenant app with photo upload and category selection',
+                    'QR code scanning on equipment and in rooms for instant, pre-filled issue reporting',
+                    'Staff-created tickets from inspections, walkthroughs, and phone calls',
+                    'Email-to-ticket conversion for issues reported via email',
+                    'Automatic categorization suggestions based on description and location',
+                    'Priority assignment: emergency, urgent, standard, and low with SLA per level'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'SLA Tracking & Escalation',
+                description: 'Define response and resolution SLAs per priority level. Automatic alerts when SLAs are approaching, breached, or at risk. Escalation chains ensure nothing slips through.',
+                points: [
+                    'Configurable SLAs per priority: emergency (2hr), urgent (24hr), standard (72hr)',
+                    'Response SLA (time to first action) and resolution SLA (time to close) tracking',
+                    'Automatic alerts at 50%, 75%, and 100% of SLA threshold',
+                    'Escalation chains: staff > manager > director with configurable timeouts',
+                    'SLA compliance dashboard showing on-time rates by property, category, and team',
+                    'Breach reporting with root cause tracking for continuous improvement'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Vendor & Contractor Coordination',
+                description: 'Invite external contractors into specific tickets. They receive work orders, submit estimates, upload completion photos, and invoice -- all without needing a full system account.',
+                points: [
+                    'Vendor portal: contractors access assigned tickets via mobile web app (no login needed)',
+                    'Work order generation with scope, location, access instructions, and photos',
+                    'Estimate submission and approval workflow before work begins',
+                    'Completion photo upload and sign-off by contractor and property manager',
+                    'Invoice submission linked to specific work orders with automatic cost tracking',
+                    'Vendor performance scorecards: response time, quality, cost, and SLA compliance'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Planned Preventive Maintenance (PPM)',
+                description: 'Schedule recurring maintenance before things break. Asset registration, service schedules, compliance-driven maintenance, and automated work order creation.',
+                points: [
+                    'Asset registration: HVAC, boilers, lifts, fire systems, electrical, plumbing per property',
+                    'PPM schedules with configurable intervals: monthly, quarterly, semi-annual, annual',
+                    'Automatic work order creation when PPM is due with contractor assignment',
+                    'Compliance-driven PPM: gas safety servicing, EICR testing, fire alarm checks',
+                    'Service history tracking per asset with cost accumulation and replacement forecasting',
+                    'PPM calendar view showing upcoming and overdue maintenance across portfolio'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Resident Communication & Transparency',
+                description: 'Keep residents informed automatically. Status updates at every stage, estimated completion times, and satisfaction surveys after resolution.',
+                points: [
+                    'Automated status notifications: received, assigned, in progress, completed',
+                    'Estimated completion time visible to residents in their app',
+                    'Resident-facing comments and photo updates showing progress',
+                    'Satisfaction survey triggered on ticket closure with rating and feedback',
+                    'Reopening workflow if resident is not satisfied with resolution',
+                    'Communication audit trail: every message between resident, staff, and vendor'
+                ],
+                image: '/images/buildscale.webp',
+            },
+
+            {
+                title: 'Maintenance Analytics & Cost Tracking',
+                description: 'Track spend, SLA performance, vendor costs, and issue patterns across your portfolio. Identify recurring problems, budget accurately, and benchmark properties.',
+                points: [
+                    'Cost tracking per ticket, vendor, property, category, and time period',
+                    'Budget vs. actual maintenance spend with variance alerts',
+                    'Recurring issue detection: flag repeat problems at same location or same equipment',
+                    'Category analysis: plumbing vs. electrical vs. HVAC vs. common area breakdown',
+                    'Property benchmarking: maintenance cost per bed, tickets per bed, resolution time',
+                    'Monthly maintenance reports for stakeholders with trend analysis'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Fix Things Faster, Spend Less",
+            description: 'See how SLA tracking, vendor coordination, and preventive maintenance transform your operations.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '65%', label: 'Faster ticket resolution with SLA tracking' },
+            { value: '40%', label: 'Reduction in maintenance costs with PPM' },
+            { value: '98%', label: 'Ticket resolution rate' },
+            { value: '0', label: 'Lost maintenance requests' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "Before JumboTiger, we had a spreadsheet with 200+ open tickets and no idea which ones were urgent. Now every ticket has an SLA, vendors submit estimates through the system, and our average resolution time dropped from 11 days to 3.",
+                    "name": "Maintenance Director",
+                    "role": "UK Coliving Operator, 30 properties"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'How do QR code tickets work?',
+                    answer: "Place QR codes on equipment, in rooms, or in common areas. Residents scan the code, which pre-fills the location and category. They add a description and photos, and the ticket is created instantly.",
+                },
+                {
+                    question: 'Can contractors access the system?',
+                    answer: 'Yes. Contractors receive a link to a mobile web app for their assigned tickets. They can view work orders, submit estimates, upload completion photos, and invoice -- all without a full user account.',
+                },
+                {
+                    question: 'How does preventive maintenance scheduling work?',
+                    answer: 'Register assets (boilers, HVAC, lifts, etc.) with service intervals. The system auto-creates work orders when service is due, assigns contractors, and tracks completion. Compliance-driven PPM ties into certificate renewal schedules.',
+                },
+                {
+                    question: 'What SLA options are available?',
+                    answer: 'Fully configurable. Set response and resolution SLAs per priority level (e.g., emergency: 2hr response / 4hr resolution). Alerts fire at configurable thresholds and escalate through chains you define.',
+                },
+                {
+                    question: 'Can residents track their ticket status?',
+                    answer: 'Yes. Residents see real-time status updates in their app: received, assigned, in progress, estimated completion, and completed. They get push notifications at each stage.',
+                },
+                {
+                    question: 'How do you track maintenance costs?',
+                    answer: 'Every ticket tracks labor and material costs from vendor invoices. Dashboards show spend by property, category, vendor, and period with budget vs. actual comparisons and per-bed cost benchmarking.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Fix Maintenance?',
+            description: "Book a demo and see how SLA tracking and vendor coordination cut resolution time by 65%.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'channel-manager': {
+        banner: {
+            title: 'Channel Manager & OTA Distribution',
+            description:
+                'List your inventory across Airbnb, Booking.com, Expedia, HousingAnywhere, and 300+ channels. Real-time rate and availability sync. Every booking managed from one dashboard.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Manual Channel Management Is Unsustainable",
+            items: [
+                { title: 'Double Booking Risk', desc: "Availability updated manually across channels. One delay = one double booking = one angry guest and one refund." },
+                { title: 'Rate Lag', desc: 'Price changes take hours to propagate. By the time all channels reflect your new rate, the opportunity has passed.' },
+                { title: 'No Channel Insight', desc: "Which channels actually perform? What is your cost per booking per channel? Without data, marketing spend is blind." },
+                { title: 'Commission Blindness', desc: "Paying 15-25% to OTAs without knowing which channels deliver the best ROI or guest quality." },
+                { title: 'Limited Reach', desc: "Only listed on 2-3 platforms. Missing bookings from regional OTAs, corporate platforms, and niche channels." },
+                { title: 'No Central Control', desc: "Different content, different photos, different descriptions on each channel. Brand inconsistency everywhere." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Multi-Channel Distribution',
+                description: 'Connect to 300+ booking channels with a single integration. Push your inventory to global OTAs, regional platforms, corporate booking tools, and student housing portals.',
+                points: [
+                    'Airbnb, Booking.com, and Expedia native certified integrations',
+                    'HousingAnywhere, Spotahome, and Uniplaces for mid-to-long-term stays',
+                    'SiteMinder connectivity for 250+ additional OTA channels',
+                    'SpareRoom, Roomgo, and flat-share platforms for room-level listings',
+                    'Corporate booking platforms: SilverDoor, AltoVita, Homelike',
+                    'Regional channels: Trip.com, Agoda, EaseMyTrip for Asia-Pacific markets'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Real-Time Rate & Availability Sync',
+                description: 'When a booking is made on any channel, all others update instantly. Rate changes propagate in seconds, not hours. Zero manual updates, zero double bookings.',
+                points: [
+                    'Real-time availability sync: booking on one channel instantly blocks all others',
+                    'Rate push across all channels in under 60 seconds',
+                    'Automatic channel blocking when units are booked via direct or long-stay channels',
+                    'Minimum stay and restriction sync per channel',
+                    'Calendar-level control: block specific dates, set channel-specific availability windows',
+                    'Fallback handling: automatic retry if a channel sync fails with alert notification'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Centralized Booking Management',
+                description: 'Every booking from every channel lands in one dashboard. View, modify, cancel, and communicate with guests regardless of where they booked.',
+                points: [
+                    'Unified booking inbox from all connected channels in one dashboard',
+                    'Booking details: guest info, dates, rate, channel source, and payment status',
+                    'Modification and cancellation handling with automatic channel notification',
+                    'Guest communication templates per channel (OTA messaging rules compliance)',
+                    'Booking-to-resident conversion for long-stay guests transitioning to leases',
+                    'Automated confirmation and pre-arrival communication sequences'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Content & Listing Management',
+                description: 'Manage property descriptions, photos, amenities, and policies from one place. Push consistent content to all channels while respecting platform-specific requirements.',
+                points: [
+                    'Centralized property content: descriptions, photos, floor plans, and amenities',
+                    'AI-generated listing descriptions optimized per channel and audience',
+                    'Photo management with automatic resizing and ordering per channel requirements',
+                    'Amenity and facility mapping to each channel taxonomy',
+                    'Policy management: cancellation, check-in/out times, house rules per channel',
+                    'Multilingual content management for international channels'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Channel Performance Analytics',
+                description: 'Know exactly which channels deliver. Bookings, revenue, commission costs, cancellation rates, and ROI per channel. Data-driven decisions on where to invest.',
+                points: [
+                    'Bookings per channel with revenue, ADR, and occupancy contribution',
+                    'Commission tracking and cost-per-booking calculation per channel',
+                    'Channel ROI comparison: net revenue after commission and marketing costs',
+                    'Cancellation and no-show rates per channel for quality assessment',
+                    'Booking velocity: how fast each channel fills upcoming availability',
+                    'Guest quality metrics: length of stay, spend, review scores per channel source'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Hybrid Distribution Strategy',
+                description: 'Manage short-stay OTA bookings alongside long-stay direct leases. Automatically switch between distribution strategies based on occupancy, season, and lead time.',
+                points: [
+                    'Dual distribution: OTA for short stays, direct/partner portals for long stays',
+                    'Automatic OTA activation when gap nights are detected between leases',
+                    'Lead time rules: switch from long-stay to short-stay pricing as dates approach',
+                    'Seasonal strategy switching: summer short-stays, academic year long-stays',
+                    'Direct booking priority: auto-close OTA channels when direct booking is confirmed',
+                    'Revenue comparison: OTA vs. direct vs. corporate to optimize channel mix'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Distribute Smarter, Not Harder",
+            description: 'See how operators manage 300+ channels from one dashboard with zero double bookings.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '300+', label: 'Connected distribution channels' },
+            { value: '0', label: 'Double bookings with real-time sync' },
+            { value: '60s', label: 'Rate propagation to all channels' },
+            { value: '25%', label: 'Revenue increase from channel diversification' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We went from 3 OTA channels to 15+ overnight. Revenue from short stays tripled, and we haven not had a single double booking since launch. The channel performance data helped us cut 2 underperforming platforms and reinvest in the top 5.",
+                    "name": "Revenue Director",
+                    "role": "Flex Living Operator, 20 properties"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'Which OTA channels are supported?',
+                    answer: "Airbnb, Booking.com, Expedia, HousingAnywhere, Spotahome, Uniplaces, SpareRoom, Trip.com, Agoda, SilverDoor, AltoVita, Homelike, and 250+ more via SiteMinder connectivity.",
+                },
+                {
+                    question: 'How fast does availability sync?',
+                    answer: 'Real-time. When a booking is made on any channel, all others are updated within seconds. Rate changes propagate in under 60 seconds.',
+                },
+                {
+                    question: 'Can we manage long-stay and short-stay on the same inventory?',
+                    answer: 'Yes. The hybrid distribution strategy lets you list the same units on long-stay platforms and short-stay OTAs simultaneously. When a long-stay booking is confirmed, OTA channels auto-close for those dates.',
+                },
+                {
+                    question: 'How do we track channel performance?',
+                    answer: 'Dashboards show bookings, revenue, commission, cancellation rates, and ROI per channel. Compare channels to identify top performers and cut underperformers.',
+                },
+                {
+                    question: 'Does it handle OTA messaging rules?',
+                    answer: 'Yes. Guest communication templates are channel-aware, respecting each platform messaging policies. You communicate with guests from one inbox without violating OTA rules.',
+                },
+                {
+                    question: 'Can we prioritize direct bookings?',
+                    answer: 'Yes. Configure rules to auto-close OTA channels when a direct booking is confirmed. Lead-time rules can shift from OTA to direct pricing as dates approach.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Distribute Everywhere?',
+            description: "Book a demo and see how 300+ channels, real-time sync, and analytics maximize your booking revenue.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'revenue-management': {
+        banner: {
+            title: 'Revenue Management & Dynamic Pricing',
+            description:
+                "Optimize every bed's revenue with dynamic pricing, demand forecasting, competitor rate tracking, yield analytics, and automated rate adjustments. Stop leaving money on the table.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Static Pricing Is Costing You Thousands",
+            items: [
+                { title: 'Flat Rate Pricing', desc: "Same price regardless of season, demand, or occupancy level. Peak-season revenue left on the table." },
+                { title: 'No Competitor Visibility', desc: 'No idea what similar properties charge. Pricing decisions based on gut feeling, not data.' },
+                { title: 'Slow Adjustments', desc: "Rate changes require manual updates across listings, portals, and contracts. Takes days, should take seconds." },
+                { title: 'One-Size-Fits-All', desc: "Same pricing logic for short stays, mid-term, and long-term. No optimization by stay type." },
+                { title: 'No Yield Metrics', desc: "Can't measure RevPAB, ADR, or yield by room type. No way to know which inventory is underperforming." },
+                { title: 'Spreadsheet Forecasting', desc: "Revenue forecasts built manually from historical data. No predictive models, no scenario planning." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Dynamic Pricing Engine',
+                description: 'Automatically adjust rates based on occupancy, demand patterns, seasonality, and day of week. Set boundaries and let the algorithm optimize within your rules.',
+                points: [
+                    'Automated rate adjustments based on occupancy thresholds and demand signals',
+                    'Seasonal pricing with configurable peak, shoulder, and off-peak periods',
+                    'Day-of-week pricing variations for short-stay and flexible accommodation',
+                    'Minimum and maximum rate boundaries to protect brand positioning',
+                    'Rate rules per room type, floor, view, amenities, and property',
+                    'A/B testing for pricing strategies with conversion tracking'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'PriceLabs & Revenue Tool Integration',
+                description: 'Connect to PriceLabs, FLYR, and other revenue management tools for algorithmic pricing powered by market data, competitor rates, and demand forecasting.',
+                points: [
+                    'PriceLabs integration for AI-powered rate recommendations',
+                    'FLYR integration for advanced revenue optimization algorithms',
+                    'Competitor rate monitoring from OTA listings and market data feeds',
+                    'Demand-based pricing adjusting rates as occupancy approaches targets',
+                    'Market-level pricing intelligence with comparable property benchmarking',
+                    'Automated rate push to all connected channels and booking engine'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Hybrid Pricing by Stay Type',
+                description: 'Different pricing strategies for different stay types on the same inventory. Nightly rates for short stays, weekly for mid-term, monthly for long-term -- all optimized independently.',
+                points: [
+                    'Stay-type pricing tiers: nightly, weekly, monthly, academic term, and custom',
+                    'Length-of-stay discounts: automatic rate reduction for longer commitments',
+                    'Minimum stay requirements configurable by season, room type, and property',
+                    'Early bird discounts and last-minute pricing for gap filling',
+                    'Corporate rate agreements with negotiated pricing per partner',
+                    'Promotional pricing campaigns with start/end dates and usage limits'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Revenue Analytics & Dashboards',
+                description: 'Track RevPAB, ADR, occupancy, yield, and revenue mix across your entire portfolio. Compare properties, room types, channels, and time periods at a glance.',
+                points: [
+                    'RevPAB (Revenue Per Available Bed) tracking across properties and room types',
+                    'ADR (Average Daily Rate) analytics with trend visualization',
+                    'Occupancy vs. revenue optimization: find the sweet spot for each property',
+                    'Channel revenue mix: direct vs. OTA vs. corporate vs. partner breakdown',
+                    'Room-type performance league tables ranking by yield and occupancy',
+                    'Portfolio-level revenue dashboards with drill-down to individual units'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Revenue Forecasting & Scenario Planning',
+                description: 'Predict future revenue using historical patterns, booking velocity, and market trends. Run scenarios to test pricing strategies before deploying them.',
+                points: [
+                    'AI-powered revenue forecasting based on historical data and booking velocity',
+                    'Seasonal pattern recognition for demand prediction and pricing optimization',
+                    'Scenario planning: model "what if" pricing changes before going live',
+                    'Booking pace analysis: compare current bookings to historical pace by date range',
+                    'Cancellation and no-show prediction to adjust overbooking strategies',
+                    'Budget vs. actual revenue tracking with variance alerts'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Void & Gap Optimization',
+                description: 'Identify and fill revenue gaps between long stays. Automatically enable short-stay pricing for gap periods, push to OTAs, and maximize revenue from every night.',
+                points: [
+                    'Automatic gap detection between lease end and next booking start',
+                    'Short-stay rate activation for gap periods with OTA channel push',
+                    'Gap night revenue tracking: incremental revenue captured from void filling',
+                    'Minimum gap threshold: only activate for gaps above configurable length',
+                    'Void reduction analytics: track improvement from gap-filling strategies',
+                    'Integration with channel manager for automatic availability push during gaps'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Stop Leaving Revenue on the Table",
+            description: 'See how dynamic pricing and yield analytics drive 15%+ revenue uplift for operators.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '15%', label: 'Average revenue uplift with dynamic pricing' },
+            { value: '72%', label: 'Reduction in void periods with gap filling' },
+            { value: '3x', label: 'ROI on revenue management investment' },
+            { value: '$0', label: 'Spreadsheet forecasting -- replaced by AI' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "Dynamic pricing was the single biggest revenue driver we implemented. RevPAB increased 18% in the first quarter, and gap-filling brought in an extra $45K annually that we were leaving on the table.",
+                    "name": "Revenue Manager",
+                    "role": "European Flex Living Brand, 1,200+ beds"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'How does dynamic pricing work?',
+                    answer: "You set rules (boundaries, seasons, occupancy thresholds) and the engine automatically adjusts rates within those rules. As occupancy rises, rates increase. During low-demand periods, rates adjust to fill beds. You control the strategy; the system executes it.",
+                },
+                {
+                    question: 'Which revenue management tools integrate?',
+                    answer: 'PriceLabs and FLYR are pre-built integrations. Custom integrations available via API for other revenue management platforms.',
+                },
+                {
+                    question: 'Can we have different prices for different stay types?',
+                    answer: 'Yes. Set separate pricing strategies for nightly, weekly, monthly, and academic-term stays on the same inventory. Each tier can have its own dynamic pricing rules.',
+                },
+                {
+                    question: 'How does gap filling work?',
+                    answer: 'The system detects gaps between long-stay bookings and automatically enables short-stay pricing for those periods. Rates are pushed to connected OTA channels to capture bookings. You set minimum gap length and pricing rules.',
+                },
+                {
+                    question: 'What revenue metrics are available?',
+                    answer: 'RevPAB, ADR, occupancy rate, yield, channel revenue mix, booking velocity, void rate, and more. All available at portfolio, property, and room-type levels with trend visualization.',
+                },
+                {
+                    question: 'Can we forecast revenue?',
+                    answer: 'Yes. AI-powered forecasting uses historical patterns, current booking pace, and market trends to predict future revenue. Scenario planning lets you model pricing changes before deploying them.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Optimize Your Revenue?',
+            description: "Book a demo and see how operators increase RevPAB by 15% with dynamic pricing and yield management.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'utility-energy': {
+        banner: {
+            title: 'Utility & Energy Management',
+            description:
+                "Smart metering, per-unit consumption tracking, automated cost allocation, sustainability reporting, anomaly detection, and energy efficiency insights -- all from one dashboard.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Utility Costs Are a Black Box",
+            items: [
+                { title: 'Unfair Cost Splitting', desc: "Dividing utility bills equally penalizes frugal residents and subsidizes waste. No per-unit data means no fair allocation." },
+                { title: 'No Consumption Visibility', desc: 'You cannot manage what you cannot measure. Without smart metering, energy waste runs unchecked across your portfolio.' },
+                { title: 'Manual Billing Headaches', desc: "Staff spend hours reading meters, calculating splits, and manually adding utility charges to invoices. Errors are constant." },
+                { title: 'Leak & Waste Detection Gaps', desc: "Water leaks and HVAC faults go undetected for weeks. By the time you notice, the damage and cost are significant." },
+                { title: 'No Sustainability Data', desc: "Investors and regulators increasingly demand ESG reporting. Without consumption data, you cannot report or improve." },
+                { title: 'Resident Disputes', desc: "Residents challenge utility charges because they have no visibility into their own consumption. Every bill cycle triggers complaints." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Smart Meter Integration & Data Collection',
+                description: 'Connect to smart electricity, gas, water, and heat meters across your portfolio. Automatic readings every 15 minutes. No manual meter reads ever again.',
+                points: [
+                    'Integration with major smart meter providers: Chameleon, Hildebrand, Stark, and utility company APIs',
+                    'Automatic 15-minute interval readings for electricity, gas, water, and heat meters',
+                    'Sub-metering support: individual room meters, floor meters, and common area meters',
+                    'Automatic meter registration on move-in and deregistration on move-out',
+                    'Historical data import for pre-existing meters and manual reading fallback',
+                    'Real-time meter health monitoring with alerts for offline or malfunctioning devices'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Per-Unit Consumption Tracking & Dashboards',
+                description: 'See exactly how much energy each unit, floor, and common area consumes. Compare properties, identify outliers, and track trends over time.',
+                points: [
+                    'Per-room and per-bed consumption dashboards with daily, weekly, and monthly views',
+                    'Property-level and portfolio-level energy overview with drill-down capability',
+                    'Consumption heatmaps showing peak usage times and high-consumption units',
+                    'Year-over-year comparison: track improvement or degradation by property and unit',
+                    'Benchmarking: compare unit consumption against property averages and portfolio norms',
+                    'Automated outlier detection: flag units consuming 2x+ above the property average'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Automated Cost Allocation & Billing',
+                description: 'Calculate and allocate utility costs automatically using configurable rules. Per-meter billing, proportional splitting, capped allowances, or included-in-rent models -- you choose.',
+                points: [
+                    'Configurable billing models per property: metered, proportional, capped, or all-inclusive',
+                    'Automatic cost calculation using tariff rates, standing charges, and consumption data',
+                    'Fair splitting for shared spaces: common area costs allocated proportionally by occupancy',
+                    'Capped utility allowances: residents get a free allowance, pay only for excess usage',
+                    'Automatic charge generation pushed to the Payments module for invoicing',
+                    'Multi-tariff support: day/night rates, seasonal pricing, and renewable energy credits'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Anomaly Detection & Leak Alerts',
+                description: 'AI-powered monitoring catches unusual consumption patterns before they become costly. Water leaks, HVAC faults, and energy waste detected and flagged automatically.',
+                points: [
+                    'Continuous monitoring algorithms comparing real-time usage against historical baselines',
+                    'Water leak detection: sudden or sustained consumption spikes trigger instant alerts',
+                    'HVAC anomaly detection: heating or cooling running when units are unoccupied',
+                    'Electrical fault indicators: unusual power draw patterns flagged for investigation',
+                    'Configurable alert thresholds and escalation rules per property and meter type',
+                    'Estimated savings dashboard: see how much anomaly detection has saved you'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Resident Energy Portal & Transparency',
+                description: 'Give residents visibility into their own consumption. Self-service dashboards, usage tips, and transparent billing eliminate disputes and encourage conservation.',
+                points: [
+                    'Resident-facing consumption dashboard in the tenant portal and mobile app',
+                    'Daily and weekly usage summaries with comparison to property averages',
+                    'Personalized energy-saving tips based on consumption patterns and property type',
+                    'Billing transparency: residents see exactly how their utility charges are calculated',
+                    'Push notifications for unusual usage: helps residents catch issues in their own units',
+                    'Gamification option: energy-saving challenges and leaderboards between units'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Sustainability Reporting & ESG Compliance',
+                description: 'Generate carbon footprint reports, track energy efficiency improvements, and meet investor ESG requirements with automated sustainability dashboards.',
+                points: [
+                    'Carbon footprint calculation: CO2 equivalent reporting per property, portfolio, and per-bed',
+                    'Energy Performance Certificate (EPC) tracking and improvement planning',
+                    'Renewable energy tracking: solar panel generation vs. grid consumption',
+                    'ESG report generation: investor-ready sustainability reports with year-over-year trends',
+                    'Regulatory compliance: automated reporting for MEES, EPBD, and local energy regulations',
+                    'Sustainability goals dashboard: set targets and track progress across your portfolio'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Take Control of Utility Costs",
+            description: 'See how smart metering and automated billing eliminate disputes, cut energy waste, and give you full visibility into every kilowatt.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '23%', label: 'Average energy cost reduction with smart monitoring' },
+            { value: '100%', label: 'Elimination of manual meter reading' },
+            { value: '0', label: 'Utility billing disputes with transparent dashboards' },
+            { value: '48h', label: 'Average time to detect water leaks vs. weeks manually' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We were losing thousands monthly to undetected water leaks and unfair utility splits that drove resident complaints. Within 3 months of deploying the energy module, we cut utility costs 23%, eliminated billing disputes entirely, and caught two major leaks within hours instead of weeks.",
+                    "name": "Finance Director",
+                    "role": "UK Coliving Operator, 22 properties, 1,800 beds"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'Which smart meters do you support?',
+                    answer: "We integrate with all major smart meter infrastructure providers and utility company APIs. For sub-metering, we support Chameleon, Hildebrand, Stark, and most Zigbee/MQTT-based meters. Our API also supports custom hardware.",
+                },
+                {
+                    question: 'Can we use different billing models per property?',
+                    answer: 'Yes. Each property can have its own billing model: fully metered, proportional split, capped allowance, or all-inclusive. You can even mix models within a property for different utility types.',
+                },
+                {
+                    question: 'How does the leak detection work?',
+                    answer: 'Our algorithms compare real-time consumption against historical baselines. A sudden spike (burst pipe) or sustained above-normal usage (slow leak) triggers alerts within hours. You configure the sensitivity and escalation rules.',
+                },
+                {
+                    question: 'Do residents see their own consumption?',
+                    answer: 'Yes. Residents access their energy dashboard from the tenant portal and mobile app. They see daily usage, comparison to averages, how charges are calculated, and personalized saving tips.',
+                },
+                {
+                    question: 'What sustainability reports can we generate?',
+                    answer: 'Carbon footprint per property and portfolio, EPC tracking, renewable vs. grid consumption, ESG investor reports, and regulatory compliance reports for MEES and EPBD. All exportable as PDF or CSV.',
+                },
+                {
+                    question: 'How quickly does it pay for itself?',
+                    answer: 'Most operators see 15-25% energy cost reduction within 3 months through leak detection, waste identification, and behavioral change from resident transparency. The module typically pays for itself within the first quarter.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Cut Energy Waste and Bill Fairly?',
+            description: "Book a demo and see how smart utility management reduces costs, eliminates disputes, and meets your sustainability goals.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'compliance-regulatory': {
+        banner: {
+            title: 'Compliance & Regulatory Management',
+            description:
+                "Track every certificate, license, and regulatory requirement across your portfolio. Automated renewal alerts, digital document serving, tenant acknowledgment, and complete audit trails.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "One Missed Certificate Can Cost You Everything",
+            items: [
+                { title: 'Spreadsheet Tracking', desc: "Certificates tracked in spreadsheets with manual date monitoring. One missed row = one missed deadline." },
+                { title: 'No Renewal Alerts', desc: "Staff have to remember to check expiry dates. No automatic reminders until it's too late." },
+                { title: 'Missing Audit Trails', desc: "No digital proof that compliance documents were served to tenants. Disputes become he-said-she-said." },
+                { title: 'Multi-Property Complexity', desc: "Different properties have different requirements, different expiry dates, and different local regulations." },
+                { title: 'Costly Non-Compliance', desc: "Fines of $10K-$100K+ for lapsed certificates. Criminal liability for serious breaches. Insurance invalidation." },
+                { title: 'Regional Variation', desc: "UK requires gas safety; EU has different fire regs; Asia-Pacific has unique building codes. No system handles all." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Certificate & License Tracking',
+                description: 'Upload and track every compliance document across your portfolio. Gas Safety, EICR, EPC, fire safety, HMO licenses, building permits -- all in one dashboard with expiry monitoring.',
+                points: [
+                    'Centralized certificate dashboard across entire portfolio with traffic-light status',
+                    'Gas Safety certificate tracking with annual renewal monitoring',
+                    'EICR (Electrical Installation Condition Report) management with 5-year cycle tracking',
+                    'EPC (Energy Performance Certificate) tracking with rating visibility per property',
+                    'HMO license management with expiry dates and early renewal warnings',
+                    'Fire safety certification, extinguisher service dates, and alarm testing logs'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Automated Renewal Workflows',
+                description: 'Never miss a renewal deadline again. Configurable alerts at 90, 60, and 30 days before expiry. Automatic maintenance ticket creation and contractor assignment for renewals.',
+                points: [
+                    'Multi-stage alerts: 90-day, 60-day, 30-day, and 7-day warnings before certificate expiry',
+                    'Automatic maintenance ticket creation for upcoming renewals with contractor assignment',
+                    'Renewal workflow: alert > ticket > contractor booked > inspection > certificate uploaded > verified',
+                    "Escalation rules if renewals aren't completed by configurable deadlines",
+                    'Calendar view of all upcoming renewals across portfolio with timeline visualization',
+                    'Priority flagging for properties with multiple certificates expiring in same period'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Digital Document Serving & Acknowledgment',
+                description: 'Electronically serve compliance documents to tenants with tracked acknowledgment. Prove that every resident received their Gas Safety certificate and EPC -- with timestamps and digital signatures.',
+                points: [
+                    'Automatic delivery of compliance documents with tenancy agreements',
+                    "Mid-tenancy serving when certificates are renewed during a resident's stay",
+                    'Tenant acknowledgment tracking with explicit confirmation and digital signature',
+                    'Proof of service audit trail: who received what, when, and their acknowledgment',
+                    'Bulk document serving across all residents in a property with one click',
+                    'Tenant dashboard access to all compliance documents affecting their unit'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Right-to-Rent & Tenant Verification',
+                description: 'Track right-to-rent checks with automated renewal reminders for time-limited permissions. Integrated with ID verification services for automated checks at onboarding.',
+                points: [
+                    'Right-to-rent verification tracking per tenant with check date and expiry logging',
+                    'Automated renewal alerts for time-limited right-to-rent permissions',
+                    'Integration with ID verification services for automated checks during onboarding',
+                    'Audit trail of all verification checks performed with outcomes and evidence',
+                    'Bulk verification reporting for portfolio-wide compliance overview',
+                    'Configurable per jurisdiction: right-to-rent (UK), residence permits (EU), work permits (APAC)'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Regional Regulatory Compliance',
+                description: 'Configurable compliance rules per jurisdiction. UK gas safety, EU fire regulations, Spanish tourism reporting, Italian tourist tax, Portuguese e-invoicing -- one platform, every market.',
+                points: [
+                    'UK: Gas Safety, EICR, EPC, HMO licensing, fire safety, legionella risk assessments',
+                    'EU: Fire regulations, energy efficiency, building accessibility, data protection',
+                    'Spain: Tourism authority reporting, local registration requirements',
+                    'Italy: Tourist tax calculation, collection, and authority reporting',
+                    'Portugal: e-invoicing requirements and fiscal authority integration',
+                    'Asia-Pacific: Building code compliance, fire safety, and occupancy permits'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Compliance Reporting & Audit Readiness',
+                description: 'Board-ready compliance reports showing certificate status, renewal history, document serving records, and gap analysis. Always audit-ready, always defensible.',
+                points: [
+                    'Portfolio-wide compliance dashboard with property-level drill-down',
+                    'Traffic-light status: green (compliant), amber (expiring soon), red (expired/missing)',
+                    'Compliance gap analysis identifying missing or expired certificates',
+                    'Historical compliance record: complete timeline of every certificate ever held',
+                    'Audit export: one-click generation of compliance packs for inspectors or insurers',
+                    'Making Tax Digital (MTD) readiness and financial compliance reporting for UK operations'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Never Miss a Compliance Deadline Again",
+            description: 'See how automated tracking, renewal workflows, and audit trails protect your portfolio.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '100%', label: 'Certificate tracking coverage across portfolio' },
+            { value: '0', label: 'Missed renewal deadlines with automated alerts' },
+            { value: '90%', label: 'Reduction in compliance admin time' },
+            { value: '$0', label: 'Fines from lapsed certificates after deployment' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We had a close call with an expired gas safety certificate that could have cost us our HMO license. Since deploying JumboTiger's compliance module, we haven't missed a single deadline across 45 properties.",
+                    "name": "Compliance Manager",
+                    "role": "UK HMO Operator, 45 properties"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'Which compliance certificates can we track?',
+                    answer: "Gas Safety, EICR, EPC, HMO licenses, fire safety, legionella risk assessments, building permits, and any custom certificate types. Each has configurable renewal cycles and alert schedules.",
+                },
+                {
+                    question: 'How do renewal alerts work?',
+                    answer: 'You configure alert intervals (e.g., 90, 60, 30, 7 days before expiry). The system sends notifications to assigned staff and can auto-create maintenance tickets with contractor assignment for the renewal.',
+                },
+                {
+                    question: 'Can we prove documents were served to tenants?',
+                    answer: 'Yes. When compliance documents are served electronically, the system tracks delivery, resident acknowledgment (with digital signature), and timestamps. This creates a defensible audit trail for inspections and disputes.',
+                },
+                {
+                    question: 'Does it handle different regulations per country?',
+                    answer: 'Yes. Compliance rules are configurable per jurisdiction. UK properties get gas safety and HMO tracking; EU properties get relevant local requirements; each market has its own compliance template.',
+                },
+                {
+                    question: 'How does the audit export work?',
+                    answer: 'One click generates a complete compliance pack for any property: current certificates, renewal history, serving records, and tenant acknowledgments. Ready for inspector visits or insurance audits.',
+                },
+                {
+                    question: 'Can we track right-to-rent checks?',
+                    answer: "Yes. Each tenant's right-to-rent status is tracked with check dates, evidence, and expiry. Time-limited permissions get automatic renewal reminders so you never have a lapsed check.",
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Automate Compliance?',
+            description: "Book a demo and see how operators track every certificate, serve every document, and pass every audit.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'document-management': {
+        banner: {
+            title: 'Document Management & Digital Contracts',
+            description:
+                "Contract templates, e-signatures, secure document storage, automated serving, compliance audit trails, and resident acknowledgment tracking -- all paperless, all automated.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Paper Contracts Are Slow, Expensive, and Risky",
+            items: [
+                { title: 'Manual Contract Chaos', desc: "Creating contracts from scratch every time. Copy-paste errors, wrong tenant names, missing clauses. Each contract takes 30+ minutes to prepare." },
+                { title: 'Signature Bottleneck', desc: 'Printing, mailing, waiting for wet signatures, scanning, filing. A single contract can take 5-7 days to execute.' },
+                { title: 'Lost Documents', desc: "Filed in email, shared drives, desk drawers, or filing cabinets. When you need a document, it takes hours to find -- if you find it at all." },
+                { title: 'Compliance Blind Spots', desc: "Section 21 notices, gas safety certs, right-to-rent checks -- serving and tracking these manually means critical deadlines slip through." },
+                { title: 'No Audit Trail', desc: "Who signed what, when? Which version was served? Without a digital trail, disputes become costly." },
+                { title: 'Printing & Storage Costs', desc: "Paper, ink, postage, filing cabinets, storage rooms. For a 500-bed operator, document costs add up to thousands annually." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Contract Template Engine',
+                description: 'Build once, use forever. Create contract templates with dynamic fields that auto-populate tenant details, property info, dates, and pricing. Version control ensures everyone uses the latest approved template.',
+                points: [
+                    'Drag-and-drop template builder with dynamic merge fields for tenant, property, and financial data',
+                    'Template library: ASTs, license agreements, guarantor forms, house rules, addendums',
+                    'Version control with approval workflows -- only authorized staff can publish new versions',
+                    'Multi-language templates for international portfolios with automatic locale detection',
+                    'Conditional clauses that appear or hide based on property type, stay length, or jurisdiction',
+                    'Bulk contract generation: create 100+ contracts in minutes for large move-in cohorts'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'E-Signature & Digital Execution',
+                description: 'Send contracts for signature in seconds. Tenants sign on any device -- phone, tablet, or desktop. Legally binding e-signatures with full compliance to eIDAS, ESIGN Act, and UETA.',
+                points: [
+                    'One-click send for signature via email, SMS, or in-app notification',
+                    'Multi-party signing: tenant, guarantor, landlord, and witness -- in any order or simultaneously',
+                    'Legally compliant e-signatures meeting eIDAS (EU), ESIGN Act (US), and Electronic Communications Act (UK)',
+                    'Signing reminders: automated follow-ups at 24h, 48h, and 72h for unsigned contracts',
+                    'In-person signing mode for walk-in tenants using tablet at reception',
+                    'Signature certificate with timestamp, IP address, device info, and geolocation audit proof'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Secure Document Storage & Retrieval',
+                description: 'Every document stored securely in the cloud, organized by tenant, property, and document type. Full-text search finds any document in seconds. No more filing cabinets.',
+                points: [
+                    'Centralized document vault organized by tenant, property, unit, and document category',
+                    'Full-text search across all documents: find any contract, certificate, or notice instantly',
+                    'Automatic categorization: contracts, ID documents, certificates, notices, correspondence',
+                    'Role-based access: staff see relevant documents; tenants see only their own files',
+                    'Document sharing with external parties via secure time-limited links',
+                    'Cloud storage with encryption at rest and in transit, meeting GDPR and SOC 2 standards'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Automated Document Serving & Compliance',
+                description: 'Serve Section 21 notices, rent increase letters, and compliance documents automatically. Track delivery, receipt, and acknowledgment with legally defensible proof of service.',
+                points: [
+                    'Automated serving of statutory notices: Section 21, Section 8, rent increase, and tenancy renewal',
+                    'Multi-channel delivery: email, in-app, SMS, and registered post with tracking',
+                    'Proof of service: delivery confirmation, read receipts, and acknowledgment timestamps',
+                    'Regulatory calendar: auto-generated schedule of all required notices by jurisdiction and tenancy',
+                    'Batch serving: send identical notices to all affected tenants in one action',
+                    'Legal hold: prevent document deletion when disputes or legal proceedings are active'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Resident Acknowledgment & Digital Signing',
+                description: 'Beyond contracts -- get digital acknowledgment for house rules, welcome packs, safety briefings, inventory checks, and move-out reports. Every acknowledgment timestamped and stored.',
+                points: [
+                    'Digital acknowledgment forms for house rules, fire safety, and community guidelines',
+                    'Move-in and move-out inventory reports with photo evidence and resident sign-off',
+                    'Welcome pack acceptance: residents confirm receipt of keys, fobs, and information packs',
+                    'Periodic re-acknowledgment: annual safety briefing sign-off, updated terms acceptance',
+                    'Acknowledgment dashboard: see at a glance which residents have outstanding items',
+                    'Push notification reminders for residents with pending acknowledgments'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Audit Trail & Compliance Reporting',
+                description: 'Every document action logged: creation, edit, send, sign, view, download. Generate compliance reports for auditors, investors, and regulators in one click.',
+                points: [
+                    'Complete audit trail: every document creation, modification, signature, and access event logged',
+                    'Compliance dashboard: expiring contracts, unsigned documents, pending notices at a glance',
+                    'Regulatory reporting: generate HMO compliance packs, right-to-rent audit reports, and certificate summaries',
+                    'Retention policies: auto-archive or delete documents after configurable retention periods',
+                    'Export capabilities: PDF bundles, CSV reports, and API access for external compliance systems',
+                    'Investor and stakeholder reports: document health metrics across your portfolio'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Go Paperless. Stay Compliant.",
+            description: 'See how digital document management eliminates paper, speeds up onboarding, and keeps you audit-ready at all times.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '95%', label: 'Reduction in contract execution time' },
+            { value: '100%', label: 'Digital audit trail for every document' },
+            { value: '2min', label: 'Average time to find any document' },
+            { value: '0', label: 'Lost or misfiled documents' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We used to spend 3 days chasing signatures for a single tenancy agreement. Now contracts go out and come back signed within hours. Our compliance team loves the automated notice serving -- nothing falls through the cracks anymore.",
+                    "name": "Operations Director",
+                    "role": "BTR Operator, 2,500 units across 8 developments"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'Are e-signatures legally binding?',
+                    answer: "Yes. Our e-signatures comply with eIDAS (EU), the ESIGN Act (US), and the Electronic Communications Act (UK). Each signature includes a certificate with timestamp, IP address, and device information for full legal defensibility.",
+                },
+                {
+                    question: 'Can we use our existing contract templates?',
+                    answer: 'Absolutely. Import your existing Word or PDF templates and add dynamic merge fields. Our team helps you migrate during onboarding so your templates are ready from day one.',
+                },
+                {
+                    question: 'How does document serving work for Section 21 notices?',
+                    answer: 'Configure the notice type, select affected tenants, and the system serves via your chosen channels (email, in-app, SMS, registered post). Delivery and acknowledgment are tracked automatically with legally defensible proof of service.',
+                },
+                {
+                    question: 'Is document storage secure and GDPR compliant?',
+                    answer: 'Yes. All documents are encrypted at rest and in transit. Storage meets GDPR, SOC 2, and ISO 27001 standards. Role-based access ensures tenants only see their own documents. Retention policies auto-archive or delete as configured.',
+                },
+                {
+                    question: 'Can tenants access their documents from the app?',
+                    answer: 'Yes. Residents view and download their contracts, notices, and acknowledgment forms from the tenant portal and mobile app. They can also sign documents and submit acknowledgments directly in-app.',
+                },
+                {
+                    question: 'How does bulk contract generation work?',
+                    answer: 'Select a template, upload a tenant list (or select from your CRM), and generate hundreds of personalized contracts in minutes. Each contract auto-populates with the correct tenant details, property info, and financial terms.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Eliminate Paper?',
+            description: "Book a demo and see how digital document management speeds up onboarding, ensures compliance, and gives you a complete audit trail.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'lead-crm': {
+        banner: {
+            title: 'Lead & CRM Management',
+            description:
+                "Track every prospect from first website visit to signed lease. Lead capture, qualification, nurturing sequences, pipeline management, attribution analytics, and conversion optimization -- built for property operators.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Leads Fall Through the Cracks",
+            items: [
+                { title: 'Scattered Enquiries', desc: "Leads come via website, email, phone, WhatsApp, OTAs, referrals, and walk-ins. No single place to see them all. Responses are slow and inconsistent." },
+                { title: 'Slow Response Times', desc: 'The first operator to respond wins the booking. Without automation, your average response time is hours -- competitors respond in minutes.' },
+                { title: 'No Pipeline Visibility', desc: "How many leads are in progress? What stage are they at? Which ones are going cold? Without a pipeline, management is flying blind." },
+                { title: 'Wasted Marketing Spend', desc: "You spend on Google Ads, social media, and listing portals but have no idea which channels deliver signed leases vs. which waste budget." },
+                { title: 'Inconsistent Follow-Up', desc: "Some staff follow up diligently, others forget. High-intent leads go cold because nobody contacted them after the viewing." },
+                { title: 'No Lead Scoring', desc: "All leads are treated equally. A corporate relocation enquiry for 20 beds gets the same response as a casual browser. No prioritization, no segmentation." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Multi-Channel Lead Capture',
+                description: 'Automatically capture leads from every source into one unified pipeline. Website forms, email, phone, WhatsApp, OTA enquiries, referrals, and walk-ins -- nothing gets lost.',
+                points: [
+                    'Website form integration: enquiry forms, instant quote requests, and viewing bookings auto-create leads',
+                    'Email parsing: enquiries sent to your inbox are auto-captured with contact details extracted',
+                    'Phone and WhatsApp: missed calls and messages logged as leads with callback reminders',
+                    'OTA and channel manager enquiries: leads from Booking.com, Airbnb, and 300+ channels auto-captured',
+                    'Referral tracking: leads from B2B partners, corporate clients, and universities tagged with source',
+                    'Walk-in registration: front desk staff log walk-in prospects via tablet in under 30 seconds'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Lead Scoring & Qualification',
+                description: 'AI-powered lead scoring ranks prospects by conversion likelihood. Budget, move-in date, stay length, and engagement signals determine priority. Your team focuses on the leads that matter.',
+                points: [
+                    'Automatic lead scoring based on budget match, move-in urgency, stay length, and property fit',
+                    'Engagement tracking: website visits, email opens, quote requests, and viewing bookings boost scores',
+                    'Lead qualification fields: budget range, desired move-in date, stay duration, room preferences, and source',
+                    'Hot/warm/cold classification with configurable thresholds and automatic re-scoring over time',
+                    'Corporate and bulk enquiry flagging: multi-bed requests and B2B leads get priority routing',
+                    'De-duplication: automatically merge duplicate leads from different channels into a single profile'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Visual Pipeline & Stage Management',
+                description: 'Drag-and-drop pipeline board shows every lead at every stage. Customizable stages, automatic stage transitions, and stale lead alerts keep your pipeline healthy.',
+                points: [
+                    'Visual Kanban board: Enquiry, Qualified, Viewing Booked, Viewed, Offer Sent, Accepted, Contracted, Moved In',
+                    'Customizable stages per property type or use case (student, corporate, individual, short-stay)',
+                    'Automatic stage progression: lead moves to Viewing Booked when a viewing is scheduled in the system',
+                    'Stale lead alerts: leads sitting in a stage too long get flagged for follow-up or archival',
+                    'Pipeline value tracking: see total potential revenue at each stage across your portfolio',
+                    'Win/loss tracking: when leads choose a competitor or drop off, capture the reason for analysis'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Automated Nurturing Sequences',
+                description: 'Set up email and WhatsApp sequences that nurture leads automatically. Follow up after viewings, re-engage cold leads, and drip content that moves prospects toward signing.',
+                points: [
+                    'Post-enquiry sequence: instant acknowledgment, property highlights, and viewing invitation',
+                    'Post-viewing sequence: thank you, pricing summary, testimonials, and urgency nudge',
+                    'Cold lead re-engagement: automated outreach at 7, 14, and 30 days with fresh content',
+                    'Seasonal campaigns: targeted outreach for September student intake, January corporate relocations',
+                    'Personalized content: dynamic variables pull in property name, room type, pricing, and availability',
+                    'Multi-channel delivery: email, SMS, WhatsApp, and in-app notifications based on lead preference'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Attribution & Marketing Analytics',
+                description: 'Know exactly which marketing channels deliver signed leases -- not just clicks. Full-funnel attribution from first touch to move-in, with cost-per-acquisition by channel.',
+                points: [
+                    'First-touch and multi-touch attribution: track the full journey from ad click to signed lease',
+                    'Channel performance dashboard: Google Ads, social media, OTAs, referrals, organic, and direct',
+                    'Cost-per-lead and cost-per-acquisition by channel, property, and room type',
+                    'Conversion funnel analysis: see exactly where leads drop off (enquiry to viewing, viewing to offer, etc.)',
+                    'Campaign tracking: UTM parameter support for measuring specific marketing campaigns',
+                    'ROI reporting: marketing spend vs. revenue generated by channel with break-even analysis'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Team Performance & Activity Tracking',
+                description: 'Monitor your leasing team performance. Response times, follow-up rates, conversion rates, and activity logs ensure consistent execution across your team.',
+                points: [
+                    'Response time tracking: measure how quickly each team member responds to new leads',
+                    'Activity logging: calls, emails, viewings, and notes recorded against each lead automatically',
+                    'Conversion rate by agent: see which team members convert the most leads and learn from top performers',
+                    'Task assignment and reminders: managers assign follow-up tasks with deadlines and escalation',
+                    'Team leaderboards: healthy competition drives performance (configurable, optional)',
+                    'Capacity management: auto-distribute new leads evenly across team members by availability and workload'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Stop Losing Leads. Start Closing Faster.",
+            description: 'See how lead management and CRM automation helps you respond faster, nurture smarter, and convert more enquiries into signed leases.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '5min', label: 'Average response time with automated lead capture' },
+            { value: '35%', label: 'Increase in enquiry-to-viewing conversion' },
+            { value: '2.4x', label: 'More signed leases from nurturing sequences' },
+            { value: '100%', label: 'Marketing attribution from click to signed lease' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "Before JumboTiger, we had leads scattered across email, WhatsApp, and spreadsheets. Response times averaged 6 hours. Now every lead is captured instantly, scored, and nurtured automatically. Our enquiry-to-lease conversion jumped from 12% to 28% in three months.",
+                    "name": "Head of Sales",
+                    "role": "Pan-European Coliving Operator, 30 properties"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'How does lead capture work?',
+                    answer: "Leads are automatically captured from every channel: website forms, email, phone, WhatsApp, OTA enquiries, referral links, and walk-in registration. Each lead enters the pipeline with source attribution and contact details extracted automatically.",
+                },
+                {
+                    question: 'What is lead scoring?',
+                    answer: 'Each lead gets a score based on budget match, move-in urgency, stay length, property fit, and engagement signals (website visits, email opens, viewing bookings). Higher scores mean higher conversion likelihood. Your team focuses on hot leads first.',
+                },
+                {
+                    question: 'Can we customize the pipeline stages?',
+                    answer: 'Yes. The default stages (Enquiry through Move-In) work for most operators, but you can add, remove, or rename stages per property type. Student housing might have different stages than corporate flex-living.',
+                },
+                {
+                    question: 'How do nurturing sequences work?',
+                    answer: 'Configure automated email/WhatsApp sequences triggered by pipeline events. When a lead enquires, they get an instant response and property highlights. After a viewing, they get pricing and testimonials. Cold leads get re-engagement after 7, 14, and 30 days.',
+                },
+                {
+                    question: 'Can we track marketing ROI?',
+                    answer: 'Yes. Full-funnel attribution tracks leads from first ad click to signed lease. See cost-per-lead and cost-per-acquisition by channel (Google, social, OTAs, referrals, organic). Know exactly which channels deliver revenue, not just traffic.',
+                },
+                {
+                    question: 'Does it integrate with our existing tools?',
+                    answer: 'The CRM integrates with the AI chatbot for 24/7 lead qualification, the listing website for form captures, the channel manager for OTA enquiries, and the booking module for seamless handoff to onboarding once a lease is signed.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Convert More Enquiries?',
+            description: "Book a demo and see how CRM automation captures every lead, nurtures them automatically, and gives you full marketing attribution.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'b2b-partners': {
+        banner: {
+            title: 'B2B Partners & Owner Management',
+            description:
+                "Manage corporate housing partners, university agreements, referral programs, OTA distribution, and property owner portals. Every external relationship, one system.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "External Relationships Managed in Silos",
+            items: [
+                { title: 'Partner Fragmentation', desc: "Corporate clients managed via email, university agreements in PDFs, and referral tracking in spreadsheets." },
+                { title: 'Owner Blindness', desc: 'Property owners have no visibility into how their assets are performing. Reports sent manually when they complain.' },
+                { title: 'No Channel Insight', desc: "No way to compare performance across booking channels, OTAs, direct bookings, and partner referrals." },
+                { title: 'Commission Chaos', desc: "Referral commissions tracked manually with no automated calculation, payment, or reporting." },
+                { title: 'Billing Complexity', desc: "Corporate clients need consolidated invoices, custom payment terms, and spend reporting that manual processes can't deliver." },
+                { title: 'Slow Onboarding', desc: "New partners wait weeks for portal access, rate agreements, and integration setup." },
+            ],
+        },
+        grid: [
+
+            {
+                title: 'Corporate Housing Portal',
+                description: 'Give corporate clients their own branded portal. Self-service booking, negotiated rates, consolidated invoicing, and spend analytics. Manage hundreds of corporate accounts at scale.',
+                points: [
+                    'Dedicated B2B portal with corporate branding and own login credentials',
+                    'Corporate rate management with negotiated agreements per client',
+                    'Account hierarchy: parent company > regional offices > individual bookers',
+                    'Bulk booking and group reservation management',
+                    'Consolidated corporate invoicing with custom payment terms and PO numbers',
+                    'Occupancy and spend reporting per corporate client with export capabilities'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Owner & Investor Portal',
+                description: 'Property owners and investors log in to see exactly how their assets are performing. Live occupancy, revenue, maintenance costs, and board-ready reports -- no manual reporting required.',
+                points: [
+                    'Property owners and investors log in to see exactly how their assets are performing. Live occupancy, revenue, maintenance costs, and board-ready reports -- no manual reporting required.',
+                    'Real-time revenue tracking, collection rates, and yield analysis per property',
+                    'Maintenance cost visibility with budget vs. actual spending breakdowns',
+                    'Contract signing and management within the portal',
+                    'Automated monthly/quarterly settlement statements and profitability reports',
+                    'Board-ready financial reports downloadable in PDF and Excel formats'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'University & Student Partnerships',
+                description: 'Manage university housing agreements, academic year allocations, and institution-specific pricing. Bulk tenant onboarding for entire cohorts with a dedicated university admin portal.',
+                points: [
+                    'University partnership agreements with institution-specific terms and pricing',
+                    'Academic year bed allocation management with reservation tracking',
+                    'Dedicated university admin portal for viewing availability and booking',
+                    'Bulk student onboarding with automated vetting and contract generation',
+                    'Guarantor management: document collection, verification, and liability tracking',
+                    'Institution-level reporting: occupancy, satisfaction, and incident tracking'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Referral & Commission Management',
+                description: 'Track every referral from source to signed lease. Automated commission calculation, agent portals, and performance reporting. Turn your referral network into a growth engine.',
+                points: [
+                    'Referral tracking with unique codes per agent, partner, and campaign',
+                    'Automated commission calculation based on configurable rules (flat fee, percentage, tiered)',
+                    'Agent portal with referral status, commission history, and payout tracking',
+                    'Performance reporting per referral source: conversion rate, revenue, lifetime value',
+                    'Automated commission payouts on resident move-in or first rent payment',
+                    'Integration with CRM for lead attribution across marketing channels'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Partner Analytics & Reporting',
+                description: 'Compare performance across all external relationships: corporates, universities, agents, OTAs, and direct bookings. Data-driven decisions on where to invest your partnership efforts.',
+                points: [
+                    'Cross-channel revenue comparison: direct vs. OTA vs. corporate vs. partner',
+                    'Partner-specific pricing rules and availability windows',
+                    'Automated partner performance reports delivered on schedule',
+                    'Commission and payout reporting across all partner types',
+                    'Lead-to-booking conversion tracking per partner and channel',
+                    'Custom partner SLAs with compliance monitoring'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Channel Manager & OTA Distribution',
+                description: 'Distribute your inventory across 300+ booking channels with real-time rate and availability sync. Centralized booking management and channel performance analytics.',
+                points: [
+                    '300+ OTA channel connections: Booking.com, Airbnb, Expedia, HousingAnywhere, Spotahome, and more',
+                    'Real-time two-way sync: rates, availability, and restrictions updated across all channels instantly',
+                    'Centralized booking dashboard: manage reservations from all channels in one unified interface',
+                    'Content and listing management: AI-generated descriptions optimized per channel and audience',
+                    'Channel performance analytics: revenue, conversion, cancellation rate, and cost-per-booking by channel',
+                    'Hybrid distribution strategy: auto-switch from long-stay portals to short-stay OTAs based on lead time'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Turn External Relationships Into Revenue Engines",
+            description: 'See how operators manage corporate clients, owners, and 300+ distribution channels from one platform.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '300+', label: 'Distribution channels connected' },
+            { value: '25%', label: 'Revenue increase from channel diversification' },
+            { value: '70%', label: 'Direct bookings via own portal reducing OTA fees' },
+            { value: '2x', label: 'Faster corporate client onboarding' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "The owner portal was a game-changer for our investor relations. Property owners stopped calling us for updates because they can see everything in real-time. It freed up 10 hours a week of management time.",
+                    "name": "Managing Director",
+                    "role": "APAC Student Housing Provider, 2,000+ beds"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'How does the owner portal work?',
+                    answer: "Property owners get dedicated login credentials to a branded portal showing their asset performance: occupancy rates, revenue, maintenance costs, and settlement statements. Reports are generated automatically on your chosen schedule.",
+                },
+                {
+                    question: 'Which OTA channels are supported?',
+                    answer: 'We integrate with 300+ channels including Airbnb, Booking.com, Expedia, HousingAnywhere, Spotahome, and via SiteMinder for additional OTA connectivity. Custom channel integrations are available for enterprise clients.',
+                },
+                {
+                    question: 'Can we manage corporate rate agreements?',
+                    answer: 'Yes. Set negotiated rates per corporate client with account hierarchies (parent company > regional offices > individual bookers). Consolidated invoicing with custom payment terms and PO numbers.',
+                },
+                {
+                    question: 'How does commission tracking work?',
+                    answer: 'Define commission rules per partner (flat fee, percentage, or tiered). The system automatically calculates commissions on confirmed bookings and tracks payouts. Agents get their own portal to monitor referrals and earnings.',
+                },
+                {
+                    question: 'Can university admins book directly?',
+                    answer: 'Yes. Universities get a dedicated admin portal where they can view availability, make reservations for their students, and track occupancy for their allocated beds.',
+                },
+                {
+                    question: 'Does the channel manager support real-time sync?',
+                    answer: 'Yes. Availability and rates sync in real-time across all connected channels. When a booking is made on any channel, all others are instantly updated to prevent double-booking.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Scale Your Partner Network?',
+            description: "Book a demo and see how operators manage owners, corporates, and 300+ channels from one platform.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'ai-layer': {
+        banner: {
+            title: 'AI Layer & Advanced Analytics',
+            description:
+                "AI that doesn't just track work -- it does work. Chatbots, voice agents, document processing, predictive analytics, sentiment analysis, and BI-grade reporting powered by machine learning.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Your Team Is Drowning in Repetitive Tasks",
+            items: [
+                { title: 'Repetitive Queries', desc: "Leads come via website, email, phone, WhatsApp, OTAs, referrals, and walk-ins. No single place to see them all. Responses are slow and inconsistent." },
+                { title: 'Missed Leads', desc: " Inbound enquiry calls missed after hours. Prospects who don't get an instant response move on to competitors." },
+                { title: 'Manual Data Entry', desc: "Passports, IDs, invoices, and contracts manually read and typed into the system. Slow and error-prone." },
+                { title: 'Report Building', desc: "Hours spent pulling data from multiple sources to build reports that are outdated by the time they're finished." },
+                { title: 'No Sentiment Visibility', desc: "Resident complaints and frustrations hidden in messages. No systematic way to detect unhappy residents before they leave." },
+                { title: 'Reactive Operations', desc: "Problems discovered after they escalate. No predictive visibility into occupancy drops, payment risks, or maintenance needs." },
+            ],
+        },
+        grid: [
+            {
+                title: 'AI Chatbot & Virtual Assistant',
+                description: 'A conversational AI trained on your property-specific rules, documentation, and FAQs. Available 24/7 in the resident app and web portal. Handles queries, escalates complex issues, and learns over time.',
+                points: [
+                    'AI chatbot trained on property-specific rules, lease terms, and documentation',
+                    'Handles FAQs: WiFi, parking, amenities, house rules, payment info, local guides',
+                    'Available 24/7 in resident app, web portal, and WhatsApp',
+                    'Automatic escalation of complex issues to human staff with full context',
+                    'Multi-language support for international resident communities',
+                    'Continuous learning: improves accuracy from every interaction'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'AI Voice Agents & Lead Response',
+                description: 'Never miss an enquiry again. AI voice agents handle inbound calls, qualify prospects, answer questions, schedule viewings, and follow up -- across phone, WhatsApp, and email simultaneously.',
+                points: [
+                    'AI voice agents handling inbound enquiry calls with natural conversation',
+                    'Instant prospect qualification: budget, move-in date, room preferences, duration',
+                    'Automated viewing scheduling integrated with property calendar',
+                    'Multi-channel follow-up: voice, WhatsApp, and email from same AI agent',
+                    'Dormant lead re-engagement with personalized outreach sequences',
+                    'Human handoff when judgment is required with full conversation context'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Smart Document Processing',
+                description: 'Extract data from passports, IDs, invoices, and contracts with 95%+ accuracy. Auto-populate forms, validate against existing records, and process in bulk.',
+                points: [
+                    'Automated data extraction from passports and IDs (95%+ accuracy)',
+                    'Lease document parsing with field auto-population and clause extraction',
+                    'Invoice OCR for vendor bills, utility statements, and receipts',
+                    'Document categorization and auto-filing into resident and property records',
+                    'Validation checks against existing records to catch errors and duplicates',
+                    'Batch processing for high-volume operations: academic intake, corporate onboarding'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Predictive Analytics & Risk Scoring',
+                description: 'Forecast occupancy, predict churn, detect payment anomalies, and identify maintenance patterns before they become problems. Data-driven decisions, not gut feelings.',
+                points: [
+                    'Predictive occupancy and revenue forecasting with seasonal pattern analysis',
+                    'Churn risk scoring per resident based on payment, engagement, and ticket data',
+                    'Payment anomaly detection: flagging unusual patterns and at-risk accounts',
+                    'Demand forecasting for pricing optimization and capacity planning',
+                    'Maintenance pattern analysis: predict equipment failures before they happen',
+                    'NPS prediction: identify at-risk residents before satisfaction surveys'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Sentiment Analysis & Smart Routing',
+                description: 'Analyze resident communications for tone and urgency. Auto-prioritize frustrated residents, route tickets intelligently, and give managers a real-time sentiment dashboard.',
+                points: [
+                    'Sentiment analysis on all resident communications: messages, tickets, reviews',
+                    'Automatic priority escalation for frustrated or urgent resident messages',
+                    'AI-assisted ticket categorization and intelligent routing by category and skill',
+                    'Natural language search across all tenant data, tickets, and communications',
+                    'Resident satisfaction trend analysis with early warning indicators',
+                    'Smart response suggestions for staff based on ticket history and context'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'BI-Grade Reporting & Data Platform',
+                description: 'Go beyond dashboards. Connect JumboTiger data to Tableau, Power BI, Google BigQuery, and Data Studio for enterprise-grade analytics and custom reporting.',
+                points: [
+                    'Pre-built reporting library: occupancy, revenue, leasing, maintenance, NPS, channel performance',
+                    'Custom report builder with drag-and-drop metric selection and scheduling',
+                    'Integration with Tableau, Power BI, Google BigQuery, and Data Studio',
+                    'Automated report generation and distribution to stakeholders on schedule',
+                    'KPI analytics hub with customizable visualizations and benchmarking',
+                    'Real-time anomaly alerts pushed to dashboards, email, or Slack'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Let AI Handle the Repetitive Work",
+            description: 'See how AI chatbots, voice agents, and predictive analytics free your team to focus on what matters.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '24/7', label: 'AI availability for resident queries and lead response' },
+            { value: '95%', label: 'Document extraction accuracy' },
+            { value: '40%', label: 'Reduction in manual work with AI automation' },
+            { value: '3x', label: 'Faster lead response with AI voice agents' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "The AI voice agent handles 60% of our inbound enquiries without human intervention. Lead response time went from hours to seconds. Our conversion rate jumped 35% in the first month.",
+                    "name": "Head of Sales",
+                    "role": "European Coliving Brand, 15 properties"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'How does the AI chatbot learn?',
+                    answer: "The chatbot is initially trained on your property documentation, rules, lease terms, and FAQs. It continuously improves from interactions, with human feedback loops to correct and refine responses.",
+                },
+                {
+                    question: 'What languages does the AI support?',
+                    answer: 'The AI chatbot and voice agents support multiple languages. New languages can be added based on your resident demographics.',
+                },
+                {
+                    question: 'How does the AI voice agent work?',
+                    answer: 'It handles inbound phone calls with natural conversation. It qualifies prospects (budget, dates, preferences), answers property questions, schedules viewings, and follows up via WhatsApp and email. Complex enquiries are handed to human staff with full context.',
+                },
+                {
+                    question: 'Can we connect to our own BI tools?',
+                    answer: 'Yes. JumboTiger integrates with Tableau, Power BI, Google BigQuery, and Data Studio. You can also access raw data via API for custom analytics pipelines.',
+                },
+                {
+                    question: 'How accurate is document processing?',
+                    answer: '95%+ accuracy for passport and ID extraction. The system validates extracted data against existing records and flags uncertain fields for human review.',
+                },
+                {
+                    question: 'Does the AI actually reduce workload?',
+                    answer: 'Yes. Operators typically see a 40% reduction in manual work. AI handles chatbot queries, document processing, ticket categorization, payment matching, and report generation -- freeing staff for higher-value tasks.',
+                },
+                {
+                    question: 'How does sentiment analysis work?',
+                    answer: 'The AI analyzes the tone and language of all resident communications (messages, tickets, reviews) to detect frustration, urgency, or satisfaction changes. Frustrated residents are auto-escalated and flagged on management dashboards.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Add AI to Your Operations?',
+            description: "Book a demo and see how AI chatbots, voice agents, and predictive analytics transform property operations.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'listing-website': {
+        banner: {
+            title: 'Listing Website & Booking Engine',
+            description:
+                "Generate SEO-optimized property listings with real-time availability, instant quotes, direct booking, and distribution to 300+ channels. Reduce OTA dependency and own your customer relationship.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "OTA Dependency Eats Your Margins",
+            items: [
+                { title: 'Commission Drain', desc: "15-25% of every booking going to OTAs. On a portfolio of 500 beds, that's hundreds of thousands per year in commissions." },
+                { title: 'No Brand Presence', desc: "Residents find you on Booking.com, not your website. They're loyal to the platform, not your brand." },
+                { title: 'No SEO Visibility', desc: "Generic property pages buried in search results. No organic traffic, no direct enquiries, no compounding growth." },
+                { title: 'Slow Quoting', desc: "Prospects enquire and wait hours or days for a quote. By then they've booked elsewhere." },
+                { title: 'Static Listings', desc: "Availability and pricing manually updated. Outdated listings lead to overbooking or missed bookings." },
+                { title: 'No Conversion Data', desc: "No visibility into where prospects drop off, which listings convert, or what search terms drive traffic." },
+            ],
+        },
+        grid: [
+            {
+                title: 'SEO-Optimized Listing Pages',
+                description: 'Auto-generated property pages optimized for search engines. Rich content, structured data, location maps, photo galleries, and virtual tour embedding that rank and convert.',
+                points: [
+                    'SEO-optimized listing pages with structured data markup for search engines',
+                    'Dynamic content: availability, pricing, and room types updated in real-time',
+                    'Photo gallery with lightbox, virtual tour embedding, and floor plan views',
+                    'Location maps with neighborhood information, transport, and amenities',
+                    'Property comparison and filtering by price, room type, location, and amenities',
+                    'Responsive design optimized for mobile, tablet, and desktop'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Instant Quote Portal',
+                description: 'Prospects get accurate quotes in under 60 seconds with live availability. Customizable quote templates, automated follow-ups for abandoned quotes, and one-click conversion to booking.',
+                points: [
+                    'Enquiry-to-quote in under 60 seconds with real-time availability and pricing',
+                    'Customizable quote template emails with property photos and room details',
+                    'Automated follow-up sequences for abandoned quotes (email + WhatsApp)',
+                    'One-click conversion from quote acceptance to booking with deposit collection',
+                    'One-click conversion from quote acceptance to booking with deposit collection',
+                    'Quote analytics: conversion rates, response times, and drop-off points'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Direct Booking Engine',
+                description: 'A white-label booking engine on your own website. Residents book and pay directly, reducing OTA dependency and building your brand relationship from day one.',
+                points: [
+                    'White-label booking engine with your brand colors, logo, and domain',
+                    'Direct booking with instant confirmation and deposit collection',
+                    'Custom booking links shareable via email, WhatsApp, and social media',
+                    'Multiple stay types: nightly, weekly, monthly, academic year, and custom',
+                    'Upsell add-on services during booking: parking, cleaning, gym, meals',
+                    'Conversion tracking via Google Analytics, UTM parameters, and pixel integration'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Multi-Portal Syndication',
+                description: 'List your inventory on Rightmove, Zoopla, OnTheMarket, HousingAnywhere, SpareRoom, and more. Centralized control, automated updates, and lead capture from every portal.',
+                points: [
+                    'Multi-portal syndication: Rightmove, Zoopla, OnTheMarket, HousingAnywhere, SpareRoom',
+                    'AI-generated professional listing descriptions optimized per portal',
+                    'Enhanced listings with amenity icons, compliance badges, and housemate profiles',
+                    'Centralized lead capture from all portals tagged to specific listings',
+                    'Automated listing updates when availability or pricing changes',
+                    'Portal performance analytics: leads, viewings, and conversions per channel'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Housemate Profiles & Social Proof',
+                description: 'Show prospective residents who already lives in the property. Housemate profiles, reviews, and community previews help convert browsers into bookers.',
+                points: [
+                    'Opt-in housemate profiles displayed on listing pages (photo, bio, interests)',
+                    'Resident reviews and testimonials displayed per property',
+                    'Community preview: upcoming events, amenities, and lifestyle snapshots',
+                    'Screening questionnaires for compatibility matching before booking',
+                    'Automated viewing reminders with 24-hour and 2-hour notifications',
+                    'No-show detection and automated follow-up for missed viewings'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Marketing Analytics & ROI Tracking',
+                description: 'Track every visitor, every lead, and every conversion. Know exactly which channels, campaigns, and listings drive revenue. Optimize spend with data, not guesswork.',
+                points: [
+                    'Visitor analytics: traffic sources, page views, bounce rates, and time on site',
+                    'Lead funnel tracking from first visit to signed lease with drop-off analysis',
+                    'Campaign ROI tracking: cost per lead, cost per booking, and lifetime value by source',
+                    'A/B testing support for listing descriptions, photos, and pricing display',
+                    'Waitlist management with automated notifications when rooms become available',
+                    'Integration with Google Ads, Facebook Ads, and retargeting platforms'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Own Your Booking Channel",
+            description: 'See how operators reduce OTA dependency by 70% with direct booking engines and SEO-optimized listings.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '70%', label: 'Direct bookings via own portal vs. OTAs' },
+            { value: '60s', label: 'Enquiry to quote with live availability' },
+            { value: '3x', label: 'More organic traffic with SEO-optimized pages' },
+            { value: '0%', label: 'Commission on direct bookings' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We went from 80% OTA bookings to 70% direct bookings in 6 months. The commission savings alone were over $200K annually. The instant quote portal converts 3x better than our old contact form.",
+                    "name": "Commercial Director",
+                    "role": "European Flex Living Brand, 20 properties"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'Can we use our own domain?',
+                    answer: "Yes. The listing website and booking engine run on your custom domain with your branding. No JumboTiger branding visible.",
+                },
+                {
+                    question: 'How does the instant quote portal work?',
+                    answer: 'Prospects enter their dates and preferences. The system checks real-time availability, applies dynamic pricing, and generates a detailed quote in under 60 seconds. Abandoned quotes trigger automated follow-up.',
+                },
+                {
+                    question: 'Which property portals are supported?',
+                    answer: 'Rightmove, Zoopla, OnTheMarket, HousingAnywhere, SpareRoom, Placebuzz, Facebook Marketplace, and more. Custom portal integrations available for enterprise clients.',
+                },
+                {
+                    question: 'How does SEO optimization work?',
+                    answer: 'Pages are generated with structured data markup, semantic HTML, optimized meta tags, and keyword-rich content. Location pages, room type pages, and neighborhood guides create a rich content ecosystem for search engines.',
+                },
+                {
+                    question: 'Can residents leave reviews?',
+                    answer: 'Yes. Post-stay review collection is automated. Positive reviews are displayed on listing pages. You control which reviews are published.',
+                },
+                {
+                    question: 'How do housemate profiles work?',
+                    answer: 'Current residents opt in to display their profile (photo, bio, interests, occupation) on the listing page. This helps prospects assess compatibility and builds community before they move in.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Own Your Booking Channel?',
+            description: "Book a demo and see how operators save hundreds of thousands in OTA commissions with direct bookings.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'communications': {
+        banner: {
+            title: 'Communications & Operations',
+            description:
+                "One platform for all resident communication, maintenance operations, housekeeping automation, and post-stay nurturing. Unified inbox, multi-channel messaging, and intelligent task routing.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Fragmented Communications Sink Operations",
+            items: [
+                { title: 'Channel Chaos', desc: "Messages arrive via email, WhatsApp, OTA platforms, phone, and in-person. No single view of all conversations." },
+                { title: 'Manual Housekeeping', desc: 'Cleaning schedules managed in spreadsheets with no automated task creation, assignment, or proof of completion.' },
+                { title: 'Ticket Black Holes', desc: "Maintenance requests submitted verbally, lost in WhatsApp threads, or forgotten in email inboxes." },
+                { title: 'No Staff App', desc: "Housekeeping and maintenance staff have no mobile tool for receiving tasks, uploading photos, or updating status in real-time." },
+                { title: 'Post-Stay Silence', desc: "After move-out, residents disappear. No follow-up, no re-engagement, no referral program. Lost lifetime value." },
+                { title: 'Vendor Coordination', desc: "External contractors managed via phone calls with no work order tracking, cost attribution, or SLA monitoring." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Unified Inbox & Multi-Channel Messaging',
+                description: 'Consolidate emails, WhatsApp, OTA messages, SMS, in-app chats, and booking enquiries into a single inbox. Every conversation tracked, every message attributed.',
+                points: [
+                    'Unified inbox consolidating email, WhatsApp, OTA platforms, SMS, and in-app messages',
+                    'Subject-based conversation threading with archive and search capabilities',
+                    'Broadcast messaging to all residents, specific properties, floors, or custom segments',
+                    'Template library with dynamic variables for personalized bulk communications',
+                    'Read receipts visible to management, responses attributed to organization (not individual)',
+                    'Automation triggers: payment received, ticket updated, lease expiring, check-in tomorrow'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Housekeeping Automation',
+                description: 'Rule-based cleaning task creation, drag-and-drop scheduling, checklists, and proof-of-completion -- all accessible from a mobile app. No more spreadsheet rotas.',
+                points: [
+                    'Rule-based task creation: by booking, check-in/out dates, stay length, building, day of week',
+                    'Drag-and-drop rescheduling with bulk task assignment and recurring scheduling',
+                    'Task-specific checklists with photo evidence of completion',
+                    'Clean/dirty unit status tracking with automatic task generation on checkout',
+                    'Linen and consumable inventory tracking with reorder alerts',
+                    'Quality inspection checklists with photo documentation and manager sign-off'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Maintenance & Work Order Management',
+                description: 'From QR-code ticket submission to contractor coordination, track every maintenance request from creation to resolution with full SLA monitoring.',
+                points: [
+                    'Resident-submitted or staff-created tickets with photo upload and priority levels',
+                    'QR code scanning for quick issue reporting at point of problem',
+                    'AI-assisted ticket categorization, priority assignment, and intelligent routing',
+                    'Contractor/vendor invitation into ticket threads for estimate and invoice tracking',
+                    'SLA tracking with escalation rules, automated reminders, and breach alerts',
+                    'Cost tracking per vendor, property, and category with performance reporting'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Mobile Operations App for Staff',
+                description: 'Give your housekeeping and maintenance teams a dedicated mobile app. Real-time task updates, photo uploads, key tracking, and remote inspections from the field.',
+                points: [
+                    'Real-time task list filtered by location, priority, and assignment',
+                    'Photo uploads as proof of work completion for inspections and cleaning',
+                    'Key and access card tracking by location with handover logging',
+                    'Direct messaging between managers, maintenance staff, and contractors',
+                    'Personalized to-do lists with urgent duty prioritization',
+                    'Remote inspection capability with checklist completion and photo capture'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Post-Stay Nurturing & Remarketing',
+                description: "Don't lose residents after move-out. Automated follow-up sequences, review collection, referral programs, and re-booking campaigns turn former residents into advocates.",
+                points: [
+                    'Automated post-move-out feedback and review collection sequences',
+                    'Referral program management with tracking codes and reward automation',
+                    'Re-booking campaigns for returning residents with personalized offers',
+                    'Alumni community access for former residents to stay connected',
+                    'Lifetime resident value tracking across all stays and properties',
+                    'Targeted re-engagement for seasonal residents (students, corporate travelers)'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Planned Preventive Maintenance',
+                description: 'Schedule recurring maintenance before things break. Asset tracking, PPM schedules, and automated work orders keep your properties in top condition.',
+                points: [
+                    'Asset registration: HVAC, boilers, lifts, fire systems, and appliances per unit',
+                    'Planned preventive maintenance (PPM) schedules with automated work order creation',
+                    'Compliance-driven maintenance: gas safety, EICR, fire alarm servicing',
+                    'Vendor assignment automation based on category, location, and availability',
+                    'Maintenance cost budgeting and actual vs. planned spending dashboards',
+                    'Facility booking coordination: meeting rooms, laundry, gym, coworking spaces'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Unify Your Operations in One Platform",
+            description: 'See how a unified inbox, housekeeping automation, and smart ticket routing transform your operations.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '65%', label: 'Faster ticket response time' },
+            { value: '80%', label: 'Reduction in missed maintenance requests' },
+            { value: '3hrs', label: 'Saved daily on housekeeping coordination' },
+            { value: '40%', label: 'Lower vendor costs with SLA tracking' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "The unified inbox alone saved us hours every day. We went from messages scattered across 5 different channels to one screen. Housekeeping automation cut our coordination time by 80%.",
+                    "name": "Operations Manager",
+                    "role": "UK Coliving Operator, 12 properties"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'What is the unified inbox?',
+                    answer: "It consolidates all incoming messages from email, WhatsApp, OTA platforms (Airbnb, Booking.com), SMS, and in-app chat into a single view. Every conversation is threaded by subject and linked to the relevant resident or booking.",
+                },
+                {
+                    question: 'How does housekeeping automation work?',
+                    answer: 'You set rules for when cleaning tasks should be created: on checkout, by day of week, by building, or by stay length. Tasks are auto-assigned to staff with checklists. Staff complete tasks on their mobile app with photo evidence.',
+                },
+                {
+                    question: 'Can contractors access the system?',
+                    answer: 'Yes. External contractors can be invited into specific ticket threads via a mobile web app. They submit estimates, receive work orders, upload completion photos, and submit invoices -- all without needing a full user account.',
+                },
+                {
+                    question: 'Does the staff mobile app work offline?',
+                    answer: 'The app caches task lists and checklists for areas with poor connectivity. Data syncs automatically when connection is restored.',
+                },
+                {
+                    question: 'How do post-stay nurturing campaigns work?',
+                    answer: 'After move-out, automated sequences collect feedback, request reviews, share referral codes, and send re-booking offers at configurable intervals. You can target specific segments like students or corporate travelers.',
+                },
+                {
+                    question: 'Can we track maintenance costs per property?',
+                    answer: 'Yes. Every ticket tracks labor and material costs. Dashboards show spending by property, vendor, category, and period with budget vs. actual comparisons.',
+                },
+                {
+                    question: 'Does it support QR code ticket submission?',
+                    answer: 'Yes. Place QR codes in common areas, rooms, or on equipment. Residents scan the code, which pre-fills the location and category, then add a description and photos.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Unify Your Operations?',
+            description: "Book a demo and see how operators save 3+ hours daily with unified comms, housekeeping automation, and smart maintenance.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'global-config': {
+        banner: {
+            title: 'Global Configuration & Compliance',
+            description:
+                "Configure every property, role, workflow, and compliance requirement from one centralized panel. Multi-property hierarchy, role-based access, regulatory automation, and white-label branding.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Scaling Without Centralized Control Is Chaos",
+            items: [
+                { title: 'Configuration Sprawl', desc: "Each property has different rules, workflows, and settings managed in different places with no central source of truth." },
+                { title: 'Compliance Gaps', desc: 'Gas safety certs, EICR reports, HMO licenses, right-to-rent checks -- tracked in spreadsheets with no renewal alerts.' },
+                { title: 'Access Control', desc: "No way to give regional managers access to their properties without exposing the entire portfolio." },
+                { title: 'Branding Inconsistency', desc: "Each property feels like a different brand because there's no centralized branding and template management." },
+                { title: 'Regulatory Complexity', desc: "Operating across regions means different tax rules, compliance requirements, and reporting standards per jurisdiction." },
+                { title: 'Audit Trail Gaps', desc: "No digital record of who changed what, when. Compliance audits become stressful investigations." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Multi-Property Hierarchy & Configuration',
+                description: 'Structure your portfolio as portfolio > property > building > floor > unit. Set defaults at any level and override at lower levels for maximum flexibility.',
+                points: [
+                    'Multi-property hierarchy: portfolio > property > building > floor > unit',
+                    'Configuration inheritance: set defaults at portfolio level, override per property',
+                    'Custom fields on any entity: tenant, property, unit, invoice, ticket',
+                    'Configurable workflow rules and automation triggers per property or globally',
+                    'Custom status workflows for tenants, tickets, invoices, and maintenance',
+                    'Data export and API access configuration with rate limiting and authentication'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Compliance & Regulatory Management',
+                description: 'Track every certificate, license, and regulatory requirement across your portfolio. Automated renewal reminders, digital document serving, and full audit trails for inspections.',
+                points: [
+                    'Gas Safety, EICR, EPC, and fire safety certificate tracking with renewal alerts',
+                    'HMO license management with expiry monitoring and early renewal warnings',
+                    'Right-to-rent verification tracking with automated renewal notifications',
+                    'Digital serving of compliance documents to tenants with acknowledgment tracking',
+                    'Automatic maintenance ticket creation for upcoming compliance renewals',
+                    'Regional compliance automation: VAT reporting, tourism tax, authority reporting per jurisdiction'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Role-Based Access & Security',
+                description: 'Give every team member exactly the access they need. Owners see financials, managers see operations, staff see tasks. SSO, 2FA, and complete audit logging.',
+                points: [
+                    'Role-based access control: owner, admin, regional manager, property manager, staff, viewer',
+                    'Property-scoped permissions: regional managers see only their properties',
+                    'Single sign-on (SSO) integration for enterprise clients',
+                    'Two-factor authentication (2FA) for all user accounts',
+                    'Complete audit log: who changed what, when, with before/after values',
+                    'IP restriction and session management for sensitive operations'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'White-Label Branding & Templates',
+                description: 'Your brand, everywhere. Custom logos, colors, email templates, contract templates, and domain configuration. Every touchpoint reflects your identity.',
+                points: [
+                    'White-label branding: logo, colors, favicon, and visual identity across all modules',
+                    'Custom domain and email sender configuration per property or brand',
+                    'Email template library with drag-and-drop editor and dynamic variables',
+                    'Contract template management with clause library and conditional sections',
+                    'Invoice template customization with brand-specific layouts',
+                    'Welcome pack and communication templates cascading from portfolio to property'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Multi-Currency, Multi-Language & Tax',
+                description: 'Operate globally with per-property currency configuration, multi-language support, and jurisdiction-specific tax rules. One platform, every market.',
+                points: [
+                    'Multi-currency support with per-property currency configuration',
+                    'Multi-language support for resident-facing interfaces and communications',
+                    'Configurable VAT/tax rules per property, charge type, and jurisdiction',
+                    'E-invoicing support for markets requiring electronic invoice submission',
+                    'Making Tax Digital (MTD) readiness for UK operations',
+                    'Automated VAT reporting and tax document generation'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Workflow Automation & Rules Engine',
+                description: 'Define rules that trigger actions automatically. When a lease expires, send a renewal offer. When a payment fails, escalate. When a certificate expires, create a ticket.',
+                points: [
+                    'Configurable automation triggers: time-based, event-based, and condition-based',
+                    'Workflow chains: one trigger can cascade multiple actions across modules',
+                    'Notification rules: who gets notified, via which channel, for which events',
+                    'Escalation rules with configurable timeouts and fallback assignments',
+                    'Scheduled automations: daily, weekly, monthly batch operations',
+                    'Custom webhook triggers for integration with external systems'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Centralize Control Across Your Entire Portfolio",
+            description: 'See how operators manage 50+ properties from a single configuration panel with full compliance automation.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '100%', label: 'Compliance certificate tracking coverage' },
+            { value: '5min', label: 'To configure a new property from template' },
+            { value: '0', label: 'Missed compliance deadlines with auto-alerts' },
+            { value: '50+', label: 'Properties managed from one config panel' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We added 8 properties in 3 months. With global config templates, each new property was configured in under an hour. Compliance tracking alone prevented what could have been a six-figure fine.",
+                    "name": "Portfolio Director",
+                    "role": "UK HMO Operator, 45 properties"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'How does compliance tracking work?',
+                    answer: "Upload certificates (Gas Safety, EICR, EPC, HMO license, etc.) with expiry dates. The system sends renewal reminders at configurable intervals (90, 60, 30 days) and automatically creates maintenance tickets for renewals. Digital serving to tenants with acknowledgment tracking provides a full audit trail.",
+                },
+                {
+                    question: 'Can we set different rules per property?',
+                    answer: 'Yes. Configuration inherits from portfolio level but can be overridden at any level: property, building, or unit. This means you set sensible defaults once and only customize where needed.',
+                },
+                {
+                    question: 'What access control options are available?',
+                    answer: 'Role-based access with property-scoping. A regional manager sees only their assigned properties. Owners see financials. Staff see only their tasks. SSO, 2FA, and IP restrictions add enterprise-grade security.',
+                },
+                {
+                    question: 'Does it support multiple currencies?',
+                    answer: 'Yes. Each property can be configured with its own currency. Financial reports can be viewed in individual currencies or consolidated with automatic conversion.',
+                },
+                {
+                    question: 'How does the rules engine work?',
+                    answer: 'You define triggers (time-based, event-based, or conditional) and actions (send notification, create ticket, change status, trigger webhook). Rules can chain together for complex workflows.',
+                },
+                {
+                    question: 'Is there an audit trail?',
+                    answer: 'Yes. Every action, change, and configuration update is logged with who, what, when, and before/after values. This supports compliance audits and operational accountability.',
+                }
+                ,
+                {
+                    question: 'Can we white-label everything?',
+                    answer: 'Yes. Logo, colors, domain, email sender, app store listing, contract templates, invoice layouts, and welcome packs are all fully customizable per brand or property.',
+                }
+
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Centralize Your Portfolio Management?',
+            description: "Book a demo and see how global configuration and compliance automation scales with your portfolio.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'integrations-hub': {
+        banner: {
+            title: 'Integrations Hub',
+            description:
+                "Pre-built connectors for payments, accounting, CRM, access control, energy management, BI tools, and 300+ OTA channels. Open API for anything custom. Your PMS is the center of your tech stack.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Disconnected Systems Waste Time & Money",
+            items: [
+                { title: 'Data Silos', desc: "Payment data in Stripe, accounting in Xero, CRM in HubSpot, comms in Mailchimp. Nothing connected." },
+                { title: 'Manual Reconciliation', desc: 'Hours spent matching payments to invoices, exporting to accounting, and reconciling across systems.' },
+                { title: 'Dumb Buildings', desc: "Smart locks, energy meters, and IoT sensors exist but aren't connected to your PMS for automated workflows." },
+                { title: 'No Single Source of Truth', desc: "Reports pulled from 5 different systems, each with slightly different numbers." },
+                { title: 'Vendor Lock-In', desc: "Stuck with tools that don't have APIs. Can't switch providers without losing data or breaking workflows." },
+                { title: 'Slow Onboarding', desc: "New integrations take weeks to set up, requiring developer resources you don't have." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Payment Gateway Integrations',
+                description: 'Stripe, GoCardless, PayTabs, UPI, and Open Banking -- all pre-built. Accept every payment method your residents use with automated reconciliation.',
+                points: [
+                    'Stripe: card payments, bank transfers, 3D Secure, and Apple Pay/Google Pay',
+                    'GoCardless: direct debit and SEPA mandates across Europe with retry logic',
+                    'PayTabs and regional payment gateways for MENA and Asia-Pacific',
+                    'Open Banking integration for AI-powered payment matching and reconciliation',
+                    'UPI QR code support for Indian market with auto-reconciliation',
+                    'Zero markup on gateway fees -- only standard provider transaction rates'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Accounting & ERP Sync',
+                description: 'Two-way sync with Xero, QuickBooks, Odoo, Sage, and Fortnox. Automated journal entries, invoice matching, and financial reporting without manual data entry.',
+                points: [
+                    'Xero: two-way sync with chart of accounts mapping, invoices, and reconciliation',
+                    'QuickBooks Online: automated invoice and payment sync with category mapping',
+                    'Odoo and Sage integration for enterprise accounting workflows',
+                    'Fortnox and Bexio integration for Nordic and Swiss markets',
+                    'Automated journal entries and bank reconciliation across all entities',
+                    'Multi-entity support: separate accounting connections per property or brand'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'CRM, Marketing & Communication',
+                description: 'HubSpot, Salesforce, Zoho, Twilio, Mailgun, and Mailchimp -- all connected. Lead capture, drip campaigns, WhatsApp messaging, and communication tracking in one flow.',
+                points: [
+                    'HubSpot and Salesforce CRM: lead capture, pipeline sync, and deal tracking',
+                    'Zoho CRM integration for contact and deal management',
+                    'Twilio: WhatsApp Business API, SMS, and voice for resident communications',
+                    'Mailgun: transactional email for invoices, reminders, and notifications',
+                    'Mailchimp: email marketing campaigns, newsletters, and audience sync',
+                    'Webhook notifications for all key events enabling custom automation'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Access Control & Smart Building',
+                description: 'SALTO, RemoteLock, SmartRent, KeyCafe, and IoT sensors. Auto-provision access codes on check-in, revoke on move-out, and monitor building systems in real-time.',
+                points: [
+                    'SALTO and SmartRent smart lock integration with auto-code provisioning',
+                    'RemoteLock, KeyCafe, and KeyNest for key management and access control',
+                    'Automatic access provisioning on check-in and revocation on move-out',
+                    'Visitor and temporary access code generation linked to guest registrations',
+                    'Smart energy meter integration for real-time consumption monitoring',
+                    'IoT device connectivity: HVAC monitoring, air quality, lighting, and WiFi control'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'BI Tools & Data Platform',
+                description: 'Connect JumboTiger to Tableau, Power BI, Google BigQuery, and Data Studio. Enterprise-grade analytics on your operational data without building custom pipelines.',
+                points: [
+                    'Tableau and Power BI integration for custom dashboard creation',
+                    'Google BigQuery data warehouse export for advanced analytics',
+                    'Google Data Studio for shareable, real-time reporting dashboards',
+                    'PriceLabs integration for dynamic pricing and revenue optimization',
+                    'Inventory Hive for property inspection and inventory management',
+                    'Custom data feeds and scheduled exports in CSV, JSON, and XML formats'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Open API & Custom Integrations',
+                description: 'Full REST API with authentication, rate limiting, webhooks, and sandbox environment. Build any custom integration your operations require.',
+                points: [
+                    'Full REST API with comprehensive documentation and sandbox environment',
+                    'Webhook support for real-time event notifications to external systems',
+                    'OAuth 2.0 authentication with scoped API keys per integration',
+                    'Rate limiting and usage monitoring for responsible API consumption',
+                    'Bi-directional data sync capabilities for real-time or scheduled updates',
+                    'Dedicated integration support for enterprise clients building custom connectors'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Connect Your Entire Tech Stack",
+            description: 'See how JumboTiger integrates with 50+ platforms to create a unified property management ecosystem.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '50+', label: 'Pre-built platform integrations' },
+            { value: '300+', label: 'OTA channels via channel manager' },
+            { value: '2-way', label: 'Sync with major accounting platforms' },
+            { value: '0', label: 'Developer hours for pre-built connectors' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We had 7 different tools that didn't talk to each other. JumboTiger's integration hub connected everything in a week. Xero sync alone saves our finance team 15 hours a month.",
+                    "name": "Finance Manager",
+                    "role": "UK Coliving Operator, 25 properties"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'How long does it take to set up integrations?',
+                    answer: "Pre-built integrations like Stripe, Xero, and HubSpot can be connected in minutes. Custom integrations using our API typically take 1-2 weeks depending on complexity.",
+                },
+                {
+                    question: 'Is there an API?',
+                    answer: 'Yes. Full REST API with OAuth 2.0 authentication, comprehensive documentation, sandbox environment, and webhook support. Enterprise clients get dedicated integration support.',
+                },
+                {
+                    question: 'Does the Xero sync work both ways?',
+                    answer: 'Yes. Invoices, payments, and journal entries sync from JumboTiger to Xero. Chart of accounts mapping ensures entries land in the right categories. Changes in Xero sync back.',
+                },
+                {
+                    question: 'Can we connect smart locks?',
+                    answer: 'Yes. Pre-built integrations with SALTO, SmartRent, RemoteLock, KeyCafe, and KeyNest. Access codes are automatically provisioned on check-in and revoked on move-out.',
+                },
+                {
+                    question: 'What BI tools are supported?',
+                    answer: 'Tableau, Power BI, Google BigQuery, and Google Data Studio. Data can also be exported in CSV, JSON, and XML formats for any analytics platform.',
+                },
+                {
+                    question: 'Does it support IoT devices?',
+                    answer: 'Yes. Smart energy meters, HVAC monitoring, air quality sensors, and lighting controls can be connected for real-time monitoring and automated billing.',
+                }
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Connect Everything?',
+            description: "Book a demo and see how 50+ pre-built integrations create a unified property management ecosystem.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'screening-verification': {
+        banner: {
+            title: 'Screening & Verification',
+            description:
+                "Automated background checks, credit scoring, ID verification, and right-to-rent compliance — integrated into your booking pipeline.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Manual Screening Is Slow, Risky, and Inconsistent",
+            items: [
+                { title: 'Inconsistent Checks', desc: "Different staff apply different screening criteria. Some prospects slip through with no verification at all." },
+                { title: 'Days of Delays', desc: 'Waiting for references, chasing employers, manually reviewing documents. Every day of delay is a day of lost rent.' },
+                { title: 'Fraud Exposure', desc: "Fake IDs, forged payslips, and fabricated references are increasingly sophisticated. Manual review can't catch them all." },
+                { title: 'Compliance Risk', desc: "Right-to-rent checks, GDPR-compliant data handling, and fair housing regulations vary by jurisdiction. One mistake can mean fines." },
+                { title: 'Paper Trail Chaos', desc: "Screening documents scattered across email, WhatsApp, and filing cabinets. No audit trail. No consistency." },
+                { title: 'Guarantor Gaps', desc: "Student and international tenants need guarantor verification. Most operators do this manually — or skip it entirely." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Automated Background & Credit Checks',
+                description: 'Run comprehensive background checks, credit scoring, and adverse history searches instantly. Integrated with major screening providers for real-time results.',
+                points: [
+                    'Instant credit scoring with configurable pass/fail thresholds per property type',
+                    'Criminal background checks with jurisdiction-appropriate data sources',
+                    'County court judgments (CCJ), bankruptcy, and insolvency screening',
+                    'Employment and income verification via Open Banking or payslip upload',
+                    'Adverse financial history flagging with risk scoring',
+                    'Automated screening triggered on application submission — zero manual work'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Digital ID Verification & Document OCR',
+                description: 'AI-powered identity verification supporting passports, national IDs, and driving licenses from 195+ countries. Real-time results with liveness detection.',
+                points: [
+                    'AI document OCR for passports, IDs, and driving licenses (195+ countries)',
+                    'Liveness detection to prevent photo and video spoofing attempts',
+                    'Automated data extraction: name, DOB, nationality, document number, expiry',
+                    'Cross-reference against watchlists and sanctions databases',
+                    'Selfie-to-document matching with facial recognition scoring',
+                    'GDPR-compliant data handling with automatic retention policies'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Right-to-Rent & Regulatory Compliance',
+                description: 'Automated right-to-rent checks for UK operators, visa status verification, and jurisdiction-specific compliance workflows. Never miss a legal requirement.',
+                points: [
+                    'UK right-to-rent share code verification via Home Office API integration',
+                    'Visa status and expiry tracking with automated re-check reminders',
+                    'EU/EEA settled status verification for post-Brexit compliance',
+                    'Jurisdiction-specific screening requirements auto-applied per property location',
+                    'Audit trail for every check: who, when, what result, what action taken',
+                    'Automated document serving for section 21 and compliance notices'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Reference & Employment Verification',
+                description: 'Automated reference requests to previous landlords and employers. Digital forms, reminders, and result tracking — no more chasing emails.',
+                points: [
+                    'Automated reference request emails to previous landlords with digital forms',
+                    'Employer verification with income confirmation and contract type',
+                    'Configurable reference requirements per property type or tenant category',
+                    'Automated follow-up reminders for unresponsive referees',
+                    'Reference scoring and red-flag detection (late payments, damage, complaints)',
+                    'Self-employed and freelancer income verification via bank statement analysis'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Guarantor Screening & Management',
+                description: 'Purpose-built for student housing and international tenants. Verify guarantors, track obligations, and manage the full guarantor lifecycle.',
+                points: [
+                    'Guarantor application portal with identity and financial verification',
+                    'Credit scoring for guarantors with minimum threshold enforcement',
+                    'Digital guarantor agreements with e-signature integration',
+                    'Multi-guarantor support for shared tenancies and per-bed guarantees',
+                    'Guarantor notification system for payment defaults or lease breaches',
+                    'International guarantor support with multi-currency income verification'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Screening Analytics & Decision Engine',
+                description: 'Configurable decision rules, risk scoring, and analytics dashboards. Automate approve/decline/review decisions based on your criteria.',
+                points: [
+                    'Configurable scoring matrix: weight credit, references, income, and ID differently',
+                    'Auto-approve, auto-decline, or escalate-to-review based on composite score',
+                    'Screening funnel analytics: pass rates, failure reasons, processing times',
+                    'Fair housing compliance monitoring to prevent discriminatory patterns',
+                    'Batch screening for bulk intake (student housing academic year onboarding)',
+                    'API access for custom screening integrations and third-party providers'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Screen Smarter. Onboard Faster.",
+            description: 'See how automated screening reduces onboarding time from days to minutes while improving compliance.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '2min', label: 'Average screening completion time' },
+            { value: '98%', label: 'Fraud detection accuracy' },
+            { value: '85%', label: 'Reduction in manual screening work' },
+            { value: '100%', label: 'Audit trail compliance' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We used to spend 2-3 days screening each applicant. Now it's done in minutes. The AI catches things we'd never spot manually. Our bad debt dropped 60% in the first quarter.",
+                    "name": "Operations Manager",
+                    "role": "UK Student Housing Operator, 2,400 beds"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'Which screening providers do you integrate with?',
+                    answer: "We integrate with Experian, Equifax, TransUnion, and Onfido for credit checks and ID verification. We also support Open Banking for income verification and Home Office share codes for right-to-rent.",
+                },
+                {
+                    question: 'How fast is the screening process?',
+                    answer: 'Most screenings complete in under 2 minutes. Credit checks and ID verification are instant. References depend on referee response time, but automated reminders keep things moving.',
+                },
+                {
+                    question: 'Is screening data GDPR compliant?',
+                    answer: 'Yes. All screening data is processed and stored in compliance with GDPR. Retention policies are configurable, and data is automatically purged after the defined period.',
+                },
+                {
+                    question: 'Can we customize screening criteria per property?',
+                    answer: 'Absolutely. You can set different credit thresholds, reference requirements, and ID verification levels for different property types, locations, or tenant categories.',
+                },
+                {
+                    question: 'Does it work for international tenants?',
+                    answer: 'Yes. ID verification covers 195+ countries. For international tenants without UK credit history, the system supports alternative verification via bank statements, employer letters, and guarantor screening.',
+                }
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Automate Tenant Screening?',
+            description: "Book a demo and see how automated screening, ID verification, and compliance checks work in your pipeline.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'owner-investor-portal': {
+        banner: {
+            title: 'Owner & Investor Portal',
+            description:
+                "Give property owners and investors real-time visibility into their assets — financial performance, occupancy, maintenance, and distribution reports in a dedicated branded portal.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Owners Are Demanding More Transparency",
+            items: [
+                { title: 'Monthly Email Reports', desc: "Owners get a PDF once a month and have no idea what's happening between reports. They call. You explain. Repeat." },
+                { title: 'Spreadsheet Statements', desc: 'Owner statements manually compiled in Excel. Error-prone, time-consuming, and never consistent across properties.' },
+                { title: 'Trust Deficit', desc: "Without real-time visibility, owners lose confidence. They micromanage, question decisions, or worse — move to another operator." },
+                { title: 'Distribution Delays', desc: "Manual calculation of owner distributions, deductions, and reserves. Late payments erode trust and create friction." },
+                { title: 'Approval Bottlenecks', desc: "Maintenance above a threshold needs owner approval, but there's no system for it. Emails get lost. Repairs get delayed." },
+                { title: 'No Document Access', desc: "Lease agreements, inspection reports, insurance certificates — owners can't access them without asking you." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Real-Time Financial Dashboard',
+                description: 'Owners see live revenue, expenses, NOI, and cash flow — broken down by property, unit, or portfolio. No more waiting for monthly reports.',
+                points: [
+                    'Live revenue tracking with gross rent, ancillary income, and vacancy loss',
+                    'Expense breakdown by category: maintenance, utilities, insurance, management fees',
+                    'Net Operating Income (NOI) calculation with trend visualization',
+                    'Cash flow forecasting based on lease terms, renewals, and vacancy projections',
+                    'Multi-property portfolio view with drill-down to individual units',
+                    'Customizable date ranges, comparison periods, and export to PDF/Excel'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Automated Owner Statements & Distributions',
+                description: 'Generate owner statements automatically. Calculate management fees, reserve contributions, and net distributions. Send on schedule with one click.',
+                points: [
+                    'Automated monthly/quarterly owner statement generation',
+                    'Configurable management fee calculation (% of rent, fixed, or hybrid)',
+                    'Reserve fund tracking and contribution management',
+                    'Net distribution calculation with automatic deductions and adjustments',
+                    'Multi-currency support for international property portfolios',
+                    'Statement history with full audit trail and download access'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Occupancy & Lease Performance',
+                description: 'Real-time occupancy rates, lease expiry timelines, renewal rates, and tenant mix — all visible to owners without them having to ask.',
+                points: [
+                    'Live occupancy rate by property, floor, and room type',
+                    'Lease expiry calendar with renewal probability predictions',
+                    'Tenant mix analysis: stay duration, demographic, and lease type breakdown',
+                    'Void period tracking and days-to-fill metrics',
+                    'Rent roll with current rates, market comparisons, and growth trends',
+                    'Automated occupancy alerts when rates fall below configurable thresholds'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Maintenance Approvals & Transparency',
+                description: 'Owners approve maintenance above thresholds directly in the portal. Full visibility into work orders, costs, and contractor performance.',
+                points: [
+                    'Configurable approval thresholds per owner or property (e.g., approve above £500)',
+                    'In-portal approval workflow with push notifications and email alerts',
+                    'Full maintenance history with costs, photos, contractor details, and timelines',
+                    'Emergency override for urgent repairs with post-approval documentation',
+                    'Contractor performance scoring visible to owners',
+                    'Annual maintenance budget vs. actual spend tracking'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Document Vault & Compliance',
+                description: 'All property documents — leases, certificates, insurance, inspection reports — accessible to owners in a secure document vault.',
+                points: [
+                    'Categorized document library: leases, certificates, insurance, inspections',
+                    'Automatic document sharing when new certificates or reports are uploaded',
+                    'Compliance status dashboard showing certificate validity and expiry dates',
+                    'Digital copies of tenant leases (redacted as needed) available on demand',
+                    'Photo galleries from inspections and turnarounds',
+                    'Secure access controls — owners see only their properties'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Investor Reporting & Tax Packs',
+                description: 'Institutional-grade reporting for investor relations. Quarterly reports, tax packs, and performance summaries — generated automatically.',
+                points: [
+                    'Quarterly investor report generation with customizable templates',
+                    'Year-end tax pack preparation with income, expenses, and depreciation',
+                    'IRR, cash-on-cash return, and cap rate calculations',
+                    'Benchmark comparisons against market data and portfolio averages',
+                    'White-labeled reports with investor branding',
+                    'Bulk report generation for multi-investor portfolios'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Give Owners the Transparency They Demand",
+            description: 'See how the owner portal eliminates monthly report chaos and builds trust through real-time visibility.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: 'Real-Time', label: 'Financial visibility for owners' },
+            { value: '90%', label: 'Reduction in owner enquiry calls' },
+            { value: '3min', label: 'Statement generation time' },
+            { value: '100%', label: 'Document accessibility' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "Our owner satisfaction scores jumped from 6.2 to 9.1 after launching the portal. They stopped calling us for updates because everything they need is right there. It's saved us 15 hours per week.",
+                    "name": "Portfolio Director",
+                    "role": "UK BTR Operator, 450 units across 6 properties"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'Can owners see individual tenant details?',
+                    answer: "You control what owners see. Typically, owners see financial summaries and occupancy data but not individual tenant personal information. Lease summaries can be shown with configurable redaction.",
+                },
+                {
+                    question: 'How are owner distributions calculated?',
+                    answer: 'Distributions are calculated automatically based on rent collected, management fees, maintenance costs, and reserve contributions. You configure the formula per owner agreement.',
+                },
+                {
+                    question: 'Do you support multiple owners per property?',
+                    answer: 'Yes. JumboTiger supports fractional ownership, joint ventures, and multi-investor structures. Each owner sees only their share of financials and distributions.',
+                },
+                {
+                    question: 'Can owners approve maintenance from their phone?',
+                    answer: 'Yes. The owner portal is fully responsive. Maintenance approvals, document access, and financial dashboards work on any device.',
+                },
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Transform Owner Relations?',
+            description: "Book a demo and see how the owner portal delivers real-time transparency that builds trust and saves you hours every week.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'reporting-analytics': {
+        banner: {
+            title: 'Reporting & Analytics',
+            description:
+                "Real-time dashboards, custom reports, automated distribution, and BI tool integrations — so you make decisions based on data, not gut feeling.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "You Can't Manage What You Can't Measure",
+            items: [
+                { title: 'Spreadsheet Reports', desc: "Hours spent pulling data from 5 different systems into a spreadsheet that's outdated by the time it's finished." },
+                { title: 'Days of Delays', desc: "Monthly reports mean you're always looking backward. By the time you spot a problem, it's already cost you money." },
+                { title: 'No Portfolio View', desc: "You can see one property at a time, but not the whole picture. Cross-property comparisons require manual calculation." },
+                { title: 'Hidden Trends', desc: "Occupancy dipping on Floor 3? Maintenance costs rising at Property B? Without proper analytics, patterns stay hidden." },
+                { title: 'Different Reports for Different People', desc: "Owners want financials. Ops wants maintenance KPIs. Finance wants rent collection. Everyone needs a different view." },
+                { title: 'No Predictive Insight', desc: "You know what happened last month. You don't know what's going to happen next month. Reactive management is expensive." },
+            ],
+        },
+        grid: [
+            {
+                title: 'Real-Time KPI Dashboards',
+                description: 'Live dashboards showing occupancy, revenue, maintenance, resident satisfaction, and operational KPIs — updated in real-time, not monthly.',
+                points: [
+                    'Portfolio-wide dashboard with drill-down to property, floor, and unit level',
+                    'Occupancy rate, ADR, RevPAR, and void period tracking in real-time',
+                    'Rent collection rate with arrears aging and payment trend analysis',
+                    'Maintenance SLA compliance, open tickets, and cost-per-unit metrics',
+                    'Resident NPS, churn rate, and renewal probability scoring',
+                    'Fully customizable — drag and drop widgets, save views per role'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Custom Report Builder',
+                description: 'Build any report without SQL or technical skills. Drag-and-drop fields, apply filters, schedule delivery, and save templates for reuse.',
+                points: [
+                    'Visual report builder with drag-and-drop field selection',
+                    'Filter by property, date range, tenant type, lease status, or any custom field',
+                    'Group, sort, and aggregate data with pivot-table-style controls',
+                    'Scheduled report delivery via email (daily, weekly, monthly) to any stakeholder',
+                    'Export to PDF, Excel, CSV, or Google Sheets',
+                    'Report template library with 50+ pre-built templates for common use cases'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Financial Reporting & P&L',
+                description: 'Automated profit and loss statements, budget vs. actual tracking, and financial summaries — broken down by property, portfolio, or entity.',
+                points: [
+                    'Automated P&L generation by property, portfolio, or legal entity',
+                    'Budget vs. actual variance tracking with alert thresholds',
+                    'Revenue breakdown: rent, ancillary, parking, facilities, penalties',
+                    'Expense categorization with vendor and category drill-down',
+                    'Cash flow statements with receivables and payables aging',
+                    'Year-over-year and month-over-month comparison views'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Operational Analytics',
+                description: 'Deep analytics for housekeeping, maintenance, leasing, and resident experience. Spot trends, optimize processes, and reduce costs.',
+                points: [
+                    'Maintenance analytics: cost per unit, resolution time, repeat issue detection',
+                    'Housekeeping efficiency: clean time per room, quality scores, staff productivity',
+                    'Leasing funnel analytics: lead sources, conversion rates, time-to-fill',
+                    'Resident satisfaction trends: NPS over time, complaint categories, response times',
+                    'Facility usage analytics: booking rates, peak hours, revenue per space',
+                    'Energy and utility consumption trends with anomaly detection'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'BI Tool Integrations',
+                description: 'Connect to Tableau, Power BI, Google BigQuery, and Data Studio. Push data to your enterprise analytics stack for advanced analysis.',
+                points: [
+                    'Native Tableau and Power BI connectors with pre-built data models',
+                    'Google BigQuery and Data Studio integration for cloud analytics',
+                    'Snowflake and Redshift data warehouse connectors for enterprise clients',
+                    'Real-time data API for custom dashboards and third-party analytics tools',
+                    'Scheduled data exports to SFTP, S3, or cloud storage',
+                    'Data dictionary and documentation for self-service analytics'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Automated Alerts & Benchmarking',
+                description: 'Set threshold alerts for any KPI. Get notified when occupancy drops, arrears rise, or maintenance costs spike. Benchmark against your own portfolio.',
+                points: [
+                    'Configurable alerts on any metric: occupancy, arrears, maintenance costs, NPS',
+                    'Multi-channel alerts: email, SMS, in-app notification, Slack/Teams webhook',
+                    'Internal benchmarking: compare properties against portfolio averages',
+                    'Trend detection: automatic flagging of deteriorating metrics over time',
+                    'Goal setting with progress tracking and achievement notifications',
+                    'Weekly/monthly digest emails summarizing key metrics and changes'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Stop Guessing. Start Knowing.",
+            description: 'See how real-time dashboards and automated reporting transform property management decision-making.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: 'Real-Time', label: 'Dashboard updates across all KPIs' },
+            { value: '50+', label: 'Pre-built report templates' },
+            { value: '90%', label: 'Less time spent building reports' },
+            { value: '0', label: 'SQL skills required' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We went from spending 2 days building monthly reports to having everything live in real-time. The board gets a dashboard link now, not a 40-page PDF. It's changed how we make decisions.",
+                    "name": "CFO",
+                    "role": "European Flex Living Operator, 1,200 units"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'Do I need SQL or technical skills?',
+                    answer: "No. The report builder is drag-and-drop. Pre-built templates cover 90% of use cases. For advanced users, there's also a raw data API.",
+                },
+                {
+                    question: 'How real-time is the data?',
+                    answer: 'Dashboard data updates in real-time. Most metrics refresh within seconds of the underlying data changing.',
+                },
+                {
+                    question: 'Can different team members see different dashboards?',
+                    answer: 'Yes. Dashboards are fully role-based. Operations sees maintenance KPIs, finance sees revenue metrics, and owners see portfolio summaries.',
+                },
+                {
+                    question: 'Which BI tools do you integrate with?',
+                    answer: 'Tableau, Power BI, Google BigQuery, Google Data Studio, Snowflake, and Redshift. Plus a REST API for any custom integration.',
+                },
+                {
+                    question: 'Can I schedule reports to be sent automatically',
+                    answer: 'Yes. Any report can be scheduled for daily, weekly, or monthly delivery via email. You can set different schedules for different recipients.',
+                }
+            ],
+        },
+        readybuild: {
+            title: 'Ready for Data-Driven Property Management?',
+            description: "Book a demo and see how real-time analytics and custom reporting transform your operations.",
+            primaryLabel: 'Book a Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/',
+        },
+    },
+    'staff-workforce': {
+        banner: {
+            title: 'Staff & Workforce Management',
+            description:
+                "Schedule shifts, assign tasks, track performance, and manage your entire operations team — from housekeepers to property managers — in one platform.",
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        challenge: {
+            heading: 'CHALLENGE',
+            subtitle: "Your Team Deserves Better Than WhatsApp Groups",
+            items: [
+                { title: 'WhatsApp Coordination', desc: "Task assignments, shift swaps, and updates happen in chaotic group chats. Nothing is trackable. Nothing is accountable." },
+                { title: 'Manual Scheduling', desc: "Shift rotas built in spreadsheets. No visibility into availability, overtime, or coverage gaps until it's too late." },
+                { title: 'No Performance Visibility', desc: "You know who complains and who doesn't. But you don't have data on who's actually performing and who's underperforming." },
+                { title: 'Overtime Surprises', desc: "Hours aren't tracked properly. Overtime claims come at month-end with no way to verify them against actual work done." },
+                { title: 'Onboarding Chaos', desc: "New staff have no structured onboarding. They learn by shadowing, which means inconsistent training across properties." },
+                { title: 'Multi-Site Blind Spots', desc: "Staff across multiple properties, but no central view. Who's working where today? Who's available for tomorrow's emergency?" },
+            ],
+        },
+        grid: [
+            {
+                title: 'Shift Scheduling & Rota Management',
+                description: 'Visual shift planner with drag-and-drop scheduling, availability management, and automatic conflict detection. Publish rotas instantly to the staff app.',
+                points: [
+                    'Drag-and-drop shift scheduler with weekly, bi-weekly, and monthly views',
+                    'Staff availability and preference management with time-off requests',
+                    'Automatic conflict detection: double-bookings, overtime, and rest period violations',
+                    'Shift templates for recurring patterns (e.g., housekeeping 3-shift rotation)',
+                    'Multi-property scheduling with cross-site staff allocation',
+                    'Push notification rota publishing with read-receipt confirmation'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Task Assignment & Tracking',
+                description: 'Assign tasks to individuals or teams, set priorities and deadlines, and track completion in real-time. Integrated with maintenance, housekeeping, and operations.',
+                points: [
+                    'Task creation with priority levels, deadlines, and property/unit assignment',
+                    'Bulk task generation from templates (e.g., turnover checklist, monthly inspections)',
+                    'Real-time task status tracking: assigned, in-progress, completed, overdue',
+                    'Photo and note attachments for task completion verification',
+                    'Automatic task routing based on skills, location, and availability',
+                    'Integration with maintenance work orders and housekeeping schedules'
+                ],
+                image: '/images/module-banner.webp',
+            },
+            {
+                title: 'Mobile Staff App',
+                description: 'A dedicated mobile app for field staff. View shifts, accept tasks, clock in/out, report issues, and communicate — all from their phone.',
+                points: [
+                    'Shift view with daily schedule, property details, and navigation',
+                    'One-tap clock in/out with GPS verification and photo timestamping',
+                    'Task list with priority sorting, instructions, and completion forms',
+                    'Issue reporting with photo capture and escalation to management',
+                    'In-app messaging with managers and team members',
+                    'Offline mode for areas with poor connectivity (syncs when back online)'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Time Tracking & Payroll Integration',
+                description: 'Accurate time tracking with GPS-verified clock in/out. Automated timesheet generation and payroll system integration.',
+                points: [
+                    'GPS-verified clock in/out to prevent buddy punching and time theft',
+                    'Automated timesheet generation from shift and clock data',
+                    'Overtime calculation with configurable rules (daily, weekly, monthly caps)',
+                    'Break tracking and working time directive compliance',
+                    'Integration with payroll providers: Xero, QuickBooks, Sage, ADP',
+                    'Manager approval workflow for timesheets before payroll submission'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Performance Management & KPIs',
+                description: 'Track individual and team performance against KPIs. Quality scores, task completion rates, response times, and resident feedback — all in one view.',
+                points: [
+                    'Individual performance dashboards with task completion rates and quality scores',
+                    'Team leaderboards for healthy competition and recognition',
+                    'Housekeeping quality scores linked to inspection results',
+                    'Maintenance response time and first-fix rate per technician',
+                    'Resident feedback attribution to specific staff members',
+                    'Performance trend analysis for training and development planning'
+                ],
+                image: '/images/buildscale.webp',
+            },
+            {
+                title: 'Training & Onboarding',
+                description: 'Structured onboarding checklists, training modules, and certification tracking. Ensure every staff member is properly trained before they start work.',
+                points: [
+                    'Role-specific onboarding checklists with task assignments and deadlines',
+                    'Training module library with completion tracking and quiz assessments',
+                    'Certification tracking: first aid, fire safety, H&S, food hygiene',
+                    'Automated re-certification reminders before expiry dates',
+                    'Document signing for policies, NDAs, and employment contracts',
+                    'New hire progress dashboard for managers'
+                ],
+                image: '/images/buildscale.webp',
+            },
+        ],
+        automate: {
+            title: "Empower Your Team With Better Tools",
+            description: 'See how shift scheduling, task management, and performance tracking transform your operations team.',
+            primaryLabel: 'Book a Free Demo',
+            primaryHref: '/bookdemo',
+            secondaryLabel: 'Explore Modules',
+            secondaryHref: '/modules',
+        },
+        stats: [
+            { value: '35%', label: 'Reduction in scheduling time' },
+            { value: '98%', label: 'Task completion visibility' },
+            { value: '24/7', label: 'Mobile access for field staff' },
+            { value: '100%', label: 'Timesheet accuracy with GPS' },
+        ],
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "Before JumboTiger, we had 3 WhatsApp groups, 2 spreadsheets, and a paper rota on the wall. Now everything is in one app. My team actually knows what they're doing each day, and I can see it all from my dashboard.",
+                    "name": "Operations Manager",
+                    "role": "London Coliving Operator, 4 properties, 35 staff"
+                }
+            ]
+        },
+        faq: {
+            heading: 'FAQ',
+            subtitle: 'Frequently Asked Questions',
+            items: [
+                {
+                    question: 'Does the staff app work offline?',
+                    answer: "Yes. Staff can view their shift schedule and task list offline. Completed tasks sync automatically when connectivity is restored.",
+                },
+                {
+                    question: 'How does GPS clock-in work?',
+                    answer: 'Staff must be within a configurable radius of the property to clock in. GPS coordinates are recorded with each clock event to prevent time fraud.',
+                },
+                {
+                    question: 'Can staff swap shifts with each other?',
+                    answer: 'Yes. Staff can request shift swaps in the app. Swaps require manager approval to ensure coverage and compliance with working time rules.',
+                },
+                {
+                    question: 'Does it integrate with our payroll system?',
+                    answer: 'Yes. Approved timesheets export to Xero, QuickBooks, Sage, ADP, and other payroll providers. Custom CSV exports are also available.',
+                },
+                {
+                    question: 'How many staff can be managed?',
+                    answer: 'No limit. The system scales from small teams (5-10) to large multi-site operations (500+) with role-based access controls.',
+                }
+            ],
+        },
+        readybuild: {
+            title: 'Ready to Modernize Your Workforce Management?',
+            description: "Book a demo and see how shift scheduling, task tracking, and performance management work together.",
             primaryLabel: 'Book a Demo',
             primaryHref: '/bookdemo',
             secondaryLabel: 'Explore Modules',

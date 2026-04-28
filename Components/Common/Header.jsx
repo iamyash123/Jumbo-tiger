@@ -17,6 +17,7 @@ import { usecasesData } from "@/data/usecasesData";
 
 const moduleLinks = Object.entries(modulesData).map(([slug, data]) => ({
     title: data.banner?.title || slug,
+    icon: data.banner?.icon,
     href: `/modules/${slug}`,
 }));
 
@@ -25,6 +26,23 @@ const usecaseLinks = Object.entries(usecasesData).map(([slug, data]) => ({
     description: data.banner?.description || "",
     href: `/usecases/${slug}`,
 }));
+
+const ModuleIcon = ({ icon }) => {
+    if (!icon) {
+        return <StepMark size={40} radius={8} />;
+    }
+
+    return (
+        <span
+            className="size-10 flex items-center justify-center bg-white rounded-lg shadow-[0_3.413px_3.413px_0_rgba(0,0,0,0.25)]"
+            dangerouslySetInnerHTML={{
+                __html: icon
+                    .replaceAll("< path", "<path")
+                    .replaceAll("</svg >", "</svg>"),
+            }}
+        />
+    );
+};
 
 const Header = () => {
     const pathname = usePathname();
@@ -245,7 +263,8 @@ const Header = () => {
                                                             href={item.href}
                                                             className="flex gap-4 items-center p-4 border border-transparent hover:bg-[#F3F4F6] hover:border-[#E5E7EB]"
                                                         >
-                                                            <StepMark size={42} />
+                                                            <ModuleIcon icon={item.icon} />
+
                                                             <p className="bold">{item.title}</p>
                                                         </Link>
                                                     ))}
@@ -277,7 +296,7 @@ const Header = () => {
                                     </div>
                                 </li>
 
-                                <li className="nav-link services country-drop">
+                                {/* <li className="nav-link services country-drop">
                                     <a className="desk-link resources tool">
                                         Pricing
                                         <DropDownArrow />
@@ -298,7 +317,7 @@ const Header = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </li>
+                                </li> */}
 
                                 <li className="nav-link services">
                                     <a className="desk-link resources">
@@ -332,12 +351,12 @@ const Header = () => {
                                         <Image src={RightArrow} alt="" aria-hidden="true" />
                                     </Link>
                                 </li>
-                                <li className="nav-link work">
+                                {/* <li className="nav-link work">
                                     <Link href="#" id="work-link">
                                         Pricing
                                         <Image src={RightArrow} alt="" aria-hidden="true" />
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li className="nav-link resources">
                                     <Link href="#" id="resources-link">
                                         Resources

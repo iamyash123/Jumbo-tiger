@@ -1,57 +1,36 @@
 'use client'
 import React from 'react'
 import { Breadcrumbs, Button } from '@heroui/react'
-import Image from 'next/image'
-import ModuleImg from '@/public/images/module-banner.webp'
 import Link from 'next/link'
 
-const defaultContent = {
-    title: 'Booking & Onboarding',
-    description:
-        'From first enquiry to move-in day, automate the entire resident journey. Online applications, housemate matching, digital contracts, e-signatures, deposits, and move-in checklists in one seamless flow.',
-    primaryLabel: 'Book a Free demo',
-    primaryHref: '/bookdemo',
-    secondaryLabel: 'See How It Works',
-    secondaryHref: '/bookdemo',
-}
-
-const ModuleBanner = ({ content = defaultContent }) => {
-    const {
-        title,
-        description,
-        primaryLabel,
-        primaryHref,
-        secondaryLabel,
-        secondaryHref,
-    } = content
-
+const ModuleBanner = () => {
     return (
-        <section className='mt-62' style={{
-            background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.00) 31.45%, rgba(187, 148, 255, 0.48) 101.35%, rgba(187, 148, 255, 0.00) 109.25%), var(--background-secondary, #F9FAFB)'
-        }}>
-            <div className="container">
-                <div className="border-x border-[#E5E7EB]">
-                    <Breadcrumbs separator="/" className='px-5 md:px-10 py-4 border-b border-[#EDEDED]'>
-                        <Breadcrumbs.Item href="/">Home</Breadcrumbs.Item>
-                        <Breadcrumbs.Item className='text-[#FFF] [&_span]:font-semibold'>Modules</Breadcrumbs.Item>
+        <section className="mt-62 bg-[#000]">
+            <div className="container relative z-4">
+                <div className="border-x border-[rgba(255,255,255,0.20)]">
+                    <Breadcrumbs
+                        separator="/"
+                        className="px-5 md:px-10 py-4 gap-2  [&_span]:text-white"
+                    >
+                        <Breadcrumbs.Item className='text-white gap-2 p-0 [&_a]:p-0' href="/">Home</Breadcrumbs.Item>
+                        <Breadcrumbs.Item className='[&_span]:text-white [&_span]:font-semibold p-0'>Modules</Breadcrumbs.Item>
                     </Breadcrumbs>
-                    <div className="padding-80 px-5 md:px-10" style={{ background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.00) 38.62%, rgba(227, 211, 255, 0.92) 80.39%, rgba(187, 148, 255, 0.80) 101.83%, rgba(187, 148, 255, 0.00) 113.34%)' }}>
+                    <div className="padding-80 px-5 md:px-10">
                         <div className='max-w-[850px] mx-auto text-center flex flex-col gap-10'>
+                            <h6 className='bold white'>Full Platform</h6>
                             <div>
-                                <h1 className="bold ">{title}</h1>
-                                <p className="!mt-4 ">
-                                    {description}
+                                <h1 className="bold white">20+ Modules, One Platform</h1>
+                                <p className="!mt-4 white">
+                                    Every module is built to work independently or together, giving you a fully integrated property management system tailored to your needs.
                                 </p>
                             </div>
-                            <div className='flex gap-4 flex-col justify-center md:flex-row'>
-                                <Link href={primaryHref} className='primary-btn large'>{primaryLabel}</Link>
-                                <Link href={secondaryHref} className='outline-btn large w-fit'>{secondaryLabel}</Link>
+                            <div className='flex gap-4 flex-col justify-center items-center md:flex-row'>
+                                <Link href={'/bookdemo'} className='primary-btn large'>Book a Free demo</Link>
+                                <Link href="#all-module" className='outline-btn large !text-white'>View all Modules</Link>
                             </div>
                         </div>
-                        <div className="padding-80 mx-auto max-w-[1200px] !pb-0">
-                            <Image src={ModuleImg} alt='modulebanner' className='w-full' loading='lazy' />
-                        </div>
                     </div>
+
                 </div>
             </div>
         </section>

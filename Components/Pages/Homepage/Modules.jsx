@@ -1,46 +1,17 @@
 import React from 'react'
 import ModuleCard from '@/Components/Common/ModuleCard'
+import { modulesData } from '@/data/modulesData'
+import Link from 'next/link'
 
 const Modules = () => {
 
-    const modulesData = [
-        {
-            image: '/images/card-img.png', // ✅ correct path (public folder)
-            title: "Booking & Onboarding",
-            description: "Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.",
-            link: "/booking-onboarding"
-        },
-        {
-            image: '/images/card-img.png',
-            title: "Property Management",
-            description: "Manage tenants, leases, maintenance, and communication from one centralized dashboard.",
-            link: "/property-management"
-        },
-        {
-            image: '/images/card-img.png',
-            title: "Payments & Billing",
-            description: "Automate rent collection, invoices, payment reminders, and financial tracking.",
-            link: "/payments-billing"
-        },
-        {
-            image: '/images/card-img.png', // ✅ correct path (public folder)
-            title: "Booking & Onboarding",
-            description: "Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.",
-            link: "/booking-onboarding"
-        },
-        {
-            image: '/images/card-img.png',
-            title: "Property Management",
-            description: "Manage tenants, leases, maintenance, and communication from one centralized dashboard.",
-            link: "/property-management"
-        },
-        {
-            image: '/images/card-img.png',
-            title: "Payments & Billing",
-            description: "Automate rent collection, invoices, payment reminders, and financial tracking.",
-            link: "/payments-billing"
-        }
-    ]
+    const modules = Object.entries(modulesData).slice(0, 9).map(([slug, module]) => ({
+        slug,
+        image: module.grid?.[0]?.image || '/images/card-img.png',
+        title: module.banner?.title,
+        description: module.banner?.description,
+        link: `/modules/${slug}`,
+    }))
 
     return (
         <section className='modules'>
@@ -56,17 +27,21 @@ const Modules = () => {
 
                 {/* Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    {modulesData.map((item, index) => (
+                    {modules.map((item) => (
                         <ModuleCard
-                            key={index}
-                            image={item.image} // ✅ important
+                            key={item.slug}
+                            image={item.image}
                             title={item.title}
                             description={item.description}
                             link={item.link}
                         />
                     ))}
                 </div>
-
+                <div className="py-10 border-x border-[#E5E7EB] flex justify-center">
+                    <Link href={'/modules'} className='primary-btn large'>
+                        View All Modules
+                    </Link>
+                </div>
             </div>
         </section>
     )

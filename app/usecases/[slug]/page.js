@@ -31,7 +31,7 @@ const page = async ({ params }) => {
             <UsecaseGrid items={usecaseData.grid} />
             <Automate content={usecaseData.automate} />
             <Stats stats={usecaseData.stats} />
-            <ClientWords />
+            <ClientWords content={usecaseData.clientWords} />
             <WorkWith content={usecaseData.workWith} />
             <PageFaq content={usecaseData.faq} />
             <Readybuild content={usecaseData.readybuild} />

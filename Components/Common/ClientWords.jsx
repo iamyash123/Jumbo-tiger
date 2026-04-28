@@ -8,28 +8,39 @@ import "@/public/styles/home.scss";
 import Image from "next/image";
 import Quoteicon from '@/public/images/quote.svg'
 
-const testimonials = [
-    {
-        quote:
-            "We used to spend 3-4 days onboarding each new resident. With JumboTiger, it's done in under 2 hours. The housemate matching alone has cut our early move-outs by 40%.",
-        name: "Sarah Chen",
-        role: "Operations Director, Urban Coliving London",
-    },
-    {
-        quote:
-            "JumboTiger gave our team one clean place for enquiries, contracts, payments, and support. The rollout felt fast without feeling rushed.",
-        name: "Michael Ross",
-        role: "Founder, Haven House",
-    },
-    {
-        quote:
-            "The best part is that it works the way our buildings work. We are not forcing coliving operations into generic property software anymore.",
-        name: "Amara Singh",
-        role: "Portfolio Manager, Shared Living Group",
-    },
-];
+const defaultContent = {
+    heading: "CLIENT WORDS",
+    description:
+        "26 battle-tested modules covering the full resident lifecycle, from first application to move-out and beyond.",
+    testimonials: [
+        {
+            quote:
+                "We used to spend 3-4 days onboarding each new resident. With JumboTiger, it's done in under 2 hours. The housemate matching alone has cut our early move-outs by 40%.",
+            name: "Sarah Chen",
+            role: "Operations Director, Urban Coliving London",
+        },
+        {
+            quote:
+                "JumboTiger gave our team one clean place for enquiries, contracts, payments, and support. The rollout felt fast without feeling rushed.",
+            name: "Michael Ross",
+            role: "Founder, Haven House",
+        },
+        {
+            quote:
+                "The best part is that it works the way our buildings work. We are not forcing coliving operations into generic property software anymore.",
+            name: "Amara Singh",
+            role: "Portfolio Manager, Shared Living Group",
+        },
+    ],
+};
 
-const ClientWords = () => {
+const ClientWords = ({ content = defaultContent }) => {
+    const {
+        heading = defaultContent.heading,
+        description = defaultContent.description,
+        testimonials = defaultContent.testimonials,
+    } = content || defaultContent;
+
     const prevButtonRef = useRef(null);
     const nextButtonRef = useRef(null);
     const swiperRef = useRef(null);
@@ -84,9 +95,9 @@ const ClientWords = () => {
 
                         <div className="absolute inset-0 bg-[linear-gradient(16deg,rgba(0,0,0,0)_13.11%,#000_51.9%)]" />
                         <div className="relative z-2">
-                            <h2 className="bold white">CLIENT WORDS</h2>
+                            <h2 className="bold white">{heading}</h2>
                             <p className="white opacity-80 !mt-3">
-                                26 battle-tested modules covering the full resident lifecycle, from first application to move-out and beyond.
+                                {description}
                             </p>
                         </div>
                     </div>

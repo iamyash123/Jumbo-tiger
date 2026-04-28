@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image';
+import StripPattern from '@/public/images/strip-pattern.svg'
 
 const promiseData = [
     {
@@ -36,6 +38,7 @@ const Promise = () => {
                                 Custom software usually takes 6-12 months. We do it in 30 days because we&apos;ve already built the foundations.
                             </p>
                         </div>
+                        <Image src={StripPattern} alt='strip-pattern' loading='lazy' className='absolute z-2 left-0 bottom-10' />
                     </div>
 
                     {/* Right Grid */}

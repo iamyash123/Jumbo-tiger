@@ -193,6 +193,15 @@ export const usecasesData = {
                 { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
             ],
         },
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We tried three different PMS platforms before JumboTiger. None of them understood coliving. With JumboTiger, we finally have community tools, flexible billing, and an app our residents actually love.",
+                    "name": "Founder & CEO",
+                    "role": "Coliving Operator, 1,500+ beds across 12 properties"
+                }
+            ]
+        },
         faq: {
             heading: 'FAQ',
             subtitle: 'Frequently Asked Questions',
@@ -416,6 +425,15 @@ export const usecasesData = {
                 { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
                 { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
             ],
+        },
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "JumboTiger gave us the portfolio-level visibility we were missing. Our investors now get real-time dashboards, and our ops team manages 3x more units with the same headcount.",
+                    "name": "COO",
+                    "role": "Institutional BTR Operator, 5,000+ units across 15 properties"
+                }
+            ]
         },
         faq: {
             heading: 'FAQ',
@@ -641,6 +659,15 @@ export const usecasesData = {
                 { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
             ],
         },
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "Managing 3-month and 6-month stays used to be a nightmare with our old system. JumboTiger handles the pricing, contracts, and turnarounds automatically. We scaled from 200 to 800 units without adding ops staff.",
+                    "name": "Operations Director",
+                    "role": "Flex Living Operator, 800+ units across 5 cities"
+                }
+            ]
+        },
         faq: {
             heading: 'FAQ',
             subtitle: 'Frequently Asked Questions',
@@ -860,6 +887,15 @@ export const usecasesData = {
                 { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
                 { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
             ],
+        },
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "Processing 400 new students in September used to take our team 3 weeks. With JumboTiger, we did it in 4 days. Bulk contracts, e-signatures, and deposit tracking all automated.",
+                    "name": "Accommodation Manager",
+                    "role": "University PBSA, 2,000+ beds"
+                }
+            ]
         },
         faq: {
             heading: 'FAQ',
@@ -1081,6 +1117,15 @@ export const usecasesData = {
                 { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
             ],
         },
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We needed a system that could handle corporate accounts, dynamic pricing, and housekeeping all in one. JumboTiger replaced three separate tools and gave us the analytics we were missing.",
+                    "name": "General Manager",
+                    "role": "Serviced Apartment Operator, 300+ units across 4 cities"
+                }
+            ]
+        },
         faq: {
             heading: 'FAQ',
             subtitle: 'Frequently Asked Questions',
@@ -1301,6 +1346,15 @@ export const usecasesData = {
                 { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
             ],
         },
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We managed 200 units across 8 properties using spreadsheets and email. JumboTiger consolidated everything into one platform. Our team now spends time on growth instead of admin.",
+                    "name": "Managing Director",
+                    "role": "Residential Portfolio, 500+ units"
+                }
+            ]
+        },
         faq: {
             heading: 'FAQ',
             subtitle: 'Frequently Asked Questions',
@@ -1481,6 +1535,15 @@ export const usecasesData = {
                 { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
                 { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
             ],
+        },
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We manage 200 furnished apartments for 15 corporate clients. Before JumboTiger, every booking was emails and spreadsheets. Now HR teams book directly, billing is automated, and our corporate retention jumped because clients love the self-service portal and reporting.",
+                    "name": "Head of Corporate Housing",
+                    "role": "UK Corporate Accommodation Provider, 200 units"
+                }
+            ]
         },
         faq: {
             heading: 'FAQ',
@@ -1663,6 +1726,15 @@ export const usecasesData = {
                 { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
                 { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
             ],
+        },
+        clientWords: {
+            "testimonials": [
+                {
+                    "quote": "We manage 12 PG properties with 2,400 beds. Before JumboTiger, we tracked everything in registers and WhatsApp groups. Now walk-ins are onboarded in 5 minutes, meal plans are automated, and parents love the portal. Our collection rate went from 78% to 97%.",
+                    "name": "Operations Director",
+                    "role": "PG Accommodation Chain, 12 properties, 2,400 beds"
+                }
+            ]
         },
         faq: {
             heading: 'FAQ',

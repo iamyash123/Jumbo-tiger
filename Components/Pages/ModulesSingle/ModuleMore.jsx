@@ -1,6 +1,7 @@
 import React from 'react'
 import GradientStepMark from '@/Components/Common/Gradientstepmark'
 import Link from 'next/link';
+import { modulesData } from '@/data/modulesData'
 
 const defaultContent = {
     heading: 'EXPLORE MORE',
@@ -23,8 +24,21 @@ const defaultContent = {
     }
     ]
 }
-const ModuleMore = ({ content = defaultContent }) => {
-    const { heading, subtitle, items } = content
+const ModuleMore = ({ content = defaultContent, currentSlug }) => {
+    const { heading, subtitle } = content
+    const moduleEntries = Object.entries(modulesData)
+    const currentIndex = moduleEntries.findIndex(([slug]) => slug === currentSlug)
+    const startIndex = currentIndex >= 0 ? currentIndex : -1
+    const items = Array.from({ length: moduleEntries.length - 1 }, (_, index) => {
+        const [slug, module] = moduleEntries[(startIndex + index + 1) % moduleEntries.length]
+
+        return {
+            title: module.banner?.title,
+            desc: module.banner?.description,
+            href: `/modules/${slug}`,
+        }
+    }).slice(0, 3)
+
     return (
         <section>
             <div className="container">
