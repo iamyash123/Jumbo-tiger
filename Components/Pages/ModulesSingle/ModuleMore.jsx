@@ -1,27 +1,27 @@
 import React from 'react'
-import GradientStepMark from '@/Components/Common/Gradientstepmark'
 import Link from 'next/link';
 import { modulesData } from '@/data/modulesData'
+import Image from 'next/image';
 
 const defaultContent = {
     heading: 'EXPLORE MORE',
     subtitle: 'Works With These Modules',
     items: [
-    {
-        title: "Inventory & Occupancy",
-        desc: "Real-time availability feeds directly into the booking pipeline.",
-        href: '/',
-    },
-    {
-        title: "Payments & Rent",
-        desc: "Deposit collection and first rent payment integrated into onboarding.",
-        href: '/',
-    },
-    {
-        title: "Tenant Portal",
-        desc: "Residents access their welcome pack and community from day one.",
-        href: '/',
-    }
+        {
+            title: "Inventory & Occupancy",
+            desc: "Real-time availability feeds directly into the booking pipeline.",
+            href: '/',
+        },
+        {
+            title: "Payments & Rent",
+            desc: "Deposit collection and first rent payment integrated into onboarding.",
+            href: '/',
+        },
+        {
+            title: "Tenant Portal",
+            desc: "Residents access their welcome pack and community from day one.",
+            href: '/',
+        }
     ]
 }
 const ModuleMore = ({ content = defaultContent, currentSlug }) => {
@@ -34,6 +34,9 @@ const ModuleMore = ({ content = defaultContent, currentSlug }) => {
 
         return {
             title: module.banner?.title,
+            image: module.banner?.cardImage?.startsWith('/')
+                ? module.banner.cardImage
+                : `/${module.banner?.cardImage || 'images/booking-card.svg'}`,
             desc: module.banner?.description,
             href: `/modules/${slug}`,
         }
@@ -49,8 +52,13 @@ const ModuleMore = ({ content = defaultContent, currentSlug }) => {
                 <div className="grid grid-cols-1 md:grid-cols-3">
                     {items.map((item, index) => (
                         <div key={index} className='padding-80 px-5 lg:px-10 border border-[#E5E7EB]'>
-                            <GradientStepMark />
-                            <div className='mt-6 lg:mt-10'>
+                            <Image
+                                src={item.image}
+                                alt={item.title}
+                                width={400}
+                                height={200}
+                                className='rounded-2xl' loading='lazy'
+                            />                            <div className='mt-6 lg:mt-10'>
                                 <h6 className="semibold">{item.title}</h6>
                                 <p className="!mt-4 grey">{item.desc}</p>
                             </div>

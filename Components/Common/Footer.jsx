@@ -19,7 +19,7 @@ const Footer = () => {
                             <div className="w-full lg:w-1/4 p-5 lg:p-10 lg:!pb-20 relative">
                                 <div className="relative z-2">
                                     <Link href={"/"}>
-                                        <Image loading="lazy" src={FooterlogoImg} alt="footer-logo" />
+                                        <Image loading="lazy" src={FooterlogoImg} alt="JumboTiger logo" />
                                     </Link>
                                     <p className="small white !mt-6">
                                         Custom property management software built for serious coliving operators. Live in 30 days.
@@ -37,22 +37,22 @@ const Footer = () => {
                                         <Link href={"/"} className="footer-link">
                                             What is JumboTiger
                                         </Link>
-                                        <Link href={"/"} className="footer-link">
+                                        <Link href={"/modules"} className="footer-link">
                                             All Modules
                                         </Link>
-                                        <Link href={"/"} className="footer-link">
+                                        <Link href={"/modules/booking-onboarding"} className="footer-link">
                                             Booking & Onboarding
                                         </Link>
-                                        <Link href={"/"} className="footer-link">
+                                        <Link href={"/modules/payments-rent"} className="footer-link">
                                             Payments & Rent
                                         </Link>
-                                        <Link href={"/"} className="footer-link">
+                                        <Link href={"/modules/tenant-portal"} className="footer-link">
                                             Tenant Portal
                                         </Link>
-                                        <Link href={"/"} className="footer-link">
+                                        <Link href={"/modules/ai-layer"} className="footer-link">
                                             AI Layer
                                         </Link>
-                                        <Link href={"/"} className="footer-link">
+                                        <Link href={"/modules/integrations-hub"} className="footer-link">
                                             Integrations Hub
                                         </Link>
                                     </div>
@@ -60,7 +60,7 @@ const Footer = () => {
                                 <div className="quicklinks w-full md:w-1/3 p-5 lg:p-10 lg:!pb-20 ">
                                     <p className="small white semibold title">Company</p>
                                     <div className="links">
-                                        <Link href={"/"} className="footer-link">
+                                        <Link href={"/about-us"} className="footer-link">
                                             About Us
                                         </Link>
                                         <Link href={"/"} className="footer-link">

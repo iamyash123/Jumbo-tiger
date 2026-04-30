@@ -15,9 +15,9 @@ const Banner = () => {
                 <div className="border-x px-5 lg:px-10 padding-80 border-[#E5E7EB] flex flex-col lg:flex-row gap-10">
                     <div className="w-full lg:max-w-[512px] flex flex-col gap-6 lg:gap-10 my-auto">
                         <Link href={'https://www.everythingcoliving.com/'} target='_blank' className='flex gap-2 items-center'>
-                            <Image src={Ecicon} alt='ecicon' loading='lazy' />
+                            <Image src={Ecicon} alt='Everything Coliving logo' loading='lazy' />
                             <p className='semibold'>Built by Coliving experts</p>
-                            <Image src={ArrowUp} alt='ecicon' loading='lazy' />
+                            <Image src={ArrowUp} alt='' aria-hidden="true" loading='lazy' />
                         </Link>
                         <div>
                             <h1 className="bold">
@@ -29,7 +29,7 @@ const Banner = () => {
                             </p>
                         </div>
                         <div className='flex gap-4 flex-col md:flex-row'>
-                            <Link href={'/bookdemo'} className='primary-btn w-fit large'>Book a Free demo</Link>
+                            <Link href={'/contact-us'} className='primary-btn w-fit large'>Book a Free demo</Link>
                             <Button className='outline-btn large'>Platform Preview</Button>
                         </div>
                         <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
@@ -43,7 +43,7 @@ const Banner = () => {
 
                                 {/* Pattern */}
                                 <div className='right-0 absolute bottom-0'>
-                                    <Image src={Spattern} alt='' loading='lazy' />
+                                    <Image src={Spattern} alt='' aria-hidden="true" loading='lazy' />
                                 </div>
                             </div>
                             <div className="relative w-full h-[172px] bg-[#F3F4F6] rounded-2xl overflow-hidden ">
@@ -57,13 +57,13 @@ const Banner = () => {
                                 {/* Pattern */}
                                 {/* Pattern */}
                                 <div className='right-0 absolute bottom-0'>
-                                    <Image src={Rpattern} alt='' loading='lazy' />
+                                    <Image src={Rpattern} alt='' aria-hidden="true" loading='lazy' />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className='my-auto'>
-                        <Image src={BannerImg} loading='lazy' alt='Hero-img' className='w-full rounded-2xl' />
+                        <Image src={BannerImg} loading='lazy' alt='JumboTiger property management dashboard preview' className='w-full rounded-2xl' />
                     </div>
                 </div>
             </div>

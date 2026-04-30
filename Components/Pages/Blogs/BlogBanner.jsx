@@ -25,7 +25,7 @@ const BlogBanner = () => {
                     </div>
                     <div className="p-6 border-y border-[#] flex flex-col gap-4 lg:flex-row">
                         <div className="lg:w-1/2">
-                            <Image src={ModuleImg} loading='lazy' alt='Hero-img' className='w-full rounded-2xl' />
+                            <Image src={ModuleImg} loading='lazy' alt='Property management module preview' className='w-full rounded-2xl' />
                         </div>
                         <div className="lg:w-1/2 my-auto">
                             <div className="lg:p-6">

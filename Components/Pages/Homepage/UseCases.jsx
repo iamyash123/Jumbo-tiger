@@ -1,34 +1,68 @@
 import React from 'react'
-import StepMark from '@/Components/Common/StepMark'
 import Image from 'next/image';
 import Usecase from '@/public/images/usecase.webp';
 import Quoteicon from '@/public/images/quote.svg'
+import BankIconTile from '@/Components/Common/IconComponents/BankIconTile';
+import ClockIconTile from '@/Components/Common/IconComponents/ClockIconTile';
+import GraduateIconTile from '@/Components/Common/IconComponents/GraduateIconTile';
+import HouseIconTile from '@/Components/Common/IconComponents/HouseIconTile';
+import CursorTargetIconTile from '@/Components/Common/IconComponents/CursorTargetIconTile';
+import LightningIconTile from '@/Components/Common/IconComponents/LightningIconTile';
 
 
 const useCasesData = [
     {
+        icon: HouseIconTile,
+        iconProps: {
+            backgroundClass: 'bg-black',
+
+        },
         title: "Coliving",
         desc: "Per-bed billing, community management, flexible stays, and shared space operations."
     },
     {
+        icon: BankIconTile,
+        iconProps: {
+            backgroundClass: 'bg-black',
+        },
         title: "Built to Rent",
-        desc: "Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation."
+        desc: "Institutional-grade reporting, amenity management, and resident lifecycle tools."
     },
     {
+        icon: ClockIconTile,
+        iconProps: {
+            backgroundClass: 'bg-black',
+        },
         title: "Flex Living",
-        desc: "Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation."
+        desc: "Short-to-long stay management, dynamic pricing, and channel distribution."
     },
     {
+        icon: GraduateIconTile,
+        iconProps: {
+            backgroundClass: 'bg-black',
+        },
         title: "Student Housing",
-        desc: "Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation."
+        desc: "University partnerships, academic year cycles, and bulk onboarding."
     },
     {
+        icon: CursorTargetIconTile,
+        iconProps: {
+            backgroundClass: 'bg-black',
+            iconGradient: ['#FFFFFF', '#BB94FF', '#9B6CFF'],
+            shadowClass: 'none'
+        },
         title: "Serviced Apartments",
-        desc: "Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation."
+        desc: "Housekeeping schedules, OTA integration, and short-stay management."
     },
     {
+        icon: LightningIconTile,
+        iconProps: {
+            backgroundClass: 'bg-black',
+            iconGradient: ['#FFFFFF', '#BB94FF', '#9B6CFF'],
+            shadowClass: 'none'
+        },
         title: "Residential Rental",
-        desc: "Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation."
+        desc: "Traditional tenancy management, compliance, and portfolio reporting."
     }
 ];
 
@@ -45,9 +79,9 @@ const UseCases = () => {
                             Built for Every Operator Type
                         </p>
                         <div className='mt-10 relative'>
-                            <Image src={Usecase} alt='Usecase' loading='lazy' className='w-full h-100 md:h-full rounded-2xl' />
+                            <Image src={Usecase} alt='Coliving property operations preview' loading='lazy' className='w-full h-100 md:h-full rounded-2xl' />
                             <div className="p-5 md:p-10 w-full absolute bottom-0">
-                                <Image src={Quoteicon} alt='Quoteicon' loading='lazy' />
+                                <Image src={Quoteicon} alt='' aria-hidden="true" loading='lazy' />
                                 <p className="large white !my-4">
                                     We used to spend 3-4 days onboarding each new resident. With JumboTiger, it&apos;s done in under 2 hours. The housemate matching alone has cut our early move-outs by 40%.
                                 </p>
@@ -59,15 +93,19 @@ const UseCases = () => {
 
                     {/* Right Content */}
                     <div className="padding-80 xl:w-1/2 px-5 lg:px-10 border-t border-[#EDEDED] xl:border-0">
-                        {useCasesData.map((item, index) => (
-                            <div key={index} className='flex flex-col md:flex-row gap-6 py-4 first:pt-0 last:pb-0 first:pb-6 last:pt-6'>
-                                <StepMark />
-                                <div>
-                                    <h6 className="semibold">{item.title}</h6>
-                                    <p className="!mt-3">{item.desc}</p>
+                        {useCasesData.map((item, index) => {
+                            const CaseIcon = item.icon
+
+                            return (
+                                <div key={index} className='flex flex-col md:flex-row gap-6 py-4 first:pt-0 last:pb-0 first:pb-6 last:pt-6'>
+                                    <CaseIcon {...item.iconProps} />
+                                    <div>
+                                        <h6 className="semibold">{item.title}</h6>
+                                        <p className="!mt-3">{item.desc}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            )
+                        })}
                     </div>
 
                 </div>

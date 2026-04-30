@@ -10,20 +10,25 @@ import Logo from "@/public/images/header-logo.svg";
 import RightArrow from "@/public/images/arrow-right-header.svg";
 import LeftArrow from "@/public/images/arrow-left-header.svg";
 import Rightup from "@/public/images/arrow-right-up.svg";
-import StepMark from "./StepMark";
+import StepMark from "./IconComponents/StepMark";
+import DynamicIconTile from "./IconComponents/DynamicIconTile";
 import { DropDownArrow } from "./MenuIcon";
 import { modulesData } from "@/data/modulesData";
 import { usecasesData } from "@/data/usecasesData";
 
 const moduleLinks = Object.entries(modulesData).map(([slug, data]) => ({
+    slug,
+    slugLabel: slug.replaceAll("-", " "),
     title: data.banner?.title || slug,
     icon: data.banner?.icon,
     href: `/modules/${slug}`,
 }));
 
 const usecaseLinks = Object.entries(usecasesData).map(([slug, data]) => ({
+    slug,
+    slugLabel: slug.replaceAll("-", " ").replace(/\s*software\s*/g, " ").trim(),
     title: data.banner?.eyebrow || data.banner?.title || slug,
-    description: data.banner?.description || "",
+    icon: data.banner?.icon,
     href: `/usecases/${slug}`,
 }));
 
@@ -32,9 +37,33 @@ const ModuleIcon = ({ icon }) => {
         return <StepMark size={40} radius={8} />;
     }
 
+    if (typeof icon !== "string") {
+        const { className = "", ...iconProps } = icon.props || {};
+
+        return (
+            <DynamicIconTile
+                icon={{
+                    ...icon,
+                    props: {
+                        sizeClass: "size-10",
+                        radiusClass: "rounded-md",
+                        backgroundClass: "bg-white",
+                        shadowClass: "shadow-[0_3.413px_3.413px_0_rgba(0,0,0,0.25)]",
+                        iconColor: "#000000",
+                        iconGradient: "",
+                        svgWidth: 24,
+                        svgHeight: 24,
+                        className: `[&_svg]:size-6 ${className}`,
+                        ...iconProps,
+                    },
+                }}
+            />
+        );
+    }
+
     return (
         <span
-            className="size-10 flex items-center justify-center bg-white rounded-lg shadow-[0_3.413px_3.413px_0_rgba(0,0,0,0.25)]"
+            className="size-10 flex items-center justify-center bg-white rounded-md [&_svg]:size-6"
             dangerouslySetInnerHTML={{
                 __html: icon
                     .replaceAll("< path", "<path")
@@ -44,6 +73,42 @@ const ModuleIcon = ({ icon }) => {
     );
 };
 
+const Usecases = ({ icon }) => {
+    if (!icon) {
+        return <StepMark size={40} radius={8} />;
+    }
+
+    if (typeof icon !== "string") {
+        return (
+            <DynamicIconTile
+                icon={{
+                    ...icon,
+                    props: {
+                        ...(icon.props || {}),
+                        sizeClass: "size-10",
+                        radiusClass: "rounded-lg",
+                        backgroundClass: "bg-white",
+                        shadowClass: "shadow-[0_3.413px_3.413px_0_rgba(0,0,0,0.25)]",
+                        svgWidth: 24,
+                        svgHeight: 24,
+                        className: `[&_svg]:size-6 ${icon.props?.className || ""}`,
+                    },
+                }}
+            />
+        );
+    }
+
+    return (
+        <span
+            className="size-10 flex items-center justify-center bg-white rounded-lg shadow-[0_3.413px_3.413px_0_rgba(0,0,0,0.25)] [&_svg]:size-6"
+            dangerouslySetInnerHTML={{
+                __html: icon
+                    .replaceAll("< path", "<path")
+                    .replaceAll("</svg >", "</svg>"),
+            }}
+        />
+    );
+};
 const Header = () => {
     const pathname = usePathname();
 
@@ -240,7 +305,7 @@ const Header = () => {
                     <div className="logo-container">
                         <div className="flex gap-3 md:gap-4 items-center">
                             <Link href="/">
-                                <Image src={Logo} alt="Jumbo-Tiger logo" className="logo" style={{ width: "auto", height: "auto" }} />
+                                <Image src={Logo} alt="JumboTiger logo" loading="lazy" className="logo" style={{ width: "auto", height: "auto" }} />
                             </Link>
                         </div>
                     </div>
@@ -257,17 +322,24 @@ const Header = () => {
                                         <div className="container">
                                             <div className="dropdown-inner w-full">
                                                 <div className="grid grid-cols-3">
-                                                    {moduleLinks.map((item) => (
-                                                        <Link
-                                                            key={item.href}
-                                                            href={item.href}
-                                                            className="flex gap-4 items-center p-4 border border-transparent hover:bg-[#F3F4F6] hover:border-[#E5E7EB]"
-                                                        >
-                                                            <ModuleIcon icon={item.icon} />
+                                                    {moduleLinks.map((item) => {
+                                                        const isActive = pathname === item.href;
 
-                                                            <p className="bold">{item.title}</p>
-                                                        </Link>
-                                                    ))}
+                                                        return (
+                                                            <Link
+                                                                key={item.href}
+                                                                href={item.href}
+                                                                className={`flex gap-4 items-center p-4 border hover:bg-[#F3F4F6] hover:border-[#E5E7EB] ${isActive
+                                                                    ? "bg-[#F3F4F6] border-[#E5E7EB]"
+                                                                    : "border-transparent"
+                                                                    }`}
+                                                            >
+                                                                <ModuleIcon icon={item.icon} />
+
+                                                                <p className={`bold capitalize ${isActive ? "text-[#4F0FBD]" : ""}`}>{item.slugLabel}</p>
+                                                            </Link>
+                                                        );
+                                                    })}
                                                 </div>
                                             </div>
                                         </div>
@@ -283,13 +355,46 @@ const Header = () => {
                                         <div className="container !justify-center">
                                             <div className="dropdown-inner">
                                                 <div className="industries-grid">
-                                                    {usecaseLinks.map((item) => (
-                                                        <Link key={item.href} href={item.href} className="industries-item">
-                                                            <div>
-                                                                <p className="bold">{item.title}</p>
-                                                            </div>
-                                                        </Link>
-                                                    ))}
+                                                    <Link href={'/usecases/coliving-software'} className="industries-item ">
+                                                        <div className="flex gap-4 !flex-row items-center">
+                                                            <p className="bold capitalize">Coliving</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link href={'/usecases/btr-software'} className="industries-item ">
+                                                        <div className="flex gap-4 !flex-row items-center">
+                                                            <p className="bold capitalize">Build-to-Rent</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link href={'/usecases/flex-living-software'} className="industries-item ">
+                                                        <div className="flex gap-4 !flex-row items-center">
+                                                            <p className="bold capitalize">Flex Living</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link href={'/usecases/student-housing-software'} className="industries-item ">
+                                                        <div className="flex gap-4 !flex-row items-center">
+                                                            <p className="bold capitalize">Student Housing</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link href={'/usecases/serviced-apartments-software'} className="industries-item ">
+                                                        <div className="flex gap-4 !flex-row items-center">
+                                                            <p className="bold capitalize">Serviced Apartments</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link href={'/usecases/residential-rental-software'} className="industries-item ">
+                                                        <div className="flex gap-4 !flex-row items-center">
+                                                            <p className="bold capitalize">Residential Rental</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link href={'/usecases/corporate-housing-software'} className="industries-item ">
+                                                        <div className="flex gap-4 !flex-row items-center">
+                                                            <p className="bold capitalize">Corporate Housing</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link href={'/usecases/pg-hostel-software'} className="industries-item ">
+                                                        <div className="flex gap-4 !flex-row items-center">
+                                                            <p className="bold capitalize">Pg & Hostel</p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -342,25 +447,25 @@ const Header = () => {
                                 <li className="nav-link services">
                                     <Link href="#" id="services-link">
                                         Modules
-                                        <Image src={RightArrow} alt="" aria-hidden="true" />
+                                        <Image src={RightArrow} alt="" loading="lazy" aria-hidden="true" />
                                     </Link>
                                 </li>
                                 <li className="nav-link">
                                     <Link href="#" id="industries-link">
                                         Usecases
-                                        <Image src={RightArrow} alt="" aria-hidden="true" />
+                                        <Image src={RightArrow} alt="" loading="lazy" aria-hidden="true" />
                                     </Link>
                                 </li>
                                 {/* <li className="nav-link work">
                                     <Link href="#" id="work-link">
                                         Pricing
-                                        <Image src={RightArrow} alt="" aria-hidden="true" />
+                                        <Image src={RightArrow} alt="" loading="lazy" aria-hidden="true" />
                                     </Link>
                                 </li> */}
                                 <li className="nav-link resources">
                                     <Link href="#" id="resources-link">
                                         Resources
-                                        <Image src={RightArrow} alt="" aria-hidden="true" />
+                                        <Image src={RightArrow} alt="" loading="lazy" aria-hidden="true" />
                                     </Link>
                                 </li>
 
@@ -376,7 +481,7 @@ const Header = () => {
                                                 <p className="small flex justify-between items-center w-full">
                                                     {item.title}
                                                 </p>
-                                                <Image src={Rightup} alt="" aria-hidden="true" />
+                                                <Image src={Rightup} alt="" loading="lazy" aria-hidden="true" />
                                             </Link>
                                         ))}
                                     </div>
@@ -384,16 +489,46 @@ const Header = () => {
 
                                 <MobilePanel id="industries-content" title="Usecases">
                                     <div className="industries-grid">
-                                        {usecaseLinks.map((item) => (
-                                            <Link key={item.href} href={item.href} className="industries-item">
-                                                <div>
-                                                    <h6 className="bold">{item.title}</h6>
-                                                    <p className="lightgrey !mt-0.5">
-                                                        {item.description}
-                                                    </p>
-                                                </div>
-                                            </Link>
-                                        ))}
+                                        <Link href={'/usecases/coliving-software'} className="industries-item ">
+                                            <div className="flex gap-4 !flex-row items-center">
+                                                <p className="bold capitalize">Coliving</p>
+                                            </div>
+                                        </Link>
+                                        <Link href={'/usecases/btr-software'} className="industries-item ">
+                                            <div className="flex gap-4 !flex-row items-center">
+                                                <p className="bold capitalize">Build-to-Rent</p>
+                                            </div>
+                                        </Link>
+                                        <Link href={'/usecases/flex-living-software'} className="industries-item ">
+                                            <div className="flex gap-4 !flex-row items-center">
+                                                <p className="bold capitalize">Flex Living</p>
+                                            </div>
+                                        </Link>
+                                        <Link href={'/usecases/student-housing-software'} className="industries-item ">
+                                            <div className="flex gap-4 !flex-row items-center">
+                                                <p className="bold capitalize">Student Housing</p>
+                                            </div>
+                                        </Link>
+                                        <Link href={'/usecases/serviced-apartments-software'} className="industries-item ">
+                                            <div className="flex gap-4 !flex-row items-center">
+                                                <p className="bold capitalize">Serviced Apartments</p>
+                                            </div>
+                                        </Link>
+                                        <Link href={'/usecases/residential-rental-software'} className="industries-item ">
+                                            <div className="flex gap-4 !flex-row items-center">
+                                                <p className="bold capitalize">Residential Rental</p>
+                                            </div>
+                                        </Link>
+                                        <Link href={'/usecases/corporate-housing-software'} className="industries-item ">
+                                            <div className="flex gap-4 !flex-row items-center">
+                                                <p className="bold capitalize">Corporate Housing</p>
+                                            </div>
+                                        </Link>
+                                        <Link href={'/usecases/pg-hostel-software'} className="industries-item ">
+                                            <div className="flex gap-4 !flex-row items-center">
+                                                <p className="bold capitalize">Pg & Hostel</p>
+                                            </div>
+                                        </Link>
                                     </div>
                                 </MobilePanel>
 
@@ -401,11 +536,11 @@ const Header = () => {
                                     <div className="capability-link">
                                         <Link href="/portfolio" className="flex items-center gap-4 pl-2 pr-5 py-4 border-b border-[#D9D9D9]">
                                             <p className="small flex justify-between items-center w-full">Portfolio</p>
-                                            <Image src={Rightup} alt="" aria-hidden="true" />
+                                            <Image src={Rightup} alt="" loading="lazy" aria-hidden="true" />
                                         </Link>
                                         <Link href="/case-studies" className="flex items-center gap-4 pl-2 pr-5 py-4 border-b border-[#D9D9D9]">
                                             <p className="small flex justify-between items-center w-full">Case Studies</p>
-                                            <Image src={Rightup} alt="" aria-hidden="true" />
+                                            <Image src={Rightup} alt="" loading="lazy" aria-hidden="true" />
                                         </Link>
                                     </div>
                                 </MobilePanel>
@@ -414,7 +549,7 @@ const Header = () => {
                                     <div className="capability-link">
                                         <Link href="/blogs" className="flex items-center gap-4 pl-2 pr-5 py-4 border-b border-[#D9D9D9]">
                                             <p className="small flex justify-between items-center w-full">Blogs</p>
-                                            <Image src={Rightup} alt="" aria-hidden="true" />
+                                            <Image src={Rightup} alt="" loading="lazy" aria-hidden="true" />
                                         </Link>
                                     </div>
                                 </MobilePanel>
@@ -424,7 +559,7 @@ const Header = () => {
 
                     <div className="flex items-center">
                         <div className="cta-desktop">
-                            <Link href="/bookdemo" className="primary-btn">
+                            <Link href="/contact-us" className="primary-btn">
                                 Book a demo
                             </Link>
                         </div>
@@ -444,7 +579,7 @@ const MobilePanel = ({ id, title, children }) => (
     <div className="next-step" id={id}>
         <div className="top">
             <Link href="#" className="flex gap-2 items-center justify-between w-full">
-                <Image src={LeftArrow} alt="" aria-hidden="true" />
+                <Image src={LeftArrow} alt="" loading="lazy" aria-hidden="true" />
                 {title}
                 <div className="w-[30px]"></div>
             </Link>

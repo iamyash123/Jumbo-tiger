@@ -25,7 +25,7 @@ const ModuleBanner = () => {
                                 </p>
                             </div>
                             <div className='flex gap-4 flex-col justify-center items-center md:flex-row'>
-                                <Link href={'/bookdemo'} className='primary-btn large'>Book a Free demo</Link>
+                                <Link href={'/contact-us'} className='primary-btn large'>Book a Free demo</Link>
                                 <Link href="#all-module" className='outline-btn large !text-white'>View all Modules</Link>
                             </div>
                         </div>

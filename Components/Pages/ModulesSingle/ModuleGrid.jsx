@@ -69,7 +69,7 @@ const ModuleGrid = ({ items = defaultItems }) => {
 
                                 {/* LEFT CONTENT */}
                                 <div
-                                    className={`lg:w-1/2 padding-80 my-auto px-5  lg:px-20 ${isReverse ? "lg:order-2" : ""
+                                    className={`lg:w-1/2 my-auto p-5  md:p-10  lg:p-20 ${isReverse ? "lg:order-2" : ""
                                         }`}
                                 >
                                     <h2 className="bold">{item.title}</h2>
@@ -95,7 +95,7 @@ const ModuleGrid = ({ items = defaultItems }) => {
 
                                 {/* RIGHT CONTENT */}
                                 <div
-                                    className={`lg:w-1/2 padding-80 px-5 lg:px-10 flex items-center justify-center border-[#EDEDED] 
+                                    className={`lg:w-1/2 p-5 md:px-10 pt-0 lg:p-20 flex items-center justify-center border-[#EDEDED] 
                                     ${index % 2 === 0 ? "border-l" : "border-r"} 
                                     ${isReverse ? "lg:order-1" : ""}`}
                                 >
@@ -105,6 +105,7 @@ const ModuleGrid = ({ items = defaultItems }) => {
                                             alt={item.title}
                                             width={500}
                                             height={400}
+                                            loading="lazy"
                                             className="w-full h-auto object-contain"
                                         />
                                     )}

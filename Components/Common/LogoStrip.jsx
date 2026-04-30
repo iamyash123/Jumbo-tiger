@@ -12,12 +12,12 @@ const LogoStrip = () => {
         <section className='bg-[#F3F4F6]  border-t border-[#E5E7EB]'>
             <div className="container">
                 <div className="border-x padding-80 border-[#E5E7EB] flex justify-center items-center flex-wrap gap-6 lg:gap-10">
-                    <Image src={StripeIcon} loading='lazy' alt='StripeIcon' />
-                    <Image src={XeroIcon} loading='lazy' alt='XeroIcon' />
-                    <Image src={HubspotIcon} loading='lazy' alt='HubspotIcon' />
-                    <Image src={TwilloIcon} loading='lazy' alt='TwilloIcon' />
-                    <Image src={BookingIcon} loading='lazy' alt='BookingIcon' />
-                    <Image src={AirbnbIcon} loading='lazy' alt='AirbnbIcon' />
+                    <Image src={StripeIcon} loading='lazy' alt='Stripe logo' />
+                    <Image src={XeroIcon} loading='lazy' alt='Xero logo' />
+                    <Image src={HubspotIcon} loading='lazy' alt='HubSpot logo' />
+                    <Image src={TwilloIcon} loading='lazy' alt='Twilio logo' />
+                    <Image src={BookingIcon} loading='lazy' alt='Booking.com logo' />
+                    <Image src={AirbnbIcon} loading='lazy' alt='Airbnb logo' />
                 </div>
             </div>
         </section>

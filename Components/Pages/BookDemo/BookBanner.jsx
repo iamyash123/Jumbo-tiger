@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import StepMark from '@/Components/Common/StepMark'
+import StepMark from '@/Components/Common/IconComponents/StepMark'
 import { Button, Input, Label } from '@heroui/react'
 import '@/public/styles/input.scss'
 

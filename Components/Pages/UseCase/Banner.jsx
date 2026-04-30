@@ -7,10 +7,6 @@ const defaultContent = {
     eyebrow: 'Coliving',
     title: 'The PMS Built for How Coliving Actually Works',
     description: 'Traditional PMS tools were not designed for community-driven, flexible-lease, shared-space living. JumboTiger was. Get software that understands beds, not just units.',
-    primaryLabel: 'Book a Free demo',
-    primaryHref: '/bookdemo',
-    secondaryLabel: 'Explore Modules',
-    secondaryHref: '/modules/booking-onboarding',
 }
 
 const Banner = ({ content = defaultContent }) => {
@@ -18,10 +14,6 @@ const Banner = ({ content = defaultContent }) => {
         eyebrow,
         title,
         description,
-        primaryLabel,
-        primaryHref,
-        secondaryLabel,
-        secondaryHref,
     } = content
 
     return (
@@ -57,8 +49,8 @@ const Banner = ({ content = defaultContent }) => {
                                 </p>
                             </div>
                             <div className='flex gap-4 flex-col items-center justify-center md:flex-row'>
-                                <Link href={primaryHref} className='primary-btn large'>{primaryLabel}</Link>
-                                <Link href={secondaryHref} className='outline-btn large w-fit !text-white'>{secondaryLabel}</Link>
+                                <Link href={'/contact-us'} className='primary-btn large'>Book a Free demo</Link>
+                                <Link href={'/modules'} className='outline-btn large w-fit !text-white'>Explore Modules</Link>
                             </div>
                         </div>
                     </div>

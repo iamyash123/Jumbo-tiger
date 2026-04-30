@@ -1,5 +1,5 @@
 import React from 'react'
-import GradientStepMark from '@/Components/Common/Gradientstepmark';
+import GradientStepMark from '@/Components/Common/IconComponents/Gradientstepmark';
 const defaultContent = {
     heading: 'CHALLENGE',
     subtitle: 'Manual Onboarding Costs You Beds & Revenue',

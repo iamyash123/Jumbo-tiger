@@ -7,7 +7,9 @@ const Modules = () => {
 
     const modules = Object.entries(modulesData).slice(0, 9).map(([slug, module]) => ({
         slug,
-        image: module.grid?.[0]?.image || '/images/card-img.png',
+        image: module.banner?.cardImage?.startsWith('/')
+            ? module.banner.cardImage
+            : `/${module.banner?.cardImage || 'images/booking-card.svg'}`,
         title: module.banner?.title,
         description: module.banner?.description,
         link: `/modules/${slug}`,

@@ -120,7 +120,7 @@ const ClientWords = ({ content = defaultContent }) => {
                             >
                                 {testimonials.map((testimonial) => (
                                     <SwiperSlide className="!h-auto my-auto" key={testimonial.name}>
-                                        <Image src={Quoteicon} alt="Quotricon" className="mb-6" loading="lazy" />
+                                        <Image src={Quoteicon} alt="" aria-hidden="true" className="mb-6" loading="lazy" />
                                         <div className="flex flex-col justify-center">
                                             <p className="white large">{testimonial.quote}</p>
                                             <div className="mt-6">

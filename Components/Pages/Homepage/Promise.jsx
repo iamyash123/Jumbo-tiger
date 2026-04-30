@@ -38,7 +38,7 @@ const Promise = () => {
                                 Custom software usually takes 6-12 months. We do it in 30 days because we&apos;ve already built the foundations.
                             </p>
                         </div>
-                        <Image src={StripPattern} alt='strip-pattern' loading='lazy' className='absolute z-2 left-0 bottom-10' />
+                        <Image src={StripPattern} alt='' aria-hidden="true" loading='lazy' className='absolute z-2 left-0 bottom-10 hidden lg:block' />
                     </div>
 
                     {/* Right Grid */}

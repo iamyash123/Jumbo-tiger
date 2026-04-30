@@ -190,6 +190,7 @@ const UsecaseGrid = ({ items = defaultItems }) => {
                                             alt={item.title}
                                             width={500}
                                             height={400}
+                                            loading="lazy"
                                             className="w-full h-auto object-contain"
                                         />
                                     )}

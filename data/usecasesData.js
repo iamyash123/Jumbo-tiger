@@ -4,10 +4,6 @@ export const usecasesData = {
             eyebrow: 'Coliving',
             title: 'The PMS Built for How Coliving Actually Works',
             description: 'Traditional PMS tools were not designed for community-driven, flexible-lease, shared-space living. JumboTiger was. Get software that understands beds, not just units.',
-            primaryLabel: 'Book a Free demo',
-            primaryHref: '/bookdemo',
-            secondaryLabel: 'Explore Modules',
-            secondaryHref: '/modules/booking-onboarding',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -175,9 +171,9 @@ export const usecasesData = {
             title: 'Ready to Run Coliving the Way It Should Be?',
             description: 'See how JumboTiger handles community, flexible leasing, bookings, and everything in between.',
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Platform Preview',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/contact-us',
         },
         stats: [
             { value: '92%', label: 'Resident app adoption' },
@@ -188,9 +184,9 @@ export const usecasesData = {
         workWith: {
             heading: 'Works With These Modules',
             items: [
-                { title: 'Coliving', desc: 'Per-bed billing, community management, flexible stays, and shared space operations.', href: '/usecases/coliving' },
-                { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
-                { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
+                { slug: 'tenant-portal' },
+                { slug: 'booking-onboarding' },
+                { slug: 'flex-living-software' },
             ],
         },
         clientWords: {
@@ -240,20 +236,19 @@ export const usecasesData = {
             title: 'Transform Your Coliving Operations',
             description: "Custom PMS built for how coliving actually works. Live in 30 days.",
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Explare All Modules',
             secondaryHref: '/',
         },
     },
     'btr-software': {
         banner: {
+            icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M20 2.48926C29.6707 2.48933 37.5107 10.3293 37.5107 20C37.5107 29.6707 29.6707 37.5107 20 37.5107C10.3293 37.5107 2.48933 29.6707 2.48926 20C2.48932 10.3293 10.3293 2.48932 20 2.48926ZM17.2109 22.8369L25.6777 27.7256L27.6777 24.2617L21.2109 20.5273V10.0781H17.2109V22.8369Z" fill="black"/>
+</svg>`,
             eyebrow: 'Build-to-Rent Software',
             title: 'Enterprise PMS for Institutional BTR Portfolios',
             description: 'Build-to-rent demands institutional-grade reporting, portfolio-wide analytics, and the scale to manage thousands of units. JumboTiger delivers.',
-            primaryLabel: 'Book a Free demo',
-            primaryHref: '/bookdemo',
-            secondaryLabel: 'Explore Modules',
-            secondaryHref: '/modules/booking-onboarding',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -408,9 +403,9 @@ export const usecasesData = {
             title: 'Ready to Scale BTR Operations?',
             description: 'See how JumboTiger handles institutional portfolios with enterprise-grade tools.',
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Platform Preview',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/contact-us',
         },
         stats: [
             { value: '5,000+', label: 'Units managed per client' },
@@ -421,9 +416,9 @@ export const usecasesData = {
         workWith: {
             heading: 'Works With These Modules',
             items: [
-                { title: 'Coliving', desc: 'Per-bed billing, community management, flexible stays, and shared space operations.', href: '/usecases/coliving' },
-                { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
-                { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
+                { slug: 'payments-rent' },
+                { slug: 'maintenance-work-orders' },
+                { slug: 'payments-rent' },
             ],
         },
         clientWords: {
@@ -473,7 +468,7 @@ export const usecasesData = {
             title: 'Scale Your BTR Operations with Confidence',
             description: "Enterprise PMS built for institutional build-to-rent portfolios.",
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Explare All Modules',
             secondaryHref: '/',
         },
@@ -483,10 +478,6 @@ export const usecasesData = {
             eyebrow: 'Flex Living Software',
             title: 'PMS Built for Short-to-Mid-Term Living Operators',
             description: 'Flex living means high turnover, flexible contracts, and dynamic pricing. JumboTiger handles the complexity so you can focus on growth.',
-            primaryLabel: 'Book a Free demo',
-            primaryHref: '/bookdemo',
-            secondaryLabel: 'Explore Modules',
-            secondaryHref: '/modules/booking-onboarding',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -641,9 +632,9 @@ export const usecasesData = {
             title: 'Ready to Scale Flex Living Operations?',
             description: 'See how JumboTiger handles dynamic pricing, high turnover, and flexible contracts.',
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Platform Preview',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/contact-us',
         },
         stats: [
             { value: '50%', label: 'Faster turnaround' },
@@ -654,9 +645,9 @@ export const usecasesData = {
         workWith: {
             heading: 'Works With These Modules',
             items: [
-                { title: 'Coliving', desc: 'Per-bed billing, community management, flexible stays, and shared space operations.', href: '/usecases/coliving' },
-                { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
-                { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
+                { slug: 'channel-manager' },
+                { slug: 'revenue-management' },
+                { slug: 'housekeeping-facilities' },
             ],
         },
         clientWords: {
@@ -702,7 +693,7 @@ export const usecasesData = {
             title: 'Scale Flex Living Without the Chaos',
             description: "PMS built for the speed and flexibility of short-to-mid-term living.",
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Explare All Modules',
             secondaryHref: '/',
         },
@@ -712,10 +703,6 @@ export const usecasesData = {
             eyebrow: 'Student Housing Software',
             title: 'PMS Built for the Academic Calendar',
             description: 'Student housing runs on academic cycles, bulk intakes, and guarantor requirements. JumboTiger handles the unique demands of PBSA and student accommodation.',
-            primaryLabel: 'Book a Free demo',
-            primaryHref: '/bookdemo',
-            secondaryLabel: 'Explore Modules',
-            secondaryHref: '/modules/booking-onboarding',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -870,9 +857,9 @@ export const usecasesData = {
             title: 'Ready to Streamline Student Housing Operations?',
             description: 'See how JumboTiger handles academic cycles, bulk intakes, and student accommodation at scale.',
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Platform Preview',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/contact-us',
         },
         stats: [
             { value: '500+', label: 'Students onboarded per intake' },
@@ -883,9 +870,9 @@ export const usecasesData = {
         workWith: {
             heading: 'Works With These Modules',
             items: [
-                { title: 'Coliving', desc: 'Per-bed billing, community management, flexible stays, and shared space operations.', href: '/usecases/coliving' },
-                { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
-                { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
+                { slug: 'booking-onboarding' },
+                { slug: 'screening-verification' },
+                { slug: 'tenant-portal' },
             ],
         },
         clientWords: {
@@ -931,7 +918,7 @@ export const usecasesData = {
             title: 'Simplify Student Housing at Scale',
             description: "PMS built for academic cycles, bulk intakes, and student accommodation.",
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Explare All Modules',
             secondaryHref: '/',
         },
@@ -941,10 +928,6 @@ export const usecasesData = {
             eyebrow: 'Serviced Apartments Software',
             title: 'PMS for Serviced Apartment Operators',
             description: 'Serviced apartments blend hospitality and residential. JumboTiger handles corporate bookings, dynamic pricing, housekeeping, and guest experience in one platform.',
-            primaryLabel: 'Book a Free demo',
-            primaryHref: '/bookdemo',
-            secondaryLabel: 'Explore Modules',
-            secondaryHref: '/modules/booking-onboarding',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -1099,9 +1082,9 @@ export const usecasesData = {
             title: 'Ready to Elevate Your Serviced Apartment Operations?',
             description: 'See how JumboTiger combines hospitality and residential management in one platform.',
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Platform Preview',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/contact-us',
         },
         stats: [
             { value: '25%', label: 'Revenue uplift from dynamic pricing' },
@@ -1112,9 +1095,9 @@ export const usecasesData = {
         workWith: {
             heading: 'Works With These Modules',
             items: [
-                { title: 'Coliving', desc: 'Per-bed billing, community management, flexible stays, and shared space operations.', href: '/usecases/coliving' },
-                { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
-                { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
+                { slug: 'channel-manager' },
+                { slug: 'housekeeping-facilities' },
+                { slug: 'payments-rent' },
             ],
         },
         clientWords: {
@@ -1160,7 +1143,7 @@ export const usecasesData = {
             title: 'Run Serviced Apartments Like a Pro',
             description: "PMS that combines hospitality and residential management.",
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Explare All Modules',
             secondaryHref: '/',
         },
@@ -1170,10 +1153,6 @@ export const usecasesData = {
             eyebrow: 'Residential Rental Software',
             title: 'Modern PMS for Residential Rental Portfolios',
             description: 'Whether you manage 50 units or 5,000, JumboTiger automates the repetitive work so your team can focus on growth and resident satisfaction.',
-            primaryLabel: 'Book a Free demo',
-            primaryHref: '/bookdemo',
-            secondaryLabel: 'Explore Modules',
-            secondaryHref: '/modules/booking-onboarding',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -1328,9 +1307,9 @@ export const usecasesData = {
             title: 'Ready to Modernize Your Rental Operations?',
             description: 'See how JumboTiger automates leasing, billing, and operations for residential portfolios.',
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Platform Preview',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/contact-us',
         },
         stats: [
             { value: '95%', label: 'On-time rent collection' },
@@ -1341,9 +1320,9 @@ export const usecasesData = {
         workWith: {
             heading: 'Works With These Modules',
             items: [
-                { title: 'Coliving', desc: 'Per-bed billing, community management, flexible stays, and shared space operations.', href: '/usecases/coliving' },
-                { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
-                { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
+                { slug: 'inventory-occupancy' },
+                { slug: 'maintenance-work-orders' },
+                { slug: 'owner-investor-portal' },
             ],
         },
         clientWords: {
@@ -1389,7 +1368,7 @@ export const usecasesData = {
             title: 'Modern PMS for Growing Portfolios',
             description: "Automate leasing, billing, and operations across your residential portfolio.",
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Explare All Modules',
             secondaryHref: '/',
         },
@@ -1399,10 +1378,6 @@ export const usecasesData = {
             eyebrow: 'Corporate Accommodation',
             title: 'Corporate Housing Software',
             description: 'Purpose-built PMS for companies housing employees on temporary assignments, relocations, and project deployments. Manage furnished apartments, employer portals, and billing -- all in one platform.',
-            primaryLabel: 'Book a Free demo',
-            primaryHref: '/bookdemo',
-            secondaryLabel: 'Explore Modules',
-            secondaryHref: '/modules/booking-onboarding',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -1518,9 +1493,9 @@ export const usecasesData = {
             title: 'Purpose-Built for Corporate Housing',
             description: 'See how JumboTiger streamlines corporate housing operations with client portals, split billing, and white-glove employee experiences.',
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Platform Preview',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/contact-us',
         },
         stats: [
             { value: '85%', label: 'Reduction in manual booking administration' },
@@ -1531,9 +1506,9 @@ export const usecasesData = {
         workWith: {
             heading: 'Works With These Modules',
             items: [
-                { title: 'Coliving', desc: 'Per-bed billing, community management, flexible stays, and shared space operations.', href: '/usecases/coliving' },
-                { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
-                { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
+                { slug: 'b2b-partners' },
+                { slug: 'lead-crm' },
+                { slug: 'document-management' },
             ],
         },
         clientWords: {
@@ -1579,21 +1554,16 @@ export const usecasesData = {
             title: 'Ready to Scale Corporate Housing?',
             description: "Book a demo and see how JumboTiger transforms corporate accommodation management.",
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Explare All Modules',
             secondaryHref: '/',
         },
-    }
-    ,
+    },
     'pg-hostel-software': {
         banner: {
             eyebrow: 'Shared Accommodation',
             title: 'PG & Hostel Management Software',
             description: 'Purpose-built PMS for paying guest accommodations, hostels, and shared living spaces. Bed-level inventory, meal plans, walk-in bookings, and community features -- designed for high-density, high-turnover operations.',
-            primaryLabel: 'Book a Free demo',
-            primaryHref: '/bookdemo',
-            secondaryLabel: 'Explore Modules',
-            secondaryHref: '/modules/booking-onboarding',
         },
         challenge: {
             heading: 'CHALLENGE',
@@ -1709,9 +1679,9 @@ export const usecasesData = {
             title: 'Built for High-Density Shared Living',
             description: 'See how JumboTiger handles bed-level inventory, meal plans, and walk-in bookings at scale.',
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Platform Preview',
-            secondaryHref: '/bookdemo',
+            secondaryHref: '/contact-us',
         },
         stats: [
             { value: '5min', label: 'Walk-in to fully onboarded resident' },
@@ -1722,9 +1692,9 @@ export const usecasesData = {
         workWith: {
             heading: 'Works With These Modules',
             items: [
-                { title: 'Coliving', desc: 'Per-bed billing, community management, flexible stays, and shared space operations.', href: '/usecases/coliving' },
-                { title: 'Built to Rent', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/built-to-rent' },
-                { title: 'Flex Living', desc: 'Applications, housemate matching, digital contracts, e-signatures, ID verification, welcome packs, and move-in automation.', href: '/usecases/flex-living' },
+                { slug: 'tenant-portal' },
+                { slug: 'access-control' },
+                { slug: 'facility-booking' },
             ],
         },
         clientWords: {
@@ -1770,7 +1740,7 @@ export const usecasesData = {
             title: 'Ready to Modernize PG & Hostel Operations?',
             description: "Book a demo and see how JumboTiger handles bed-level management, meal plans, and mixed payments at scale.",
             primaryLabel: 'Book a Demo',
-            primaryHref: '/bookdemo',
+            primaryHref: '/contact-us',
             secondaryLabel: 'Explare All Modules',
             secondaryHref: '/',
         },

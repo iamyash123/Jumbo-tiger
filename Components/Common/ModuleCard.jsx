@@ -11,6 +11,7 @@ const ModuleCard = ({ title, description, link, image }) => {
                     src={image}
                     alt={title}
                     fill
+                    loading="lazy"
                     className='object-cover rounded-2xl'
                 />
             </div>
