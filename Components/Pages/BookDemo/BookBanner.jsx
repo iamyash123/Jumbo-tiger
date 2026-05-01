@@ -4,7 +4,8 @@ import React from 'react'
 import StepMark from '@/Components/Common/IconComponents/StepMark'
 import { Button, Input, Label } from '@heroui/react'
 import '@/public/styles/input.scss'
-
+const selectClass =
+  'w-full h-12 bg-white border border-[#E0E0E0] cursor-pointer !text-[#333] rounded-lg px-4 text-sm focus:outline-none focus:border-[#111827] focus:bg-[#F3F4F6] transition appearance-none';
 const bannerData = [
   {
     title: 'Custom Demo',
@@ -86,12 +87,50 @@ const BookBanner = () => {
                 name="companyName"
                 className="popup-input md:col-span-2"
               />
+              <div>
+                <Label className='font-semibold'>Number of Beds</Label>
+                <div className="relative">
+                  <select
+                    name="category"
+                    defaultValue="Select range"
+                    className={selectClass}
+                  >
+                    <option>Select range</option>
+                    <option>Under 200</option>
+                    <option>200 - 500</option>
+                    <option>500 - 1,000</option>
+                    <option>1,000+</option>
+                  </select>
+                  {/* <ChevronDown className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" /> */}
+                </div>
+              </div>
+
+              <div>
+                <Label className='font-semibold'>Geography</Label>
+                <div className="relative">
+                  <select
+                    name="category"
+                    defaultValue="Select region"
+                    className={selectClass}
+                  >
+                    <option>Select region</option>
+                    <option>United Kingdom</option>
+                    <option>Europe</option>
+                    <option>Asia</option>
+                    <option>Americans</option>
+                    <option>Global / Multi-Region</option>
+                  </select>
+                  {/* <ChevronDown className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" /> */}
+                </div>
+              </div>
+
               <Label htmlFor="input-type-currentTools" className='font-semibold'>Current PMS / Tools</Label>
               <Input
                 name="currentTools"
                 placeholder=" "
                 className="popup-input md:col-span-2"
               />
+
               <Label htmlFor="input-type-problem" className='font-semibold'>What are you looking to solve? *</Label>
               <Input
                 name="problem"

@@ -36,6 +36,7 @@ const getSelectedCards = (items = [], limit = 3) => {
 
                 return {
                     title: usecaseData.banner?.eyebrow || usecaseData.banner?.title,
+                    cardDiscription: usecaseData.banner?.cardDiscription,
                     desc: usecaseData.banner?.description,
                     icon: getCardIcon(usecaseData.banner?.icon),
                     href: `/usecases/${slug}`,
@@ -47,6 +48,7 @@ const getSelectedCards = (items = [], limit = 3) => {
 
                 return {
                     title: moduleData.banner?.title,
+                    cardDiscription: moduleData.banner?.cardDiscription,
                     desc: moduleData.banner?.description,
                     icon: getCardIcon(moduleData.banner?.icon),
                     href: `/modules/${slug}`,
@@ -65,7 +67,7 @@ const RelatedCards = ({ items = [], limit = 3 }) => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-3">
             {cards.map((item, index) => (
-                <div key={`${item.href}-${index}`} className="padding-80 px-5 lg:px-10 border border-[#E5E7EB]">
+                <div key={`${item.href}-${index}`} className="p-5 lg:p-10 border border-[#E5E7EB]">
                     {item.icon ? (
                         <DynamicIconTile icon={item.icon} />
                     ) : (
@@ -73,7 +75,7 @@ const RelatedCards = ({ items = [], limit = 3 }) => {
                     )}
                     <div className="mt-6 lg:mt-10">
                         <h6 className="semibold">{item.title}</h6>
-                        <p className="!mt-4 grey">{item.desc}</p>
+                        <p className="!mt-4 grey">{item.cardDiscription?.trim() || item.desc}</p>
                     </div>
                     <Link href={item.href || '/'} className="outline-btn w-fit mt-6">Learn more</Link>
                 </div>

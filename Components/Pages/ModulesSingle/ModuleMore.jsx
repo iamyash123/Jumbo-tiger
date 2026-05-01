@@ -34,6 +34,8 @@ const ModuleMore = ({ content = defaultContent, currentSlug }) => {
 
         return {
             title: module.banner?.title,
+            stitle: module.banner?.cardDiscription,
+
             image: module.banner?.cardImage?.startsWith('/')
                 ? module.banner.cardImage
                 : `/${module.banner?.cardImage || 'images/booking-card.svg'}`,
@@ -49,18 +51,21 @@ const ModuleMore = ({ content = defaultContent, currentSlug }) => {
                     <h2 className="bold text-center">{heading}</h2>
                     <p className="mt-3! text-center">{subtitle}</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     {items.map((item, index) => (
-                        <div key={index} className='padding-80 px-5 lg:px-10 border border-[#E5E7EB]'>
-                            <Image
-                                src={item.image}
-                                alt={item.title}
-                                width={400}
-                                height={200}
-                                className='rounded-2xl' loading='lazy'
-                            />                            <div className='mt-6 lg:mt-10'>
+                        <div key={index} className='p-5 lg:p-10 border border-[#E5E7EB]'>
+                            <div className="relative w-full h-[200px]">
+                                <Image
+                                    src={item.image}
+                                    alt={item.title}
+                                    fill
+                                    loading="lazy"
+                                    className='object-cover rounded-2xl'
+                                />
+                            </div>
+                            <div className='mt-6 lg:mt-10'>
                                 <h6 className="semibold">{item.title}</h6>
-                                <p className="!mt-4 grey">{item.desc}</p>
+                                <p className="!mt-4 grey">{item.stitle?.trim() || item.desc}</p>
                             </div>
                             <Link href={item.href || '/'} className='outline-btn w-fit mt-6'>Learn more</Link>
                         </div>

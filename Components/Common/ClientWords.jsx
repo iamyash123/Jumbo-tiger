@@ -21,15 +21,15 @@ const defaultContent = {
         },
         {
             quote:
-                "JumboTiger gave our team one clean place for enquiries, contracts, payments, and support. The rollout felt fast without feeling rushed.",
-            name: "Michael Ross",
-            role: "Founder, Haven House",
+                "Managing 8 properties across 3 countries was chaos before JumboTiger. Now everything — from rent collection to compliance — is in one place. Our operational costs dropped 35%.",
+            name: "Marcus Weber",
+            role: "CEO, FlexStay Europe",
         },
         {
             quote:
-                "The best part is that it works the way our buildings work. We are not forcing coliving operations into generic property software anymore.",
-            name: "Amara Singh",
-            role: "Portfolio Manager, Shared Living Group",
+                "The AI chatbot handles 80% of resident queries without human intervention. Our response time went from 4 hours to under 30 seconds. Our NPS jumped from 32 to 71.",
+            name: "Priya Sharma",
+            role: "Head of Operations, CoLive India",
         },
     ],
 };

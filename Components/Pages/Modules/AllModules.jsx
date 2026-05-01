@@ -54,6 +54,7 @@ const getModuleCards = (slugs) => slugs
 
         return {
             title: moduleData.banner?.title,
+            cardDiscription: moduleData.banner?.cardDiscription,
             description: moduleData.banner?.description,
             href: `/modules/${slug}`,
         }
@@ -83,12 +84,12 @@ const sections = [
     },
 ]
 
-const ModuleCard = ({ title, description, href }) => {
+const ModuleCard = ({ title, cardDiscription, description, href }) => {
     return (
-        <article className="flex min-h-[214px] flex-col items-start justify-between gap-6 border border-[#E5E7EB] hover:bg-[#F3F4F6] p-5 lg:flex-row lg:items-end md:px-10 md:py-10">
+        <article className="flex flex-col items-start justify-between gap-6 border border-[#E5E7EB] hover:bg-[#F3F4F6] p-5 lg:flex-row lg:items-end md:px-10 md:py-10">
             <div className="min-w-0 flex-1">
                 <h6 className="">{title}</h6>
-                <p className="!mt-4 grey">{description}</p>
+                <p className="!mt-4 grey">{cardDiscription?.trim() || description}</p>
             </div>
             <Link
                 href={href}

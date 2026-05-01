@@ -6,7 +6,7 @@ const ModuleStats = ({ stats = defaultStats }) => {
             <div className="container">
                 <div className="grid grid-cols-2  lg:grid-cols-4">
                     {stats.map((item) => (
-                        <div key={`${item.value}-${item.label}`} className='padding-80 px-5 md:px-10 border border-[#E5E7EB]'>
+                        <div key={`${item.value}-${item.label}`} className='p-5 md:p-10 border border-[#E5E7EB]'>
                             <h2 className="bold">{item.value}</h2>
                             <p className="!mt-1 large grey">{item.label}</p>
                         </div>
