@@ -237,12 +237,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: 'Manual Rent Collection Kills Cash Flow',
             items: [
-                { title: 'Payment Chase', desc: 'Staff spending hours sending manual reminders, tracking partial payments, and reconciling bank statements.' },
-                { title: 'Static Pricing', desc: 'No ability to adjust rates dynamically based on demand, season, or occupancy -- leaving revenue on the table.' },
-                { title: 'Utility Nightmares', desc: 'Splitting utility bills across shared rooms and common areas requires complex spreadsheets with no real-time tracking.' },
-                { title: 'Deposit Disputes', desc: 'Manual deposit tracking leads to disputes, missing audit trails, and compliance headaches at move-out.' },
-                { title: 'Accounting Disconnects', desc: 'Data re-entered between PMS and accounting software, causing reconciliation errors and delayed reporting.' },
-                { title: 'Multi-Currency Chaos', desc: 'International operators juggling multiple currencies, tax rules, and payment methods across properties.' },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Payment Chase', desc: 'Staff spending hours sending manual reminders, tracking partial payments, and reconciling bank statements.'
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Static Pricing', desc: 'No ability to adjust rates dynamically based on demand, season, or occupancy -- leaving revenue on the table.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Utility Nightmares', desc: 'Splitting utility bills across shared rooms and common areas requires complex spreadsheets with no real-time tracking.'
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Deposit Disputes', desc: 'Manual deposit tracking leads to disputes, missing audit trails, and compliance headaches at move-out.'
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Accounting Disconnects', desc: 'Data re-entered between PMS and accounting software, causing reconciliation errors and delayed reporting.'
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Multi-Currency Chaos', desc: 'International operators juggling multiple currencies, tax rules, and payment methods across properties.'
+                },
             ],
         },
         grid: [
@@ -399,12 +447,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: 'Residents Deserve Better Than Email & WhatsApp',
             items: [
-                { title: 'No Central Hub', desc: 'Residents ping you on WhatsApp, email, phone, and in person. Nothing is tracked, nothing is resolved efficiently.' },
-                { title: 'Zero Community', desc: 'Coliving thrives on community, but without a platform, events die, residents feel isolated, and renewals drop.' },
-                { title: 'Visitor Management', desc: 'No system for pre-registering guests, generating visitor passes, or tracking who enters and exits your property.' },
-                { title: 'Meal Plan Chaos', desc: 'Operators offering F&B have no way for residents to opt in/out of meals, view menus, or get billed automatically.' },
-                { title: 'Lost Information', desc: 'WiFi passwords, house rules, emergency contacts, and local guides shared once and immediately forgotten.' },
-                { title: 'No Feedback Loop', desc: 'No systematic way to measure resident satisfaction, collect feedback, or track NPS scores across properties.' },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Central Hub', desc: 'Residents ping you on WhatsApp, email, phone, and in person. Nothing is tracked, nothing is resolved efficiently.'
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Zero Community', desc: 'Coliving thrives on community, but without a platform, events die, residents feel isolated, and renewals drop.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Visitor Management', desc: 'No system for pre-registering guests, generating visitor passes, or tracking who enters and exits your property.'
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Meal Plan Chaos', desc: 'Operators offering F&B have no way for residents to opt in/out of meals, view menus, or get billed automatically.'
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Lost Information', desc: 'WiFi passwords, house rules, emergency contacts, and local guides shared once and immediately forgotten.'
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Feedback Loop', desc: 'No systematic way to measure resident satisfaction, collect feedback, or track NPS scores across properties.'
+                },
             ],
         },
         grid: [
@@ -559,12 +655,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: 'Blind Spots in Your Portfolio Cost You Money',
             items: [
-                { title: 'No Real-Time View', desc: "Occupancy tracked in spreadsheets that are outdated the moment they're saved. No live dashboard across properties." },
-                { title: 'Single Stay Type', desc: 'Platform only supports long-term or short-term -- not both. Revenue lost from gaps between long stays that could be filled with short stays.' },
-                { title: 'No Forecasting', desc: 'Vacancy forecasting is guesswork. No data-driven visibility into upcoming lease expirations, churn risk, or seasonal demand.' },
-                { title: 'Renewal Gaps', desc: 'Renewals managed manually, leading to missed windows, lost residents, and unnecessary turnover costs.' },
-                { title: 'No Yield Optimization', desc: "Can't compare RevPAB across room types, properties, or time periods. Pricing decisions based on gut feeling." },
-                { title: 'Slow Turnarounds', desc: "Move-out to re-listing takes days because there's no coordinated workflow between inspection, cleaning, and listing." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Real-Time View', desc: "Occupancy tracked in spreadsheets that are outdated the moment they're saved. No live dashboard across properties."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Single Stay Type', desc: 'Platform only supports long-term or short-term -- not both. Revenue lost from gaps between long stays that could be filled with short stays.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Forecasting', desc: 'Vacancy forecasting is guesswork. No data-driven visibility into upcoming lease expirations, churn risk, or seasonal demand.'
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Renewal Gaps', desc: 'Renewals managed manually, leading to missed windows, lost residents, and unnecessary turnover costs.'
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Yield Optimization', desc: "Can't compare RevPAB across room types, properties, or time periods. Pricing decisions based on gut feeling."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Slow Turnarounds', desc: "Move-out to re-listing takes days because there's no coordinated workflow between inspection, cleaning, and listing."
+                },
             ],
         },
         grid: [
@@ -720,12 +864,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: 'Community Dies Without the Right Tools',
             items: [
-                { title: 'Event Ghost Towns', desc: "Events posted on WhatsApp get buried. No RSVP tracking, no reminders, no attendance data." },
-                { title: 'Anonymous Residents', desc: 'People live next door for months without knowing each other. No directory, no profiles, no shared interests.' },
-                { title: 'One-Way Communication', desc: 'Management broadcasts updates but has no way to gauge sentiment, run polls, or gather feedback.' },
-                { title: 'No Engagement Data', desc: 'No metrics on which events work, who participates, or how community health correlates with renewals.' },
-                { title: 'No Local Ecosystem', desc: "Residents discover restaurants, gyms, and services on their own. No curated local partnerships or exclusive deals." },
-                { title: 'Fragmented Channels', desc: "Community happens across WhatsApp groups, Instagram, email, and notice boards. Nothing centralized." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Event Ghost Towns', desc: "Events posted on WhatsApp get buried. No RSVP tracking, no reminders, no attendance data."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Anonymous Residents', desc: 'People live next door for months without knowing each other. No directory, no profiles, no shared interests.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'One-Way Communication', desc: 'Management broadcasts updates but has no way to gauge sentiment, run polls, or gather feedback.'
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Engagement Data', desc: 'No metrics on which events work, who participates, or how community health correlates with renewals.'
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Local Ecosystem', desc: "Residents discover restaurants, gyms, and services on their own. No curated local partnerships or exclusive deals."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Fragmented Channels', desc: "Community happens across WhatsApp groups, Instagram, email, and notice boards. Nothing centralized."
+                },
             ],
         },
         grid: [
@@ -877,12 +1069,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Your Team Is Drowning in Repetitive Tasks",
             items: [
-                { title: 'Repetitive Queries', desc: "Leads come via website, email, phone, WhatsApp, OTAs, referrals, and walk-ins. No single place to see them all. Responses are slow and inconsistent." },
-                { title: 'Missed Leads', desc: " Inbound enquiry calls missed after hours. Prospects who don't get an instant response move on to competitors." },
-                { title: 'Manual Data Entry', desc: "Passports, IDs, invoices, and contracts manually read and typed into the system. Slow and error-prone." },
-                { title: 'Report Building', desc: "Hours spent pulling data from multiple sources to build reports that are outdated by the time they're finished." },
-                { title: 'No Sentiment Visibility', desc: "Resident complaints and frustrations hidden in messages. No systematic way to detect unhappy residents before they leave." },
-                { title: 'Reactive Operations', desc: "Problems discovered after they escalate. No predictive visibility into occupancy drops, payment risks, or maintenance needs." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Repetitive Queries', desc: "Leads come via website, email, phone, WhatsApp, OTAs, referrals, and walk-ins. No single place to see them all. Responses are slow and inconsistent."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Missed Leads', desc: " Inbound enquiry calls missed after hours. Prospects who don't get an instant response move on to competitors."
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Manual Data Entry', desc: "Passports, IDs, invoices, and contracts manually read and typed into the system. Slow and error-prone."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Report Building', desc: "Hours spent pulling data from multiple sources to build reports that are outdated by the time they're finished."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Sentiment Visibility', desc: "Resident complaints and frustrations hidden in messages. No systematic way to detect unhappy residents before they leave."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Reactive Operations', desc: "Problems discovered after they escalate. No predictive visibility into occupancy drops, payment risks, or maintenance needs."
+                },
             ],
         },
         grid: [
@@ -1036,12 +1276,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "OTA Dependency Eats Your Margins",
             items: [
-                { title: 'Commission Drain', desc: "15-25% of every booking going to OTAs. On a portfolio of 500 beds, that's hundreds of thousands per year in commissions." },
-                { title: 'No Brand Presence', desc: "Residents find you on Booking.com, not your website. They're loyal to the platform, not your brand." },
-                { title: 'No SEO Visibility', desc: "Generic property pages buried in search results. No organic traffic, no direct enquiries, no compounding growth." },
-                { title: 'Slow Quoting', desc: "Prospects enquire and wait hours or days for a quote. By then they've booked elsewhere." },
-                { title: 'Static Listings', desc: "Availability and pricing manually updated. Outdated listings lead to overbooking or missed bookings." },
-                { title: 'No Conversion Data', desc: "No visibility into where prospects drop off, which listings convert, or what search terms drive traffic." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Commission Drain', desc: "15-25% of every booking going to OTAs. On a portfolio of 500 beds, that's hundreds of thousands per year in commissions."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Brand Presence', desc: "Residents find you on Booking.com, not your website. They're loyal to the platform, not your brand."
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No SEO Visibility', desc: "Generic property pages buried in search results. No organic traffic, no direct enquiries, no compounding growth."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Slow Quoting', desc: "Prospects enquire and wait hours or days for a quote. By then they've booked elsewhere."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Static Listings', desc: "Availability and pricing manually updated. Outdated listings lead to overbooking or missed bookings."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Conversion Data', desc: "No visibility into where prospects drop off, which listings convert, or what search terms drive traffic."
+                },
             ],
         },
         grid: [
@@ -1191,12 +1479,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Fragmented Communications Sink Operations",
             items: [
-                { title: 'Channel Chaos', desc: "Messages arrive via email, WhatsApp, OTA platforms, phone, and in-person. No single view of all conversations." },
-                { title: 'Manual Housekeeping', desc: 'Cleaning schedules managed in spreadsheets with no automated task creation, assignment, or proof of completion.' },
-                { title: 'Ticket Black Holes', desc: "Maintenance requests submitted verbally, lost in WhatsApp threads, or forgotten in email inboxes." },
-                { title: 'No Staff App', desc: "Housekeeping and maintenance staff have no mobile tool for receiving tasks, uploading photos, or updating status in real-time." },
-                { title: 'Post-Stay Silence', desc: "After move-out, residents disappear. No follow-up, no re-engagement, no referral program. Lost lifetime value." },
-                { title: 'Vendor Coordination', desc: "External contractors managed via phone calls with no work order tracking, cost attribution, or SLA monitoring." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Channel Chaos', desc: "Messages arrive via email, WhatsApp, OTA platforms, phone, and in-person. No single view of all conversations."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Manual Housekeeping', desc: 'Cleaning schedules managed in spreadsheets with no automated task creation, assignment, or proof of completion.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Ticket Black Holes', desc: "Maintenance requests submitted verbally, lost in WhatsApp threads, or forgotten in email inboxes."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Staff App', desc: "Housekeeping and maintenance staff have no mobile tool for receiving tasks, uploading photos, or updating status in real-time."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Post-Stay Silence', desc: "After move-out, residents disappear. No follow-up, no re-engagement, no referral program. Lost lifetime value."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Vendor Coordination', desc: "External contractors managed via phone calls with no work order tracking, cost attribution, or SLA monitoring."
+                },
             ],
         },
         grid: [
@@ -1350,12 +1686,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Scaling Without Centralized Control Is Chaos",
             items: [
-                { title: 'Configuration Sprawl', desc: "Each property has different rules, workflows, and settings managed in different places with no central source of truth." },
-                { title: 'Compliance Gaps', desc: 'Gas safety certs, EICR reports, HMO licenses, right-to-rent checks -- tracked in spreadsheets with no renewal alerts.' },
-                { title: 'Access Control', desc: "No way to give regional managers access to their properties without exposing the entire portfolio." },
-                { title: 'Branding Inconsistency', desc: "Each property feels like a different brand because there's no centralized branding and template management." },
-                { title: 'Regulatory Complexity', desc: "Operating across regions means different tax rules, compliance requirements, and reporting standards per jurisdiction." },
-                { title: 'Audit Trail Gaps', desc: "No digital record of who changed what, when. Compliance audits become stressful investigations." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Configuration Sprawl', desc: "Each property has different rules, workflows, and settings managed in different places with no central source of truth."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Compliance Gaps', desc: 'Gas safety certs, EICR reports, HMO licenses, right-to-rent checks -- tracked in spreadsheets with no renewal alerts.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Access Control', desc: "No way to give regional managers access to their properties without exposing the entire portfolio."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Branding Inconsistency', desc: "Each property feels like a different brand because there's no centralized branding and template management."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Regulatory Complexity', desc: "Operating across regions means different tax rules, compliance requirements, and reporting standards per jurisdiction."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Audit Trail Gaps', desc: "No digital record of who changed what, when. Compliance audits become stressful investigations."
+                },
             ],
         },
         grid: [
@@ -1510,12 +1894,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Disconnected Systems Waste Time & Money",
             items: [
-                { title: 'Data Silos', desc: "Payment data in Stripe, accounting in Xero, CRM in HubSpot, comms in Mailchimp. Nothing connected." },
-                { title: 'Manual Reconciliation', desc: 'Hours spent matching payments to invoices, exporting to accounting, and reconciling across systems.' },
-                { title: 'Dumb Buildings', desc: "Smart locks, energy meters, and IoT sensors exist but aren't connected to your PMS for automated workflows." },
-                { title: 'No Single Source of Truth', desc: "Reports pulled from 5 different systems, each with slightly different numbers." },
-                { title: 'Vendor Lock-In', desc: "Stuck with tools that don't have APIs. Can't switch providers without losing data or breaking workflows." },
-                { title: 'Slow Onboarding', desc: "New integrations take weeks to set up, requiring developer resources you don't have." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Data Silos', desc: "Payment data in Stripe, accounting in Xero, CRM in HubSpot, comms in Mailchimp. Nothing connected."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Manual Reconciliation', desc: 'Hours spent matching payments to invoices, exporting to accounting, and reconciling across systems.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Dumb Buildings', desc: "Smart locks, energy meters, and IoT sensors exist but aren't connected to your PMS for automated workflows."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Single Source of Truth', desc: "Reports pulled from 5 different systems, each with slightly different numbers."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Vendor Lock-In', desc: "Stuck with tools that don't have APIs. Can't switch providers without losing data or breaking workflows."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Slow Onboarding', desc: "New integrations take weeks to set up, requiring developer resources you don't have."
+                },
             ],
         },
         grid: [
@@ -1665,12 +2097,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "You Don't Know Who's in Your Building",
             items: [
-                { title: 'Untracked Visitors', desc: "Guests walk in and out with no registration. No record of who visited, when, or for how long." },
-                { title: 'Security Blind Spots', desc: 'No way to verify if a visitor was actually invited by a resident or is unauthorized.' },
-                { title: 'Vendor Chaos', desc: 'Contractors and delivery staff enter without logging. No movement tracking, no time stamps, no accountability.' },
-                { title: 'Reception Overload', desc: 'Front desk staff manually call residents to confirm every visitor. Queues build, residents get frustrated.' },
-                { title: 'No Overstay Detection', desc: "Long-term guests staying beyond allowed periods with no system to flag or enforce limits." },
-                { title: 'Zero Audit Trail', desc: "If an incident occurs, there's no digital record of who was in the building. Insurance claims and investigations become guesswork." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Untracked Visitors', desc: "Guests walk in and out with no registration. No record of who visited, when, or for how long."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Security Blind Spots', desc: 'No way to verify if a visitor was actually invited by a resident or is unauthorized.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Vendor Chaos', desc: 'Contractors and delivery staff enter without logging. No movement tracking, no time stamps, no accountability.'
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Reception Overload', desc: 'Front desk staff manually call residents to confirm every visitor. Queues build, residents get frustrated.'
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Overstay Detection', desc: "Long-term guests staying beyond allowed periods with no system to flag or enforce limits."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Zero Audit Trail', desc: "If an incident occurs, there's no digital record of who was in the building. Insurance claims and investigations become guesswork."
+                },
             ],
         },
         grid: [
@@ -1826,12 +2306,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Keys Are a Liability. Manual Access Is a Bottleneck.",
             items: [
-                { image: '/images/bi-1.svg', title: 'Lost & Copied Keys', desc: "Physical keys get duplicated, lost, and never returned. Re-keying costs $150+ per lock and leaves security gaps between tenants." },
-                { image: '/images/bi-1.svg', title: '24/7 Front Desk Dependency', desc: 'Someone has to be at the desk to buzz in guests, vendors, and deliveries. After-hours access is a constant headache.' },
-                { image: '/images/bi-1.svg', title: 'No Access Audit Trail', desc: 'When something goes wrong, you have no idea who entered which door at what time. No logs, no accountability.' },
-                { image: '/images/bi-1.svg', title: 'Guest Access Chaos', desc: 'Residents share entry codes freely. You have no control over who enters, when, or for how long.' },
-                { image: '/images/bi-1.svg', title: 'Emergency Response Gaps', desc: "Fire alarm goes off -- who is in the building? No real-time occupancy data means slow and unreliable emergency response." },
-                { image: '/images/bi-1.svg', title: 'Disconnected Systems', desc: "Locks, intercoms, CCTV, and PMS all run separately. No unified view of building security." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Lost & Copied Keys', desc: "Physical keys get duplicated, lost, and never returned. Re-keying costs $150+ per lock and leaves security gaps between tenants."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: '24/7 Front Desk Dependency', desc: 'Someone has to be at the desk to buzz in guests, vendors, and deliveries. After-hours access is a constant headache.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Access Audit Trail', desc: 'When something goes wrong, you have no idea who entered which door at what time. No logs, no accountability.'
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Guest Access Chaos', desc: 'Residents share entry codes freely. You have no control over who enters, when, or for how long.'
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Emergency Response Gaps', desc: "Fire alarm goes off -- who is in the building? No real-time occupancy data means slow and unreliable emergency response."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Disconnected Systems', desc: "Locks, intercoms, CCTV, and PMS all run separately. No unified view of building security."
+                },
             ],
         },
         grid: [
@@ -1982,12 +2510,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Shared Amenities Without a System Is Chaos",
             items: [
-                { image: '/images/bi-1.svg', title: 'Double Bookings', desc: "Two residents show up for the same meeting room at the same time. Paper sign-up sheets and WhatsApp groups create constant conflicts." },
-                { image: '/images/bi-1.svg', title: 'Gym Overcrowding', desc: 'No capacity limits means the gym is packed at 6pm and empty at 10am. Residents complain about wait times for equipment.' },
-                { image: '/images/bi-1.svg', title: 'Revenue Left on the Table', desc: 'Premium amenities like coworking spaces, private dining rooms, and rooftop terraces could generate revenue but have no booking or payment system.' },
-                { image: '/images/bi-1.svg', title: 'Laundry Wars', desc: 'Machines are always busy. Residents leave clothes in for hours. No way to enforce time limits or notify when cycles finish.' },
-                { image: '/images/bi-1.svg', title: 'No Usage Data', desc: "You have no idea which amenities are popular, which are underused, and what residents actually want. Investment decisions are guesswork." },
-                { image: '/images/bi-1.svg', title: 'No-Show Waste', desc: "Residents book slots and never show up, blocking others from using the space. No accountability or consequence for no-shows." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Double Bookings', desc: "Two residents show up for the same meeting room at the same time. Paper sign-up sheets and WhatsApp groups create constant conflicts."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Gym Overcrowding', desc: 'No capacity limits means the gym is packed at 6pm and empty at 10am. Residents complain about wait times for equipment.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Revenue Left on the Table', desc: 'Premium amenities like coworking spaces, private dining rooms, and rooftop terraces could generate revenue but have no booking or payment system.'
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Laundry Wars', desc: 'Machines are always busy. Residents leave clothes in for hours. No way to enforce time limits or notify when cycles finish.'
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Usage Data', desc: "You have no idea which amenities are popular, which are underused, and what residents actually want. Investment decisions are guesswork."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No-Show Waste', desc: "Residents book slots and never show up, blocking others from using the space. No accountability or consequence for no-shows."
+                },
             ],
         },
         grid: [
@@ -2138,12 +2714,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Housekeeping Still Runs on WhatsApp & Spreadsheets",
             items: [
-                { image: '/images/bi-1.svg', title: 'Spreadsheet Rotas', desc: "Cleaning schedules maintained manually. One staff sick day and the whole system collapses." },
-                { image: '/images/bi-1.svg', title: 'WhatsApp Coordination', desc: 'Task assignments and updates happening in group chats. Nothing tracked, nothing measured.' },
-                { image: '/images/bi-1.svg', title: 'No Proof of Work', desc: "Cleaners say rooms are done, but there's no photo evidence or checklist completion to verify." },
-                { image: '/images/bi-1.svg', title: 'Slow Turnarounds', desc: "Move-out to move-in takes too long because cleaning, inspection, and maintenance aren't coordinated." },
-                { image: '/images/bi-1.svg', title: 'Linen Guesswork', desc: "No tracking of linen inventory, replacement cycles, or consumable stock levels across properties." },
-                { image: '/images/bi-1.svg', title: 'No Quality Metrics', desc: "No inspection scoring, no cleanliness KPIs, no way to compare cleaning quality across properties or teams." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Spreadsheet Rotas', desc: "Cleaning schedules maintained manually. One staff sick day and the whole system collapses."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'WhatsApp Coordination', desc: 'Task assignments and updates happening in group chats. Nothing tracked, nothing measured.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Proof of Work', desc: "Cleaners say rooms are done, but there's no photo evidence or checklist completion to verify."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Slow Turnarounds', desc: "Move-out to move-in takes too long because cleaning, inspection, and maintenance aren't coordinated."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Linen Guesswork', desc: "No tracking of linen inventory, replacement cycles, or consumable stock levels across properties."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Quality Metrics', desc: "No inspection scoring, no cleanliness KPIs, no way to compare cleaning quality across properties or teams."
+                },
             ],
         },
         grid: [
@@ -2294,12 +2918,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Maintenance Requests Disappear Into Black Holes",
             items: [
-                { image: '/images/bi-1.svg', title: 'Lost Requests', desc: "Tickets reported verbally, via WhatsApp, or email. No centralized system, no tracking, no accountability." },
-                { image: '/images/bi-1.svg', title: 'Slow Resolution', desc: 'Average time to fix an issue is days or weeks because there is no priority system or SLA tracking.' },
-                { image: '/images/bi-1.svg', title: 'Cost Blindness', desc: "No visibility into maintenance spend by property, category, or vendor. Budget overruns discovered too late." },
-                { image: '/images/bi-1.svg', title: 'Reactive Only', desc: "Everything breaks before it is addressed. No preventive maintenance schedules for boilers, HVAC, or fire systems." },
-                { image: '/images/bi-1.svg', title: 'Vendor Chaos', desc: "Contractors managed via phone calls. No work orders, no estimate tracking, no proof of completion." },
-                { image: '/images/bi-1.svg', title: 'No Resident Updates', desc: "Residents submit a request and hear nothing until it is either fixed or they complain again." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Lost Requests', desc: "Tickets reported verbally, via WhatsApp, or email. No centralized system, no tracking, no accountability."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Slow Resolution', desc: 'Average time to fix an issue is days or weeks because there is no priority system or SLA tracking.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Cost Blindness', desc: "No visibility into maintenance spend by property, category, or vendor. Budget overruns discovered too late."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Reactive Only', desc: "Everything breaks before it is addressed. No preventive maintenance schedules for boilers, HVAC, or fire systems."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Vendor Chaos', desc: "Contractors managed via phone calls. No work orders, no estimate tracking, no proof of completion."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Resident Updates', desc: "Residents submit a request and hear nothing until it is either fixed or they complain again."
+                },
             ],
         },
         grid: [
@@ -2450,12 +3122,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Manual Channel Management Is Unsustainable",
             items: [
-                { image: '/images/bi-1.svg', title: 'Double Booking Risk', desc: "Availability updated manually across channels. One delay = one double booking = one angry guest and one refund." },
-                { image: '/images/bi-1.svg', title: 'Rate Lag', desc: 'Price changes take hours to propagate. By the time all channels reflect your new rate, the opportunity has passed.' },
-                { image: '/images/bi-1.svg', title: 'No Channel Insight', desc: "Which channels actually perform? What is your cost per booking per channel? Without data, marketing spend is blind." },
-                { image: '/images/bi-1.svg', title: 'Commission Blindness', desc: "Paying 15-25% to OTAs without knowing which channels deliver the best ROI or guest quality." },
-                { image: '/images/bi-1.svg', title: 'Limited Reach', desc: "Only listed on 2-3 platforms. Missing bookings from regional OTAs, corporate platforms, and niche channels." },
-                { image: '/images/bi-1.svg', title: 'No Central Control', desc: "Different content, different photos, different descriptions on each channel. Brand inconsistency everywhere." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Double Booking Risk', desc: "Availability updated manually across channels. One delay = one double booking = one angry guest and one refund."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Rate Lag', desc: 'Price changes take hours to propagate. By the time all channels reflect your new rate, the opportunity has passed.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Channel Insight', desc: "Which channels actually perform? What is your cost per booking per channel? Without data, marketing spend is blind."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Commission Blindness', desc: "Paying 15-25% to OTAs without knowing which channels deliver the best ROI or guest quality."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Limited Reach', desc: "Only listed on 2-3 platforms. Missing bookings from regional OTAs, corporate platforms, and niche channels."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Central Control', desc: "Different content, different photos, different descriptions on each channel. Brand inconsistency everywhere."
+                },
             ],
         },
         grid: [
@@ -2605,12 +3325,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Static Pricing Is Costing You Thousands",
             items: [
-                { image: '/images/bi-1.svg', title: 'Flat Rate Pricing', desc: "Same price regardless of season, demand, or occupancy level. Peak-season revenue left on the table." },
-                { image: '/images/bi-1.svg', title: 'No Competitor Visibility', desc: 'No idea what similar properties charge. Pricing decisions based on gut feeling, not data.' },
-                { image: '/images/bi-1.svg', title: 'Slow Adjustments', desc: "Rate changes require manual updates across listings, portals, and contracts. Takes days, should take seconds." },
-                { image: '/images/bi-1.svg', title: 'One-Size-Fits-All', desc: "Same pricing logic for short stays, mid-term, and long-term. No optimization by stay type." },
-                { image: '/images/bi-1.svg', title: 'No Yield Metrics', desc: "Can't measure RevPAB, ADR, or yield by room type. No way to know which inventory is underperforming." },
-                { image: '/images/bi-1.svg', title: 'Spreadsheet Forecasting', desc: "Revenue forecasts built manually from historical data. No predictive models, no scenario planning." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Flat Rate Pricing', desc: "Same price regardless of season, demand, or occupancy level. Peak-season revenue left on the table."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Competitor Visibility', desc: 'No idea what similar properties charge. Pricing decisions based on gut feeling, not data.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Slow Adjustments', desc: "Rate changes require manual updates across listings, portals, and contracts. Takes days, should take seconds."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'One-Size-Fits-All', desc: "Same pricing logic for short stays, mid-term, and long-term. No optimization by stay type."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Yield Metrics', desc: "Can't measure RevPAB, ADR, or yield by room type. No way to know which inventory is underperforming."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Spreadsheet Forecasting', desc: "Revenue forecasts built manually from historical data. No predictive models, no scenario planning."
+                },
             ],
         },
         grid: [
@@ -2760,12 +3528,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Utility Costs Are a Black Box",
             items: [
-                { image: '/images/bi-1.svg', title: 'Unfair Cost Splitting', desc: "Dividing utility bills equally penalizes frugal residents and subsidizes waste. No per-unit data means no fair allocation." },
-                { image: '/images/bi-1.svg', title: 'No Consumption Visibility', desc: 'You cannot manage what you cannot measure. Without smart metering, energy waste runs unchecked across your portfolio.' },
-                { image: '/images/bi-1.svg', title: 'Manual Billing Headaches', desc: "Staff spend hours reading meters, calculating splits, and manually adding utility charges to invoices. Errors are constant." },
-                { image: '/images/bi-1.svg', title: 'Leak & Waste Detection Gaps', desc: "Water leaks and HVAC faults go undetected for weeks. By the time you notice, the damage and cost are significant." },
-                { image: '/images/bi-1.svg', title: 'No Sustainability Data', desc: "Investors and regulators increasingly demand ESG reporting. Without consumption data, you cannot report or improve." },
-                { image: '/images/bi-1.svg', title: 'Resident Disputes', desc: "Residents challenge utility charges because they have no visibility into their own consumption. Every bill cycle triggers complaints." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Unfair Cost Splitting', desc: "Dividing utility bills equally penalizes frugal residents and subsidizes waste. No per-unit data means no fair allocation."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Consumption Visibility', desc: 'You cannot manage what you cannot measure. Without smart metering, energy waste runs unchecked across your portfolio.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Manual Billing Headaches', desc: "Staff spend hours reading meters, calculating splits, and manually adding utility charges to invoices. Errors are constant."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Leak & Waste Detection Gaps', desc: "Water leaks and HVAC faults go undetected for weeks. By the time you notice, the damage and cost are significant."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Sustainability Data', desc: "Investors and regulators increasingly demand ESG reporting. Without consumption data, you cannot report or improve."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Resident Disputes', desc: "Residents challenge utility charges because they have no visibility into their own consumption. Every bill cycle triggers complaints."
+                },
             ],
         },
         grid: [
@@ -2915,12 +3731,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "One Missed Certificate Can Cost You Everything",
             items: [
-                { image: '/images/bi-1.svg', title: 'Spreadsheet Tracking', desc: "Certificates tracked in spreadsheets with manual date monitoring. One missed row = one missed deadline." },
-                { image: '/images/bi-1.svg', title: 'No Renewal Alerts', desc: "Staff have to remember to check expiry dates. No automatic reminders until it's too late." },
-                { image: '/images/bi-1.svg', title: 'Missing Audit Trails', desc: "No digital proof that compliance documents were served to tenants. Disputes become he-said-she-said." },
-                { image: '/images/bi-1.svg', title: 'Multi-Property Complexity', desc: "Different properties have different requirements, different expiry dates, and different local regulations." },
-                { image: '/images/bi-1.svg', title: 'Costly Non-Compliance', desc: "Fines of $10K-$100K+ for lapsed certificates. Criminal liability for serious breaches. Insurance invalidation." },
-                { image: '/images/bi-1.svg', title: 'Regional Variation', desc: "UK requires gas safety; EU has different fire regs; Asia-Pacific has unique building codes. No system handles all." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Spreadsheet Tracking', desc: "Certificates tracked in spreadsheets with manual date monitoring. One missed row = one missed deadline."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Renewal Alerts', desc: "Staff have to remember to check expiry dates. No automatic reminders until it's too late."
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Missing Audit Trails', desc: "No digital proof that compliance documents were served to tenants. Disputes become he-said-she-said."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Multi-Property Complexity', desc: "Different properties have different requirements, different expiry dates, and different local regulations."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Costly Non-Compliance', desc: "Fines of $10K-$100K+ for lapsed certificates. Criminal liability for serious breaches. Insurance invalidation."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Regional Variation', desc: "UK requires gas safety; EU has different fire regs; Asia-Pacific has unique building codes. No system handles all."
+                },
             ],
         },
         grid: [
@@ -3070,12 +3934,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Paper Contracts Are Slow, Expensive, and Risky",
             items: [
-                { image: '/images/bi-1.svg', title: 'Manual Contract Chaos', desc: "Creating contracts from scratch every time. Copy-paste errors, wrong tenant names, missing clauses. Each contract takes 30+ minutes to prepare." },
-                { image: '/images/bi-1.svg', title: 'Signature Bottleneck', desc: 'Printing, mailing, waiting for wet signatures, scanning, filing. A single contract can take 5-7 days to execute.' },
-                { image: '/images/bi-1.svg', title: 'Lost Documents', desc: "Filed in email, shared drives, desk drawers, or filing cabinets. When you need a document, it takes hours to find -- if you find it at all." },
-                { image: '/images/bi-1.svg', title: 'Compliance Blind Spots', desc: "Section 21 notices, gas safety certs, right-to-rent checks -- serving and tracking these manually means critical deadlines slip through." },
-                { image: '/images/bi-1.svg', title: 'No Audit Trail', desc: "Who signed what, when? Which version was served? Without a digital trail, disputes become costly." },
-                { image: '/images/bi-1.svg', title: 'Printing & Storage Costs', desc: "Paper, ink, postage, filing cabinets, storage rooms. For a 500-bed operator, document costs add up to thousands annually." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Manual Contract Chaos', desc: "Creating contracts from scratch every time. Copy-paste errors, wrong tenant names, missing clauses. Each contract takes 30+ minutes to prepare."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Signature Bottleneck', desc: 'Printing, mailing, waiting for wet signatures, scanning, filing. A single contract can take 5-7 days to execute.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Lost Documents', desc: "Filed in email, shared drives, desk drawers, or filing cabinets. When you need a document, it takes hours to find -- if you find it at all."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Compliance Blind Spots', desc: "Section 21 notices, gas safety certs, right-to-rent checks -- serving and tracking these manually means critical deadlines slip through."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Audit Trail', desc: "Who signed what, when? Which version was served? Without a digital trail, disputes become costly."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Printing & Storage Costs', desc: "Paper, ink, postage, filing cabinets, storage rooms. For a 500-bed operator, document costs add up to thousands annually."
+                },
             ],
         },
         grid: [
@@ -3225,12 +4137,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Leads Fall Through the Cracks",
             items: [
-                { image: '/images/bi-1.svg', title: 'Scattered Enquiries', desc: "Leads come via website, email, phone, WhatsApp, OTAs, referrals, and walk-ins. No single place to see them all. Responses are slow and inconsistent." },
-                { image: '/images/bi-1.svg', title: 'Slow Response Times', desc: 'The first operator to respond wins the booking. Without automation, your average response time is hours -- competitors respond in minutes.' },
-                { image: '/images/bi-1.svg', title: 'No Pipeline Visibility', desc: "How many leads are in progress? What stage are they at? Which ones are going cold? Without a pipeline, management is flying blind." },
-                { image: '/images/bi-1.svg', title: 'Wasted Marketing Spend', desc: "You spend on Google Ads, social media, and listing portals but have no idea which channels deliver signed leases vs. which waste budget." },
-                { image: '/images/bi-1.svg', title: 'Inconsistent Follow-Up', desc: "Some staff follow up diligently, others forget. High-intent leads go cold because nobody contacted them after the viewing." },
-                { image: '/images/bi-1.svg', title: 'No Lead Scoring', desc: "All leads are treated equally. A corporate relocation enquiry for 20 beds gets the same response as a casual browser. No prioritization, no segmentation." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Scattered Enquiries', desc: "Leads come via website, email, phone, WhatsApp, OTAs, referrals, and walk-ins. No single place to see them all. Responses are slow and inconsistent."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Slow Response Times', desc: 'The first operator to respond wins the booking. Without automation, your average response time is hours -- competitors respond in minutes.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Pipeline Visibility', desc: "How many leads are in progress? What stage are they at? Which ones are going cold? Without a pipeline, management is flying blind."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Wasted Marketing Spend', desc: "You spend on Google Ads, social media, and listing portals but have no idea which channels deliver signed leases vs. which waste budget."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Inconsistent Follow-Up', desc: "Some staff follow up diligently, others forget. High-intent leads go cold because nobody contacted them after the viewing."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Lead Scoring', desc: "All leads are treated equally. A corporate relocation enquiry for 20 beds gets the same response as a casual browser. No prioritization, no segmentation."
+                },
             ],
         },
         grid: [
@@ -3380,12 +4340,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "External Relationships Managed in Silos",
             items: [
-                { image: '/images/bi-1.svg', title: 'Partner Fragmentation', desc: "Corporate clients managed via email, university agreements in PDFs, and referral tracking in spreadsheets." },
-                { image: '/images/bi-1.svg', title: 'Owner Blindness', desc: 'Property owners have no visibility into how their assets are performing. Reports sent manually when they complain.' },
-                { image: '/images/bi-1.svg', title: 'No Channel Insight', desc: "No way to compare performance across booking channels, OTAs, direct bookings, and partner referrals." },
-                { image: '/images/bi-1.svg', title: 'Commission Chaos', desc: "Referral commissions tracked manually with no automated calculation, payment, or reporting." },
-                { image: '/images/bi-1.svg', title: 'Billing Complexity', desc: "Corporate clients need consolidated invoices, custom payment terms, and spend reporting that manual processes can't deliver." },
-                { image: '/images/bi-1.svg', title: 'Slow Onboarding', desc: "New partners wait weeks for portal access, rate agreements, and integration setup." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Partner Fragmentation', desc: "Corporate clients managed via email, university agreements in PDFs, and referral tracking in spreadsheets."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Owner Blindness', desc: 'Property owners have no visibility into how their assets are performing. Reports sent manually when they complain.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Channel Insight', desc: "No way to compare performance across booking channels, OTAs, direct bookings, and partner referrals."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Commission Chaos', desc: "Referral commissions tracked manually with no automated calculation, payment, or reporting."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Billing Complexity', desc: "Corporate clients need consolidated invoices, custom payment terms, and spend reporting that manual processes can't deliver."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Slow Onboarding', desc: "New partners wait weeks for portal access, rate agreements, and integration setup."
+                },
             ],
         },
         grid: [
@@ -3536,12 +4544,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Manual Screening Is Slow, Risky, and Inconsistent",
             items: [
-                { image: '/images/bi-1.svg', title: 'Inconsistent Checks', desc: "Different staff apply different screening criteria. Some prospects slip through with no verification at all." },
-                { image: '/images/bi-1.svg', title: 'Days of Delays', desc: 'Waiting for references, chasing employers, manually reviewing documents. Every day of delay is a day of lost rent.' },
-                { image: '/images/bi-1.svg', title: 'Fraud Exposure', desc: "Fake IDs, forged payslips, and fabricated references are increasingly sophisticated. Manual review can't catch them all." },
-                { image: '/images/bi-1.svg', title: 'Compliance Risk', desc: "Right-to-rent checks, GDPR-compliant data handling, and fair housing regulations vary by jurisdiction. One mistake can mean fines." },
-                { image: '/images/bi-1.svg', title: 'Paper Trail Chaos', desc: "Screening documents scattered across email, WhatsApp, and filing cabinets. No audit trail. No consistency." },
-                { image: '/images/bi-1.svg', title: 'Guarantor Gaps', desc: "Student and international tenants need guarantor verification. Most operators do this manually — or skip it entirely." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Inconsistent Checks', desc: "Different staff apply different screening criteria. Some prospects slip through with no verification at all."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Days of Delays', desc: 'Waiting for references, chasing employers, manually reviewing documents. Every day of delay is a day of lost rent.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Fraud Exposure', desc: "Fake IDs, forged payslips, and fabricated references are increasingly sophisticated. Manual review can't catch them all."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Compliance Risk', desc: "Right-to-rent checks, GDPR-compliant data handling, and fair housing regulations vary by jurisdiction. One mistake can mean fines."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Paper Trail Chaos', desc: "Screening documents scattered across email, WhatsApp, and filing cabinets. No audit trail. No consistency."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Guarantor Gaps', desc: "Student and international tenants need guarantor verification. Most operators do this manually — or skip it entirely."
+                },
             ],
         },
         grid: [
@@ -3687,12 +4743,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Owners Are Demanding More Transparency",
             items: [
-                { image: '/images/bi-1.svg', title: 'Monthly Email Reports', desc: "Owners get a PDF once a month and have no idea what's happening between reports. They call. You explain. Repeat." },
-                { image: '/images/bi-1.svg', title: 'Spreadsheet Statements', desc: 'Owner statements manually compiled in Excel. Error-prone, time-consuming, and never consistent across properties.' },
-                { image: '/images/bi-1.svg', title: 'Trust Deficit', desc: "Without real-time visibility, owners lose confidence. They micromanage, question decisions, or worse — move to another operator." },
-                { image: '/images/bi-1.svg', title: 'Distribution Delays', desc: "Manual calculation of owner distributions, deductions, and reserves. Late payments erode trust and create friction." },
-                { image: '/images/bi-1.svg', title: 'Approval Bottlenecks', desc: "Maintenance above a threshold needs owner approval, but there's no system for it. Emails get lost. Repairs get delayed." },
-                { image: '/images/bi-1.svg', title: 'No Document Access', desc: "Lease agreements, inspection reports, insurance certificates — owners can't access them without asking you." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Monthly Email Reports', desc: "Owners get a PDF once a month and have no idea what's happening between reports. They call. You explain. Repeat."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Spreadsheet Statements', desc: 'Owner statements manually compiled in Excel. Error-prone, time-consuming, and never consistent across properties.'
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Trust Deficit', desc: "Without real-time visibility, owners lose confidence. They micromanage, question decisions, or worse — move to another operator."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Distribution Delays', desc: "Manual calculation of owner distributions, deductions, and reserves. Late payments erode trust and create friction."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Approval Bottlenecks', desc: "Maintenance above a threshold needs owner approval, but there's no system for it. Emails get lost. Repairs get delayed."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Document Access', desc: "Lease agreements, inspection reports, insurance certificates — owners can't access them without asking you."
+                },
             ],
         },
         grid: [
@@ -3834,12 +4938,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "You Can't Manage What You Can't Measure",
             items: [
-                { image: '/images/bi-1.svg', title: 'Spreadsheet Reports', desc: "Hours spent pulling data from 5 different systems into a spreadsheet that's outdated by the time it's finished." },
-                { image: '/images/bi-1.svg', title: 'Days of Delays', desc: "Monthly reports mean you're always looking backward. By the time you spot a problem, it's already cost you money." },
-                { image: '/images/bi-1.svg', title: 'No Portfolio View', desc: "You can see one property at a time, but not the whole picture. Cross-property comparisons require manual calculation." },
-                { image: '/images/bi-1.svg', title: 'Hidden Trends', desc: "Occupancy dipping on Floor 3? Maintenance costs rising at Property B? Without proper analytics, patterns stay hidden." },
-                { image: '/images/bi-1.svg', title: 'Different Reports for Different People', desc: "Owners want financials. Ops wants maintenance KPIs. Finance wants rent collection. Everyone needs a different view." },
-                { image: '/images/bi-1.svg', title: 'No Predictive Insight', desc: "You know what happened last month. You don't know what's going to happen next month. Reactive management is expensive." },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Spreadsheet Reports', desc: "Hours spent pulling data from 5 different systems into a spreadsheet that's outdated by the time it's finished."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Days of Delays', desc: "Monthly reports mean you're always looking backward. By the time you spot a problem, it's already cost you money."
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Portfolio View', desc: "You can see one property at a time, but not the whole picture. Cross-property comparisons require manual calculation."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Hidden Trends', desc: "Occupancy dipping on Floor 3? Maintenance costs rising at Property B? Without proper analytics, patterns stay hidden."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Different Reports for Different People', desc: "Owners want financials. Ops wants maintenance KPIs. Finance wants rent collection. Everyone needs a different view."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Predictive Insight', desc: "You know what happened last month. You don't know what's going to happen next month. Reactive management is expensive."
+                },
             ],
         },
         grid: [
@@ -3985,12 +5137,60 @@ export const modulesData = {
             heading: 'CHALLENGE',
             subtitle: "Your Team Deserves Better Than WhatsApp Groups",
             items: [
-                { image: '/images/bi-1.svg', title: 'WhatsApp Coordination', desc: "Task assignments, shift swaps, and updates happen in chaotic group chats. Nothing is trackable. Nothing is accountable." },
-                { image: '/images/bi-1.svg', title: 'Manual Scheduling', desc: "Shift rotas built in spreadsheets. No visibility into availability, overtime, or coverage gaps until it's too late." },
-                { image: '/images/bi-1.svg', title: 'No Performance Visibility', desc: "You know who complains and who doesn't. But you don't have data on who's actually performing and who's underperforming." },
-                { image: '/images/bi-1.svg', title: 'Overtime Surprises', desc: "Hours aren't tracked properly. Overtime claims come at month-end with no way to verify them against actual work done." },
-                { image: '/images/bi-1.svg', title: 'Onboarding Chaos', desc: "New staff have no structured onboarding. They learn by shadowing, which means inconsistent training across properties." },
-                { image: '/images/bi-1.svg', title: 'Multi-Site Blind Spots', desc: "Staff across multiple properties, but no central view. Who's working where today? Who's available for tomorrow's emergency?" },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'WhatsApp Coordination', desc: "Task assignments, shift swaps, and updates happen in chaotic group chats. Nothing is trackable. Nothing is accountable."
+                },
+                {
+                    icon: {
+                        name: 'clock',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Manual Scheduling', desc: "Shift rotas built in spreadsheets. No visibility into availability, overtime, or coverage gaps until it's too late."
+                },
+                {
+                    icon: {
+                        name: 'document',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'No Performance Visibility', desc: "You know who complains and who doesn't. But you don't have data on who's actually performing and who's underperforming."
+                },
+                {
+                    icon: {
+                        name: 'eyeOff',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Overtime Surprises', desc: "Hours aren't tracked properly. Overtime claims come at month-end with no way to verify them against actual work done."
+                },
+                {
+                    icon: {
+                        name: 'grid',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Onboarding Chaos', desc: "New staff have no structured onboarding. They learn by shadowing, which means inconsistent training across properties."
+                },
+                {
+                    icon: {
+                        name: 'result',
+                        props: {
+                            sizeClass: 'size-16',
+                        },
+                    },
+                    title: 'Multi-Site Blind Spots', desc: "Staff across multiple properties, but no central view. Who's working where today? Who's available for tomorrow's emergency?"
+                },
             ],
         },
         grid: [
